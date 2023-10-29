@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 235, 235, 235;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -16,4 +16,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.dotted-background {
+  opacity: 0.99;
+  background-image: radial-gradient(rgba(175, 175, 175, 0.3) 1.25px, rgba(0, 0, 0, 0) 0.95px);
+  background-size: 19px 19px;
+  background-repeat: repeat;
 }

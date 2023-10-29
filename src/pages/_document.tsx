@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <title>TLDS.world &middot; The best comparing platform for top level domain</title>
       </Head>
-      <body>
+      <body className='dotted-background'>
         <Main />
         <NextScript />
       </body>
