@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
+
+import 'animate.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,12 +21,10 @@ export default function Home() {
           onSubmit={searchForDomain}
         >
           <input 
-            className='w-full bg-gray-100 border border-gray-200 rounded-lg py-4 px-6'
+            className='w-full bg-gray-100 border border-gray-300 rounded-lg py-4 px-6 animate__animated animate__fadeInDown'
             placeholder='Search for a domain...'
             type='search'
-          >
-            
-          </input>
+          />
         </form>
       </div>
     </main>
