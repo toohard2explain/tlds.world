@@ -2,7 +2,7 @@ type TopLevelDomainInfo = {
     name: string,
     description: string,
     public: boolean, // everyone can register
-    category: TopLevelDomainCategory,
+    category: TopLevelDomainCategory
 }
 
 enum TopLevelDomainCategory {
@@ -16,5445 +16,8753 @@ enum TopLevelDomainCategory {
     SEXUAL = 'sexual',
 }
 
-enum TopLevelDomain {
-    AAA = TopLevelDomainInfo = {
+class TopLevelDomain {
+    AAA: TopLevelDomainInfo = {
         name: 'aaa',
         description: 'American Automobile Association, Inc.',
         public: false,
         category: TopLevelDomainCategory.FUNCTIONAL,
-    },
-    AARP = TopLevelDomainInfo = {
+    };
+    AARP: TopLevelDomainInfo = {
         name: 'aarp',
         description: 'American Association of Retired Persons',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABB = TopLevelDomainInfo = {
+    };
+    ABB: TopLevelDomainInfo = {
         name: 'abb',
         description: 'ABB Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABBOTT = TopLevelDomainInfo = {
+    };
+    ABBOTT: TopLevelDomainInfo = {
         name: 'abbott',
         description: 'Abbott Laboratories, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABBVIE = TopLevelDomainInfo = {
+    };
+    ABBVIE: TopLevelDomainInfo = {
         name: 'abbvie',
         description: 'AbbVie Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABC = TopLevelDomainInfo = {
+    };
+    ABC: TopLevelDomainInfo = {
         name: 'abc',
         description: 'Disney Enterprises, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABLE = TopLevelDomainInfo = {
+    };
+    ABLE: TopLevelDomainInfo = {
         name: 'able',
         description: 'Able Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABOGADO = TopLevelDomainInfo = {
+    };
+    ABOGADO: TopLevelDomainInfo = {
         name: 'abogado',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ABUDHABI = TopLevelDomainInfo = {
+    };
+    ABUDHABI: TopLevelDomainInfo = {
         name: 'abudhabi',
         description: 'Abu Dhabi Systems and Information Centre',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AC = TopLevelDomainInfo = {
+    };
+    AC: TopLevelDomainInfo = {
         name: 'ac',
         description: 'Ascension Island',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ACADEMY = TopLevelDomainInfo = {
+    };
+    ACADEMY: TopLevelDomainInfo = {
         name: 'academy',
         description: 'Half Oaks, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ACCENTURE = TopLevelDomainInfo = {
+    };
+    ACCENTURE: TopLevelDomainInfo = {
         name: 'accenture',
         description: 'Accenture plc',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ACCOUNTANT = TopLevelDomainInfo = {
+    };
+    ACCOUNTANT: TopLevelDomainInfo = {
         name: 'accountant',
         description: 'dot Accountant Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ACCOUNTANTS = TopLevelDomainInfo = {
+    };
+    ACCOUNTANTS: TopLevelDomainInfo = {
         name: 'accountants',
         description: 'Knob Town, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ACO = TopLevelDomainInfo = {
+    };
+    ACO: TopLevelDomainInfo = {
         name: 'aco',
         description: 'ACO Severin Ahlmann GmbH & Co. KG',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ACTOR = TopLevelDomainInfo = {
+    };
+    ACTOR: TopLevelDomainInfo = {
         name: 'actor',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AD = TopLevelDomainInfo = {
+    };
+    AD: TopLevelDomainInfo = {
         name: 'ad',
         description: 'Andorra (Principality of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ADS = TopLevelDomainInfo = {
+    };
+    ADS: TopLevelDomainInfo = {
         name: 'ads',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ADULT = TopLevelDomainInfo = {
+    };
+    ADULT: TopLevelDomainInfo = {
         name: 'adult',
         description: 'ICM Registry AD LLC',
         public: true,
-        category: TopLevelDomainCategory.SEUXAL,
-    },
-    AE = TopLevelDomainInfo = {
+        category: TopLevelDomainCategory.SEXUAL,
+    };
+    AE: TopLevelDomainInfo = {
         name: 'ae',
         description: 'United Arab Emirates',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AEG = TopLevelDomainInfo = {
+    };
+    AEG: TopLevelDomainInfo = {
         name: 'aeg',
         description: 'Aktiebolaget Electrolux',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AERO = TopLevelDomainInfo = {
+    };
+    AERO: TopLevelDomainInfo = {
         name: 'aero',
         description: 'Societe Internationale de Telecommunications Aeronautique (SITA INC USA)',
         public: false,
         category: TopLevelDomainCategory.INFRASTRUCTURE,
-    },
-    AETNA = TopLevelDomainInfo = {
+    };
+    AETNA: TopLevelDomainInfo = {
         name: 'aetna',
         description: 'Aetna Life Insurance Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AF = TopLevelDomainInfo = {
+    };
+    AF: TopLevelDomainInfo = {
         name: 'af',
         description: 'Afghanistan',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AFL = TopLevelDomainInfo = {
+    };
+    AFL: TopLevelDomainInfo = {
         name: 'afl',
         description: 'Australian Football League',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AFRICA = TopLevelDomainInfo = {
+    };
+    AFRICA: TopLevelDomainInfo = {
         name: 'africa',
         description: 'ZA Central Registry NPC trading as Registry.Africa',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AG = TopLevelDomainInfo = {
+    };
+    AG: TopLevelDomainInfo = {
         name: 'ag',
         description: 'Antigua and Barbuda',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AGAKHAN = TopLevelDomainInfo = {
+    };
+    AGAKHAN: TopLevelDomainInfo = {
         name: 'agakhan',
         description: 'Fondation Aga Khan (Aga Khan Foundation)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AGENCY = TopLevelDomainInfo = {
+    };
+    AGENCY: TopLevelDomainInfo = {
         name: 'agency',
         description: 'Steel Falls, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AI = TopLevelDomainInfo = {
+    };
+    AI: TopLevelDomainInfo = {
         name: 'ai',
         description: 'Anguilla',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AIG = TopLevelDomainInfo = {
+    };
+    AIG: TopLevelDomainInfo = {
         name: 'aig',
         description: 'American International Group, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AIRBUS = TopLevelDomainInfo = {
+    };
+    AIRBUS: TopLevelDomainInfo = {
         name: 'airbus',
         description: 'Airbus S.A.S.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AIRFORCE = TopLevelDomainInfo = {
+    };
+    AIRFORCE: TopLevelDomainInfo = {
         name: 'airforce',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AIRTEL = TopLevelDomainInfo = {
+    };
+    AIRTEL: TopLevelDomainInfo = {
         name: 'airtel',
         description: 'Bharti Airtel Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AKDN = TopLevelDomainInfo = {
+    };
+    AKDN: TopLevelDomainInfo = {
         name: 'akdn',
         description: 'Fondation Aga Khan (Aga Khan Foundation)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AL = TopLevelDomainInfo = {
+    };
+    AL: TopLevelDomainInfo = {
         name: 'al',
         description: 'Albania',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ALIBABA = TopLevelDomainInfo = {
+    };
+    ALIBABA: TopLevelDomainInfo = {
         name: 'alibaba',
         description: 'Alibaba Group Holding Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ALIPAY = TopLevelDomainInfo = {
+    };
+    ALIPAY: TopLevelDomainInfo = {
         name: 'alipay',
         description: 'Alibaba Group Holding Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ALLFINANZ = TopLevelDomainInfo = {
+    };
+    ALLFINANZ: TopLevelDomainInfo = {
         name: 'allfinanz',
         description: 'Allfinanz Deutsche Vermögensberatung Aktiengesellschaft',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ALLSTATE = TopLevelDomainInfo = {
+    };
+    ALLSTATE: TopLevelDomainInfo = {
         name: 'allstate',
         description: 'Allstate Fire and Casualty Insurance Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ALLY = TopLevelDomainInfo = {
+    };
+    ALLY: TopLevelDomainInfo = {
         name: 'ally',
         description: 'Ally Financial Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ALSACE = TopLevelDomainInfo = {
+    };
+    ALSACE: TopLevelDomainInfo = {
         name: 'alsace',
         description: 'REGION D ALSACE',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ALSTOM = TopLevelDomainInfo = {
+    };
+    ALSTOM: TopLevelDomainInfo = {
         name: 'alstom',
         description: 'ALSTOM',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AM = TopLevelDomainInfo = {
+    };
+    AM: TopLevelDomainInfo = {
         name: 'am',
         description: 'Armenia',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AMAZON = TopLevelDomainInfo = {
+    };
+    AMAZON: TopLevelDomainInfo = {
         name: 'amazon',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AMERICANEXPRESS = TopLevelDomainInfo = {
+    };
+    AMERICANEXPRESS: TopLevelDomainInfo = {
         name: 'americanexpress',
         description: 'American Express Travel Related Services Company, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AMERICANFAMILY = TopLevelDomainInfo = {
+    };
+    AMERICANFAMILY: TopLevelDomainInfo = {
         name: 'americanfamily',
         description: 'AmFam, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AMEX = TopLevelDomainInfo = {
+    };
+    AMEX: TopLevelDomainInfo = {
         name: 'amex',
         description: 'American Express Travel Related Services Company, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AMFAM = TopLevelDomainInfo = {
+    };
+    AMFAM: TopLevelDomainInfo = {
         name: 'amfam',
         description: 'AmFam, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AMICA = TopLevelDomainInfo = {
+    };
+    AMICA: TopLevelDomainInfo = {
         name: 'amica',
         description: 'Amica Mutual Insurance Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AMSTERDAM = TopLevelDomainInfo = {
+    };
+    AMSTERDAM: TopLevelDomainInfo = {
         name: 'amsterdam',
         description: 'Gemeente Amsterdam',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ANALYTICS = TopLevelDomainInfo = {
+    };
+    ANALYTICS: TopLevelDomainInfo = {
         name: 'analytics',
         description: 'Campus IP LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ANDROID = TopLevelDomainInfo = {
+    };
+    ANDROID: TopLevelDomainInfo = {
         name: 'android',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ANQUAN = TopLevelDomainInfo = {
+    };
+    ANQUAN: TopLevelDomainInfo = {
         name: 'anquan',
         description: 'QIHOO 360 TECHNOLOGY CO. LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ANZ = TopLevelDomainInfo = {
+    };
+    ANZ: TopLevelDomainInfo = {
         name: 'anz',
         description: 'Australia and New Zealand Banking Group Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AO = TopLevelDomainInfo = {
+    };
+    AO: TopLevelDomainInfo = {
         name: 'ao',
         description: 'Angola',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AOL = TopLevelDomainInfo = {
+    };
+    AOL: TopLevelDomainInfo = {
         name: 'aol',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    APARTMENTS = TopLevelDomainInfo = {
+    };
+    APARTMENTS: TopLevelDomainInfo = {
         name: 'apartments',
         description: 'June Maple, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    APP = TopLevelDomainInfo = {
+    };
+    APP: TopLevelDomainInfo = {
         name: 'app',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    APPLE = TopLevelDomainInfo = {
+    };
+    APPLE: TopLevelDomainInfo = {
         name: 'apple',
         description: 'Apple Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AQ = TopLevelDomainInfo = {
+    };
+    AQ: TopLevelDomainInfo = {
         name: 'aq',
         description: 'Antarctica',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AQUARELLE = TopLevelDomainInfo = {
+    };
+    AQUARELLE: TopLevelDomainInfo = {
         name: 'aquarelle',
         description: 'Aquarelle.com',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AR = TopLevelDomainInfo = {
+    };
+    AR: TopLevelDomainInfo = {
         name: 'ar',
         description: 'Argentina',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ARAB = TopLevelDomainInfo = {
+    };
+    ARAB: TopLevelDomainInfo = {
         name: 'arab',
         description: 'League of Arab States',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ARAMCO = TopLevelDomainInfo = {
+    };
+    ARAMCO: TopLevelDomainInfo = {
         name: 'aramco',
         description: 'Aramco Services Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ARCHI = TopLevelDomainInfo = {
+    };
+    ARCHI: TopLevelDomainInfo = {
         name: 'archi',
         description: 'STARTING DOT LIMITED',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ARMY = TopLevelDomainInfo = {
+    };
+    ARMY: TopLevelDomainInfo = {
         name: 'army',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ARPA = TopLevelDomainInfo = {
+    };
+    ARPA: TopLevelDomainInfo = {
         name: 'arpa',
         description: 'Internet Architecture Board (IAB)',
         public: false,
         category: TopLevelDomainCategory.INFRASTRUCTURE,
-    },
-    ART = TopLevelDomainInfo = {
+    };
+    ART: TopLevelDomainInfo = {
         name: 'art',
         description: 'UK Creative Ideas Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ARTE = TopLevelDomainInfo = {
+    };
+    ARTE: TopLevelDomainInfo = {
         name: 'arte',
         description: 'Association Relative à la Télévision Européenne G.E.I.E.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AS = TopLevelDomainInfo = {
+    };
+    AS: TopLevelDomainInfo = {
         name: 'as',
         description: 'American Samoa',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ASDA = TopLevelDomainInfo = {
+    };
+    ASDA: TopLevelDomainInfo = {
         name: 'asda',
         description: 'Wal-Mart Stores, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ASIA = TopLevelDomainInfo = {
+    };
+    ASIA: TopLevelDomainInfo = {
         name: 'asia',
         description: 'DotAsia Organisation Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ASSOCIATES = TopLevelDomainInfo = {
+    };
+    ASSOCIATES: TopLevelDomainInfo = {
         name: 'associates',
         description: 'Baxter Hill, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AT = TopLevelDomainInfo = {
+    };
+    AT: TopLevelDomainInfo = {
         name: 'at',
         description: 'Austria',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ATHLETA = TopLevelDomainInfo = {
+    };
+    ATHLETA: TopLevelDomainInfo = {
         name: 'athleta',
         description: 'The Gap, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ATTORNEY = TopLevelDomainInfo = {
+    };
+    ATTORNEY: TopLevelDomainInfo = {
         name: 'attorney',
         description: 'United TLD Holdco, Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AU = TopLevelDomainInfo = {
+    };
+    AU: TopLevelDomainInfo = {
         name: 'au',
         description: 'Australia',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AUCTION = TopLevelDomainInfo = {
+    };
+    AUCTION: TopLevelDomainInfo = {
         name: 'auction',
         description: 'United TLD HoldCo, Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUDI = TopLevelDomainInfo = {
+    };
+    AUDI: TopLevelDomainInfo = {
         name: 'audi',
         description: 'AUDI Aktiengesellschaft',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUDIBLE = TopLevelDomainInfo = {
+    };
+    AUDIBLE: TopLevelDomainInfo = {
         name: 'audible',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUDIO = TopLevelDomainInfo = {
+    };
+    AUDIO: TopLevelDomainInfo = {
         name: 'audio',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUSPOST = TopLevelDomainInfo = {
+    };
+    AUSPOST: TopLevelDomainInfo = {
         name: 'auspost',
         description: 'Australian Postal Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUTHOR = TopLevelDomainInfo = {
+    };
+    AUTHOR: TopLevelDomainInfo = {
         name: 'author',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUTO = TopLevelDomainInfo = {
+    };
+    AUTO: TopLevelDomainInfo = {
         name: 'auto',
         description: 'Cars Registry Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AUTOS = TopLevelDomainInfo = {
+    };
+    AUTOS: TopLevelDomainInfo = {
         name: 'autos',
         description: 'DERAutos, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AVIANCA = TopLevelDomainInfo = {
+    };
+    AVIANCA: TopLevelDomainInfo = {
         name: 'avianca',
         description: 'Aerovias del Continente Americano S.A. Avianca',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AW = TopLevelDomainInfo = {
+    };
+    AW: TopLevelDomainInfo = {
         name: 'aw',
         description: 'Aruba',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AWS = TopLevelDomainInfo = {
+    };
+    AWS: TopLevelDomainInfo = {
         name: 'aws',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AX = TopLevelDomainInfo = {
+    };
+    AX: TopLevelDomainInfo = {
         name: 'ax',
         description: 'Åland Islands',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AXA = TopLevelDomainInfo = {
+    };
+    AXA: TopLevelDomainInfo = {
         name: 'axa',
         description: 'AXA SA',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    AZ = TopLevelDomainInfo = {
+    };
+    AZ: TopLevelDomainInfo = {
         name: 'az',
         description: 'Azerbaijan',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    AZURE = TopLevelDomainInfo = {
+    };
+    AZURE: TopLevelDomainInfo = {
         name: 'azure',
         description: 'Microsoft Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BA = TopLevelDomainInfo = {
+    };
+    BA: TopLevelDomainInfo = {
         name: 'ba',
         description: 'Bosnia and Herzegovina',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BABY = TopLevelDomainInfo = {
+    };
+    BABY: TopLevelDomainInfo = {
         name: 'baby',
         description: 'Johnson & Johnson Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BAIDU = TopLevelDomainInfo = {
+    };
+    BAIDU: TopLevelDomainInfo = {
         name: 'baidu',
         description: 'Baidu, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BANAMEX = TopLevelDomainInfo = {
+    };
+    BANAMEX: TopLevelDomainInfo = {
         name: 'banamex',
         description: 'Citigroup Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BANANAREPUBLIC = TopLevelDomainInfo = {
+    };
+    BANANAREPUBLIC: TopLevelDomainInfo = {
         name: 'bananarepublic',
         description: 'The Gap, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BAND = TopLevelDomainInfo = {
+    };
+    BAND: TopLevelDomainInfo = {
         name: 'band',
         description: 'United TLD Holdco, Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BANK = TopLevelDomainInfo = {
+    };
+    BANK: TopLevelDomainInfo = {
         name: 'bank',
         description: 'fTLD Registry Services, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BAR = TopLevelDomainInfo = {
+    };
+    BAR: TopLevelDomainInfo = {
         name: 'bar',
         description: 'Punto 2012 Sociedad Anonima Promotora de Inversion de Capital Variable',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BARCELONA = TopLevelDomainInfo = {
+    };
+    BARCELONA: TopLevelDomainInfo = {
         name: 'barcelona',
         description: 'Municipi de Barcelona',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BARCLAYCARD = TopLevelDomainInfo = {
+    };
+    BARCLAYCARD: TopLevelDomainInfo = {
         name: 'barclaycard',
         description: 'Barclays Bank PLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BARCLAYS = TopLevelDomainInfo = {
+    };
+    BARCLAYS: TopLevelDomainInfo = {
         name: 'barclays',
         description: 'Barclays Bank PLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BAREFOOT = TopLevelDomainInfo = {
+    };
+    BAREFOOT: TopLevelDomainInfo = {
         name: 'barefoot',
         description: 'Gallo Vineyards, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BARGAINS = TopLevelDomainInfo = {
+    };
+    BARGAINS: TopLevelDomainInfo = {
         name: 'bargains',
         description: 'Half Hallow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BASEBALL = TopLevelDomainInfo = {
+    };
+    BASEBALL: TopLevelDomainInfo = {
         name: 'baseball',
         description: 'MLB Advanced Media DH, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BASKETBALL = TopLevelDomainInfo = {
+    };
+    BASKETBALL: TopLevelDomainInfo = {
         name: 'basketball',
         description: 'Fédération Internationale de Basketball (FIBA)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BAUHAUS = TopLevelDomainInfo = {
+    };
+    BAUHAUS: TopLevelDomainInfo = {
         name: 'bauhaus',
         description: 'Werkhaus GmbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BAYERN = TopLevelDomainInfo = {
+    };
+    BAYERN: TopLevelDomainInfo = {
         name: 'bayern',
         description: 'Bayern Connect GmbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BB = TopLevelDomainInfo = {
+    };
+    BB: TopLevelDomainInfo = {
         name: 'bb',
         description: 'Barbados',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BBC = TopLevelDomainInfo = {
+    };
+    BBC: TopLevelDomainInfo = {
         name: 'bbc',
         description: 'British Broadcasting Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BBT = TopLevelDomainInfo = {
+    };
+    BBT: TopLevelDomainInfo = {
         name: 'bbt',
         description: 'BB&T Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BBVA = TopLevelDomainInfo = {
+    };
+    BBVA: TopLevelDomainInfo = {
         name: 'bbva',
         description: 'BANCO BILBAO VIZCAYA ARGENTARIA, S.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BCG = TopLevelDomainInfo = {
+    };
+    BCG: TopLevelDomainInfo = {
         name: 'bcg',
         description: 'The Boston Consulting Group, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BCN = TopLevelDomainInfo = {
+    };
+    BCN: TopLevelDomainInfo = {
         name: 'bcn',
         description: 'Municipi de Barcelona',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BD = TopLevelDomainInfo = {
+    };
+    BD: TopLevelDomainInfo = {
         name: 'bd',
         description: 'Bangladesh (People\'s Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BE = TopLevelDomainInfo = {
+    };
+    BE: TopLevelDomainInfo = {
         name: 'be',
         description: 'Belgium',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BEATS = TopLevelDomainInfo = {
+    };
+    BEATS: TopLevelDomainInfo = {
         name: 'beats',
         description: 'Beats Electronics, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BEAUTY = TopLevelDomainInfo = {
+    };
+    BEAUTY: TopLevelDomainInfo = {
         name: 'beauty',
         description: 'L\'Oréal',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    BEER = TopLevelDomainInfo = {
+    };
+    BEER: TopLevelDomainInfo = {
         name: 'beer',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BENTLEY = TopLevelDomainInfo = {
+    };
+    BENTLEY: TopLevelDomainInfo = {
         name: 'bentley',
         description: 'Bentley Motors Limited',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    BERLIN = TopLevelDomainInfo = {
+    };
+    BERLIN: TopLevelDomainInfo = {
         name: 'berlin',
         description: 'dotBERLIN GmbH & Co. KG',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BEST = TopLevelDomainInfo = {
+    };
+    BEST: TopLevelDomainInfo = {
         name: 'best',
         description: 'BestTLD Pty Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BESTBUY = TopLevelDomainInfo = {
+    };
+    BESTBUY: TopLevelDomainInfo = {
         name: 'bestbuy',
         description: 'BBY Solutions, Inc.',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    BET = TopLevelDomainInfo = {
+    };
+    BET: TopLevelDomainInfo = {
         name: 'bet',
         description: 'Afilias plc',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BF = TopLevelDomainInfo = {
+    };
+    BF: TopLevelDomainInfo = {
         name: 'bf',
         description: 'Burkina Faso',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BG = TopLevelDomainInfo = {
+    };
+    BG: TopLevelDomainInfo = {
         name: 'bg',
         description: 'Bulgaria',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BH = TopLevelDomainInfo = {
+    };
+    BH: TopLevelDomainInfo = {
         name: 'bh',
         description: 'Bahrain (Kingdom of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BHARTI = TopLevelDomainInfo = {
+    };
+    BHARTI: TopLevelDomainInfo = {
         name: 'bharti',
         description: 'Bharti Enterprises (Holding) Private Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BI = TopLevelDomainInfo = {
+    };
+    BI: TopLevelDomainInfo = {
         name: 'bi',
         description: 'Burundi (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BIBLE = TopLevelDomainInfo = {
+    };
+    BIBLE: TopLevelDomainInfo = {
         name: 'bible',
         description: 'American Bible Society',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BID = TopLevelDomainInfo = {
+    };
+    BID: TopLevelDomainInfo = {
         name: 'bid',
         description: 'dot Bid Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BIKE = TopLevelDomainInfo = {
+    };
+    BIKE: TopLevelDomainInfo = {
         name: 'bike',
         description: 'Grand Hollow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BING = TopLevelDomainInfo = {
+    };
+    BING: TopLevelDomainInfo = {
         name: 'bing',
         description: 'Microsoft Corporation',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    BINGO = TopLevelDomainInfo = {
+    };
+    BINGO: TopLevelDomainInfo = {
         name: 'bingo',
         description: 'Sand Cedar, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BIO = TopLevelDomainInfo = {
+    };
+    BIO: TopLevelDomainInfo = {
         name: 'bio',
         description: 'STARTING DOT LIMITED',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BIZ = TopLevelDomainInfo = {
+    };
+    BIZ: TopLevelDomainInfo = {
         name: 'biz',
         description: 'Business',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BJ = TopLevelDomainInfo = {
+    };
+    BJ: TopLevelDomainInfo = {
         name: 'bj',
         description: 'Benin (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BLACK = TopLevelDomainInfo = {
+    };
+    BLACK: TopLevelDomainInfo = {
         name: 'black',
         description: 'Afilias Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BLACKFRIDAY = TopLevelDomainInfo = {
+    };
+    BLACKFRIDAY: TopLevelDomainInfo = {
         name: 'blackfriday',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BLOCKBUSTER = TopLevelDomainInfo = {
+    };
+    BLOCKBUSTER: TopLevelDomainInfo = {
         name: 'blockbuster',
         description: 'Dish DBS Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BLOG = TopLevelDomainInfo = {
+    };
+    BLOG: TopLevelDomainInfo = {
         name: 'blog',
         description: 'Knock Knock WHOIS There, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BLOOMBERG = TopLevelDomainInfo = {
+    };
+    BLOOMBERG: TopLevelDomainInfo = {
         name: 'bloomberg',
         description: 'Bloomberg IP Holdings LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BLUE = TopLevelDomainInfo = {
+    };
+    BLUE: TopLevelDomainInfo = {
         name: 'blue',
         description: 'Afilias Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BM = TopLevelDomainInfo = {
+    };
+    BM: TopLevelDomainInfo = {
         name: 'bm',
         description: 'Bermuda',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BMS = TopLevelDomainInfo = {
+    };
+    BMS: TopLevelDomainInfo = {
         name: 'bms',
         description: 'Bristol-Myers Squibb Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BMW = TopLevelDomainInfo = {
+    };
+    BMW: TopLevelDomainInfo = {
         name: 'bmw',
         description: 'Bayerische Motoren Werke Aktiengesellschaft',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    BN = TopLevelDomainInfo = {
+    };
+    BN: TopLevelDomainInfo = {
         name: 'bn',
         description: 'Brunei Darussalam',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BNPPARIBAS = TopLevelDomainInfo = {
+    };
+    BNPPARIBAS: TopLevelDomainInfo = {
         name: 'bnpparibas',
         description: 'BNP Paribas',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BO = TopLevelDomainInfo = {
+    };
+    BO: TopLevelDomainInfo = {
         name: 'bo',
         description: 'Bolivia (Plurinational State of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BOATS = TopLevelDomainInfo = {
+    };
+    BOATS: TopLevelDomainInfo = {
         name: 'boats',
         description: 'DERBoats, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOEHRINGER = TopLevelDomainInfo = {
+    };
+    BOEHRINGER: TopLevelDomainInfo = {
         name: 'boehringer',
         description: 'Boehringer Ingelheim International GmbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOFA = TopLevelDomainInfo = {
+    };
+    BOFA: TopLevelDomainInfo = {
         name: 'bofa',
         description: 'Bank of America Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOM = TopLevelDomainInfo = {
+    };
+    BOM: TopLevelDomainInfo = {
         name: 'bom',
         description: 'Núcleo de Informação e Coordenação do Ponto BR - NIC.br',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOND = TopLevelDomainInfo = {
+    };
+    BOND: TopLevelDomainInfo = {
         name: 'bond',
         description: 'Bond University Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOO = TopLevelDomainInfo = {
+    };
+    BOO: TopLevelDomainInfo = {
         name: 'boo',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOOK = TopLevelDomainInfo = {
+    };
+    BOOK: TopLevelDomainInfo = {
         name: 'book',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOOKING = TopLevelDomainInfo = {
+    };
+    BOOKING: TopLevelDomainInfo = {
         name: 'booking',
         description: 'Booking.com B.V.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOSCH = TopLevelDomainInfo = {
+    };
+    BOSCH: TopLevelDomainInfo = {
         name: 'bosch',
         description: 'Robert Bosch GMBH',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    BOSTIK = TopLevelDomainInfo = {
+    };
+    BOSTIK: TopLevelDomainInfo = {
         name: 'bostik',
         description: 'Bostik SA',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOSTON = TopLevelDomainInfo = {
+    };
+    BOSTON: TopLevelDomainInfo = {
         name: 'boston',
         description: 'Boston TLD Management, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOT = TopLevelDomainInfo = {
+    };
+    BOT: TopLevelDomainInfo = {
         name: 'bot',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOUTIQUE = TopLevelDomainInfo = {
+    };
+    BOUTIQUE: TopLevelDomainInfo = {
         name: 'boutique',
         description: 'Over Galley, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BOX = TopLevelDomainInfo = {
+    };
+    BOX: TopLevelDomainInfo = {
         name: 'box',
         description: 'NS1 Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BR = TopLevelDomainInfo = {
+    };
+    BR: TopLevelDomainInfo = {
         name: 'br',
         description: 'Brazil (Federative Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BRADESCO = TopLevelDomainInfo = {
+    };
+    BRADESCO: TopLevelDomainInfo = {
         name: 'bradesco',
         description: 'Banco Bradesco S.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BRIDGESTONE = TopLevelDomainInfo = {
+    };
+    BRIDGESTONE: TopLevelDomainInfo = {
         name: 'bridgestone',
         description: 'Bridgestone Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BROADWAY = TopLevelDomainInfo = {
+    };
+    BROADWAY: TopLevelDomainInfo = {
         name: 'broadway',
         description: 'Celebrate Broadway, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BROKER = TopLevelDomainInfo = {
+    };
+    BROKER: TopLevelDomainInfo = {
         name: 'broker',
         description: 'DOTBROKER REGISTRY LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BROTHER = TopLevelDomainInfo = {
+    };
+    BROTHER: TopLevelDomainInfo = {
         name: 'brother',
         description: 'Brother Industries, Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BRUSSELS = TopLevelDomainInfo = {
+    };
+    BRUSSELS: TopLevelDomainInfo = {
         name: 'brussels',
         description: 'DNS.be vzw',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BS = TopLevelDomainInfo = {
+    };
+    BS: TopLevelDomainInfo = {
         name: 'bs',
         description: 'Bahamas (Commonwealth of the)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BT = TopLevelDomainInfo = {
+    };
+    BT: TopLevelDomainInfo = {
         name: 'bt',
         description: 'Bhutan (Kingdom of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BUILD = TopLevelDomainInfo = {
+    };
+    BUILD: TopLevelDomainInfo = {
         name: 'build',
         description: 'Plan Bee LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BUILDERS = TopLevelDomainInfo = {
+    };
+    BUILDERS: TopLevelDomainInfo = {
         name: 'builders',
         description: 'Atomic Madison, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BUSINESS = TopLevelDomainInfo = {
+    };
+    BUSINESS: TopLevelDomainInfo = {
         name: 'business',
         description: 'Spring Cross, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BUY = TopLevelDomainInfo = {
+    };
+    BUY: TopLevelDomainInfo = {
         name: 'buy',
         description: 'Amazon Registry Services, INC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BUZZ = TopLevelDomainInfo = {
+    };
+    BUZZ: TopLevelDomainInfo = {
         name: 'buzz',
         description: 'DOTSTRATEGY CO.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    BV = TopLevelDomainInfo = {
+    };
+    BV: TopLevelDomainInfo = {
         name: 'bv',
         description: 'Bouvet Island',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BW = TopLevelDomainInfo = {
+    };
+    BW: TopLevelDomainInfo = {
         name: 'bw',
         description: 'Botswana (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BY = TopLevelDomainInfo = {
+    };
+    BY: TopLevelDomainInfo = {
         name: 'by',
         description: 'Belarus (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BZ = TopLevelDomainInfo = {
+    };
+    BZ: TopLevelDomainInfo = {
         name: 'bz',
         description: 'Belize',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    BZH = TopLevelDomainInfo = {
+    };
+    BZH: TopLevelDomainInfo = {
         name: 'bzh',
         description: 'Association www.bzh',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CA = TopLevelDomainInfo = {
+    };
+    CA: TopLevelDomainInfo = {
         name: 'ca',
         description: 'Canada',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CAB = TopLevelDomainInfo = {
+    };
+    CAB: TopLevelDomainInfo = {
         name: 'cab',
         description: 'Half Sunset, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAFE = TopLevelDomainInfo = {
+    };
+    CAFE: TopLevelDomainInfo = {
         name: 'cafe',
         description: 'Pioneer Canyon, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAL = TopLevelDomainInfo = {
+    };
+    CAL: TopLevelDomainInfo = {
         name: 'cal',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CALL = TopLevelDomainInfo = {
+    };
+    CALL: TopLevelDomainInfo = {
         name: 'call',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CALVINKLEIN = TopLevelDomainInfo = {
+    };
+    CALVINKLEIN: TopLevelDomainInfo = {
         name: 'calvinklein',
         description: 'PVH gTLD Holdings LLC',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    CAM = TopLevelDomainInfo = {
+    };
+    CAM: TopLevelDomainInfo = {
         name: 'cam',
         description: 'AC Webconnecting Holding B.V.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAMERA = TopLevelDomainInfo = {
+    };
+    CAMERA: TopLevelDomainInfo = {
         name: 'camera',
         description: 'Atomic Maple, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAMP = TopLevelDomainInfo = {
+    };
+    CAMP: TopLevelDomainInfo = {
         name: 'camp',
         description: 'Delta Dynamite, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CANON = TopLevelDomainInfo = {
+    };
+    CANON: TopLevelDomainInfo = {
         name: 'canon',
         description: 'Canon Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAPETOWN = TopLevelDomainInfo = {
+    };
+    CAPETOWN: TopLevelDomainInfo = {
         name: 'capetown',
         description: 'ZA Central Registry NPC trading as ZA Central Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAPITAL = TopLevelDomainInfo = {
+    };
+    CAPITAL: TopLevelDomainInfo = {
         name: 'capital',
         description: 'Delta Mill, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAPITALONE = TopLevelDomainInfo = {
+    };
+    CAPITALONE: TopLevelDomainInfo = {
         name: 'capitalone',
         description: 'Capital One Financial Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAR = TopLevelDomainInfo = {
+    };
+    CAR: TopLevelDomainInfo = {
         name: 'car',
         description: 'Cars Registry Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CARAVAN = TopLevelDomainInfo = {
+    };
+    CARAVAN: TopLevelDomainInfo = {
         name: 'caravan',
         description: 'Caravan International, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CARDS = TopLevelDomainInfo = {
+    };
+    CARDS: TopLevelDomainInfo = {
         name: 'cards',
         description: 'Foggy Hollow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CARE = TopLevelDomainInfo = {
+    };
+    CARE: TopLevelDomainInfo = {
         name: 'care',
         description: 'Goose Cross',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAREER = TopLevelDomainInfo = {
+    };
+    CAREER: TopLevelDomainInfo = {
         name: 'career',
         description: 'dotCareer LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAREERS = TopLevelDomainInfo = {
+    };
+    CAREERS: TopLevelDomainInfo = {
         name: 'careers',
         description: 'Wild Corner, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CARS = TopLevelDomainInfo = {
+    };
+    CARS: TopLevelDomainInfo = {
         name: 'cars',
         description: 'Cars Registry Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CASA = TopLevelDomainInfo = {
+    };
+    CASA: TopLevelDomainInfo = {
         name: 'casa',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CASE = TopLevelDomainInfo = {
+    };
+    CASE: TopLevelDomainInfo = {
         name: 'case',
         description: 'CNH Industrial N.V.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CASH = TopLevelDomainInfo = {
+    };
+    CASH: TopLevelDomainInfo = {
         name: 'cash',
         description: 'Delta Lake, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CASINO = TopLevelDomainInfo = {
+    };
+    CASINO: TopLevelDomainInfo = {
         name: 'casino',
         description: 'Binky Sky, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CAT = TopLevelDomainInfo = {
+    };
+    CAT: TopLevelDomainInfo = {
         name: 'cat',
         description: 'Fundacio puntCAT',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CATERING = TopLevelDomainInfo = {
+    };
+    CATERING: TopLevelDomainInfo = {
         name: 'catering',
         description: 'New Falls. LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CATHOLIC = TopLevelDomainInfo = {
+    };
+    CATHOLIC: TopLevelDomainInfo = {
         name: 'catholic',
         description: 'Pontificium Consilium de Comunicationibus Socialibus (PCCS) (Pontifical Council for Social Communication)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CBA = TopLevelDomainInfo = {
+    };
+    CBA: TopLevelDomainInfo = {
         name: 'cba',
         description: 'COMMONWEALTH BANK OF AUSTRALIA',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CBN = TopLevelDomainInfo = {
+    };
+    CBN: TopLevelDomainInfo = {
         name: 'cbn',
         description: 'The Christian Broadcasting Network, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CBRE = TopLevelDomainInfo = {
+    };
+    CBRE: TopLevelDomainInfo = {
         name: 'cbre',
         description: 'CBRE, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CC = TopLevelDomainInfo = {
+    };
+    CC: TopLevelDomainInfo = {
         name: 'cc',
         description: 'Cocos (Keeling) Islands (Territory of the)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CD = TopLevelDomainInfo = {
+    };
+    CD: TopLevelDomainInfo = {
         name: 'cd',
         description: 'Congo (Democratic Republic of the)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CENTER = TopLevelDomainInfo = {
+    };
+    CENTER: TopLevelDomainInfo = {
         name: 'center',
         description: 'Tin Mill, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CEO = TopLevelDomainInfo = {
+    };
+    CEO: TopLevelDomainInfo = {
         name: 'ceo',
         description: 'CEOTLD Pty Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CERN = TopLevelDomainInfo = {
+    };
+    CERN: TopLevelDomainInfo = {
         name: 'cern',
         description: 'European Organization for Nuclear Research ("CERN")',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CF = TopLevelDomainInfo = {
+    };
+    CF: TopLevelDomainInfo = {
         name: 'cf',
         description: 'Central African Republic',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CFA = TopLevelDomainInfo = {
+    };
+    CFA: TopLevelDomainInfo = {
         name: 'cfa',
         description: 'CFA Institute',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CFD = TopLevelDomainInfo = {
+    };
+    CFD: TopLevelDomainInfo = {
         name: 'cfd',
         description: 'DOTCFD REGISTRY LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CG = TopLevelDomainInfo = {
+    };
+    CG: TopLevelDomainInfo = {
         name: 'cg',
         description: 'Congo (Republic of the)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CH = TopLevelDomainInfo = {
+    };
+    CH: TopLevelDomainInfo = {
         name: 'ch',
         description: 'Switzerland (Swiss Confederation)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CHANEL = TopLevelDomainInfo = {
+    };
+    CHANEL: TopLevelDomainInfo = {
         name: 'chanel',
         description: 'Chanel International B.V.',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    CHANNEL = TopLevelDomainInfo = {
+    };
+    CHANNEL: TopLevelDomainInfo = {
         name: 'channel',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHARITY = TopLevelDomainInfo = {
+    };
+    CHARITY: TopLevelDomainInfo = {
         name: 'charity',
         description: 'Corn Lake, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHASE = TopLevelDomainInfo = {
+    };
+    CHASE: TopLevelDomainInfo = {
         name: 'chase',
         description: 'JPMorgan Chase Bank, National Association',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHAT = TopLevelDomainInfo = {
+    };
+    CHAT: TopLevelDomainInfo = {
         name: 'chat',
         description: 'Sand Fields, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHEAP = TopLevelDomainInfo = {
+    };
+    CHEAP: TopLevelDomainInfo = {
         name: 'cheap',
         description: 'Sand Cover, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHINTAI = TopLevelDomainInfo = {
+    };
+    CHINTAI: TopLevelDomainInfo = {
         name: 'chintai',
         description: 'CHINTAI Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHRISTMAS = TopLevelDomainInfo = {
+    };
+    CHRISTMAS: TopLevelDomainInfo = {
         name: 'christmas',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHROME = TopLevelDomainInfo = {
+    };
+    CHROME: TopLevelDomainInfo = {
         name: 'chrome',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CHURCH = TopLevelDomainInfo = {
+    };
+    CHURCH: TopLevelDomainInfo = {
         name: 'church',
         description: 'Holly Fileds, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CI = TopLevelDomainInfo = {
+    };
+    CI: TopLevelDomainInfo = {
         name: 'ci',
         description: 'Côte d\'Ivoire (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CIPRIANI = TopLevelDomainInfo = {
+    };
+    CIPRIANI: TopLevelDomainInfo = {
         name: 'cipriani',
         description: 'Hotel Cipriani Srl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CIRCLE = TopLevelDomainInfo = {
+    };
+    CIRCLE: TopLevelDomainInfo = {
         name: 'circle',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CISCO = TopLevelDomainInfo = {
+    };
+    CISCO: TopLevelDomainInfo = {
         name: 'cisco',
         description: 'Cisco Technology, Inc.',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    CITADEL = TopLevelDomainInfo = {
+    };
+    CITADEL: TopLevelDomainInfo = {
         name: 'citadel',
         description: 'Citadel Domain LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CITI = TopLevelDomainInfo = {
+    };
+    CITI: TopLevelDomainInfo = {
         name: 'citi',
         description: 'Citigroup Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CITIC = TopLevelDomainInfo = {
+    };
+    CITIC: TopLevelDomainInfo = {
         name: 'citic',
         description: 'CITIC Group Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CITY = TopLevelDomainInfo = {
+    };
+    CITY: TopLevelDomainInfo = {
         name: 'city',
         description: 'Snow Sky, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CK = TopLevelDomainInfo = {
+    };
+    CK: TopLevelDomainInfo = {
         name: 'ck',
         description: 'Cook Islands',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CL = TopLevelDomainInfo = {
+    };
+    CL: TopLevelDomainInfo = {
         name: 'cl',
         description: 'Chile (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CLAIMS = TopLevelDomainInfo = {
+    };
+    CLAIMS: TopLevelDomainInfo = {
         name: 'claims',
         description: 'Black Corner, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLEANING = TopLevelDomainInfo = {
+    };
+    CLEANING: TopLevelDomainInfo = {
         name: 'cleaning',
         description: 'Fox Shadow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLICK = TopLevelDomainInfo = {
+    };
+    CLICK: TopLevelDomainInfo = {
         name: 'click',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLINIC = TopLevelDomainInfo = {
+    };
+    CLINIC: TopLevelDomainInfo = {
         name: 'clinic',
         description: 'Goose Park, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLINIQUE = TopLevelDomainInfo = {
+    };
+    CLINIQUE: TopLevelDomainInfo = {
         name: 'clinique',
         description: 'The Estée Lauder Companies Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLOTHING = TopLevelDomainInfo = {
+    };
+    CLOTHING: TopLevelDomainInfo = {
         name: 'clothing',
         description: 'Steel Lake, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLOUD = TopLevelDomainInfo = {
+    };
+    CLOUD: TopLevelDomainInfo = {
         name: 'cloud',
         description: 'ARUBA PEC S.p.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLUB = TopLevelDomainInfo = {
+    };
+    CLUB: TopLevelDomainInfo = {
         name: 'club',
         description: 'CLUB DOMAINS, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CLUBMED = TopLevelDomainInfo = {
+    };
+    CLUBMED: TopLevelDomainInfo = {
         name: 'clubmed',
         description: 'Club Méditerranée S.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CM = TopLevelDomainInfo = {
+    };
+    CM: TopLevelDomainInfo = {
         name: 'cm',
         description: 'Cameroon (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CN = TopLevelDomainInfo = {
+    };
+    CN: TopLevelDomainInfo = {
         name: 'cn',
         description: 'China (People\'s Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CO = TopLevelDomainInfo = {
+    };
+    CO: TopLevelDomainInfo = {
         name: 'co',
         description: 'Colombia (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    COACH = TopLevelDomainInfo = {
+    };
+    COACH: TopLevelDomainInfo = {
         name: 'coach',
         description: 'Koko Island, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CODES = TopLevelDomainInfo = {
+    };
+    CODES: TopLevelDomainInfo = {
         name: 'codes',
         description: 'Puff Willow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COFFEE = TopLevelDomainInfo = {
+    };
+    COFFEE: TopLevelDomainInfo = {
         name: 'coffee',
         description: 'Trixy Cover, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COLLEGE = TopLevelDomainInfo = {
+    };
+    COLLEGE: TopLevelDomainInfo = {
         name: 'college',
         description: 'XYZ.COM LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COLOGNE = TopLevelDomainInfo = {
+    };
+    COLOGNE: TopLevelDomainInfo = {
         name: 'cologne',
         description: 'NetCologne Gesellschaft für Telekommunikation mbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COM = TopLevelDomainInfo = {
+    };
+    COM: TopLevelDomainInfo = {
         name: 'com',
         description: 'Commercial',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COMCAST = TopLevelDomainInfo = {
+    };
+    COMCAST: TopLevelDomainInfo = {
         name: 'comcast',
         description: 'Comcast IP Holdings I, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COMMBANK = TopLevelDomainInfo = {
+    };
+    COMMBANK: TopLevelDomainInfo = {
         name: 'commbank',
         description: 'COMMONWEALTH BANK OF AUSTRALIA',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    COMMUNITY = TopLevelDomainInfo = {
+    };
+    COMMUNITY: TopLevelDomainInfo = {
         name: 'community',
         description: 'Fox Orchard, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COMPANY = TopLevelDomainInfo = {
+    };
+    COMPANY: TopLevelDomainInfo = {
         name: 'company',
         description: 'Silver Avenue, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COMPARE = TopLevelDomainInfo = {
+    };
+    COMPARE: TopLevelDomainInfo = {
         name: 'compare',
         description: 'iSelect Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COMPUTER = TopLevelDomainInfo = {
+    };
+    COMPUTER: TopLevelDomainInfo = {
         name: 'computer',
         description: 'Pine Mill, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COMSEC = TopLevelDomainInfo = {
+    };
+    COMSEC: TopLevelDomainInfo = {
         name: 'comsec',
         description: 'VeriSign, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CONDOS = TopLevelDomainInfo = {
+    };
+    CONDOS: TopLevelDomainInfo = {
         name: 'condos',
         description: 'Pine House, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CONSTRUCTION = TopLevelDomainInfo = {
+    };
+    CONSTRUCTION: TopLevelDomainInfo = {
         name: 'construction',
         description: 'Fox Dynamite, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CONSULTING = TopLevelDomainInfo = {
+    };
+    CONSULTING: TopLevelDomainInfo = {
         name: 'consulting',
         description: 'United TLD Holdco, LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CONTACT = TopLevelDomainInfo = {
+    };
+    CONTACT: TopLevelDomainInfo = {
         name: 'contact',
         description: 'Top Level Spectrum, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CONTRACTORS = TopLevelDomainInfo = {
+    };
+    CONTRACTORS: TopLevelDomainInfo = {
         name: 'contractors',
         description: 'Magic Woods, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COOKING = TopLevelDomainInfo = {
+    };
+    COOKING: TopLevelDomainInfo = {
         name: 'cooking',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COOL = TopLevelDomainInfo = {
+    };
+    COOL: TopLevelDomainInfo = {
         name: 'cool',
         description: 'Koko Lake, LLC',
         public: true,
         category: TopLevelDomainCategory.FUN,
-    },
-    COOP = TopLevelDomainInfo = {
+    };
+    COOP: TopLevelDomainInfo = {
         name: 'coop',
         description: 'Cooperatives',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    CORSICA = TopLevelDomainInfo = {
+    };
+    CORSICA: TopLevelDomainInfo = {
         name: 'corsica',
         description: 'Collectivité Territoriale de Corse',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COUNTRY = TopLevelDomainInfo = {
+    };
+    COUNTRY: TopLevelDomainInfo = {
         name: 'country',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COUPON = TopLevelDomainInfo = {
+    };
+    COUPON: TopLevelDomainInfo = {
         name: 'coupon',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COUPONS = TopLevelDomainInfo = {
+    };
+    COUPONS: TopLevelDomainInfo = {
         name: 'coupons',
         description: 'Black Island, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    COURSES = TopLevelDomainInfo = {
+    };
+    COURSES: TopLevelDomainInfo = {
         name: 'courses',
         description: 'OPEN UNIVERSITIES AUSTRALIA PTY LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CPA = TopLevelDomainInfo = {
+    };
+    CPA: TopLevelDomainInfo = {
         name: 'cpa',
         description: 'American Institute of Certified Public Accountants',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    CR = TopLevelDomainInfo = {
+    };
+    CR: TopLevelDomainInfo = {
         name: 'cr',
         description: 'Costa Rica (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CREDIT = TopLevelDomainInfo = {
+    };
+    CREDIT: TopLevelDomainInfo = {
         name: 'credit',
         description: 'Snow Shadow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CREDITCARD = TopLevelDomainInfo = {
+    };
+    CREDITCARD: TopLevelDomainInfo = {
         name: 'creditcard',
         description: 'Binky Frostbite, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CREDITUNION = TopLevelDomainInfo = {
+    };
+    CREDITUNION: TopLevelDomainInfo = {
         name: 'creditunion',
         description: 'CUNA Performance Resources, LLC',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    CRICKET = TopLevelDomainInfo = {
+    };
+    CRICKET: TopLevelDomainInfo = {
         name: 'cricket',
         description: 'dot Cricket Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CROWN = TopLevelDomainInfo = {
+    };
+    CROWN: TopLevelDomainInfo = {
         name: 'crown',
         description: 'Crown Equipment Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CRS = TopLevelDomainInfo = {
+    };
+    CRS: TopLevelDomainInfo = {
         name: 'crs',
         description: 'Federated Co-operatives Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CRUISE = TopLevelDomainInfo = {
+    };
+    CRUISE: TopLevelDomainInfo = {
         name: 'cruise',
         description: 'Viking River Cruises (Bermuda) Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CRUISES = TopLevelDomainInfo = {
+    };
+    CRUISES: TopLevelDomainInfo = {
         name: 'cruises',
         description: 'Spring Way, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CU = TopLevelDomainInfo = {
+    };
+    CU: TopLevelDomainInfo = {
         name: 'cu',
         description: 'Cuba (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CUISINELLA = TopLevelDomainInfo = {
+    };
+    CUISINELLA: TopLevelDomainInfo = {
         name: 'cuisinella',
         description: 'SALM S.A.S.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CV = TopLevelDomainInfo = {
+    };
+    CV: TopLevelDomainInfo = {
         name: 'cv',
         description: 'Cabo Verde (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CW = TopLevelDomainInfo = {
+    };
+    CW: TopLevelDomainInfo = {
         name: 'cw',
         description: 'Curaçao (Country of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CX = TopLevelDomainInfo = {
+    };
+    CX: TopLevelDomainInfo = {
         name: 'cx',
         description: 'Christmas Island (Territory of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CY = TopLevelDomainInfo = {
+    };
+    CY: TopLevelDomainInfo = {
         name: 'cy',
         description: 'Cyprus (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    CYMRU = TopLevelDomainInfo = {
+    };
+    CYMRU: TopLevelDomainInfo = {
         name: 'cymru',
         description: 'Nominet UK',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CYOU = TopLevelDomainInfo = {
+    };
+    CYOU: TopLevelDomainInfo = {
         name: 'cyou',
         description: 'Beijing Gamease Age Digital Technology Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    CZ = TopLevelDomainInfo = {
+    };
+    CZ: TopLevelDomainInfo = {
         name: 'cz',
         description: 'Czech Republic',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    DABUR = TopLevelDomainInfo = {
+    };
+    DABUR: TopLevelDomainInfo = {
         name: 'dabur',
         description: 'Dabur India Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DAD = TopLevelDomainInfo = {
+    };
+    DAD: TopLevelDomainInfo = {
         name: 'dad',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DANCE = TopLevelDomainInfo = {
+    };
+    DANCE: TopLevelDomainInfo = {
         name: 'dance',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.FUN,
-    },
-    DATA = TopLevelDomainInfo = {
+    };
+    DATA: TopLevelDomainInfo = {
         name: 'data',
         description: 'Dish DBS Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DATE = TopLevelDomainInfo = {
+    };
+    DATE: TopLevelDomainInfo = {
         name: 'date',
         description: 'dot Date Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DATING = TopLevelDomainInfo = {
+    };
+    DATING: TopLevelDomainInfo = {
         name: 'dating',
         description: 'Pine Fest, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DATSUN = TopLevelDomainInfo = {
+    };
+    DATSUN: TopLevelDomainInfo = {
         name: 'datsun',
         description: 'NISSAN MOTOR CO., LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DAY = TopLevelDomainInfo = {
+    };
+    DAY: TopLevelDomainInfo = {
         name: 'day',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DCLK = TopLevelDomainInfo = {
+    };
+    DCLK: TopLevelDomainInfo = {
         name: 'dclk',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DDS = TopLevelDomainInfo = {
+    };
+    DDS: TopLevelDomainInfo = {
         name: 'dds',
         description: 'Minds + Machines Group Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DE = TopLevelDomainInfo = {
+    };
+    DE: TopLevelDomainInfo = {
         name: 'de',
         description: 'Germany (Federal Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    DEAL = TopLevelDomainInfo = {
+    };
+    DEAL: TopLevelDomainInfo = {
         name: 'deal',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DEALER = TopLevelDomainInfo = {
+    };
+    DEALER: TopLevelDomainInfo = {
         name: 'dealer',
         description: 'Dealer Dot Com, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DEALS = TopLevelDomainInfo = {
+    };
+    DEALS: TopLevelDomainInfo = {
         name: 'deals',
         description: 'Sand Sunset, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DEGREE = TopLevelDomainInfo = {
+    };
+    DEGREE: TopLevelDomainInfo = {
         name: 'degree',
         description: 'United TLD Holdco, Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DELIVERY = TopLevelDomainInfo = {
+    };
+    DELIVERY: TopLevelDomainInfo = {
         name: 'delivery',
         description: 'Steel Station, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DELL = TopLevelDomainInfo = {
+    };
+    DELL: TopLevelDomainInfo = {
         name: 'dell',
         description: 'Dell Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    DELOITTE = TopLevelDomainInfo = {
+    };
+    DELOITTE: TopLevelDomainInfo = {
         name: 'deloitte',
         description: 'Deloitte Touche Tohmatsu',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    DELTA = TopLevelDomainInfo = {
+    };
+    DELTA: TopLevelDomainInfo = {
         name: 'delta',
         description: 'Delta Air Lines, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    DEMOCRAT = TopLevelDomainInfo = {
+    };
+    DEMOCRAT: TopLevelDomainInfo = {
         name: 'democrat',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DENTAL = TopLevelDomainInfo = {
+    };
+    DENTAL: TopLevelDomainInfo = {
         name: 'dental',
         description: 'Steel Falls, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DENTIST = TopLevelDomainInfo = {
+    };
+    DENTIST: TopLevelDomainInfo = {
         name: 'dentist',
         description: 'United TLD Holdco, Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DESI = TopLevelDomainInfo = {
+    };
+    DESI: TopLevelDomainInfo = {
         name: 'desi',
         description: 'Desi Networks LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DESIGN = TopLevelDomainInfo = {
+    };
+    DESIGN: TopLevelDomainInfo = {
         name: 'design',
         description: 'Top Level Design, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DEV = TopLevelDomainInfo = {
+    };
+    DEV: TopLevelDomainInfo = {
         name: 'dev',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DHL = TopLevelDomainInfo = {
+    };
+    DHL: TopLevelDomainInfo = {
         name: 'dhl',
         description: 'Deutsche Post AG',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    DIAMONDS = TopLevelDomainInfo = {
+    };
+    DIAMONDS: TopLevelDomainInfo = {
         name: 'diamonds',
         description: 'John Edge, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DIET = TopLevelDomainInfo = {
+    };
+    DIET: TopLevelDomainInfo = {
         name: 'diet',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DIGITAL = TopLevelDomainInfo = {
+    };
+    DIGITAL: TopLevelDomainInfo = {
         name: 'digital',
         description: 'Dash Park, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DIRECT = TopLevelDomainInfo = {
+    };
+    DIRECT: TopLevelDomainInfo = {
         name: 'direct',
         description: 'Half Trail, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DIRECTORY = TopLevelDomainInfo = {
+    };
+    DIRECTORY: TopLevelDomainInfo = {
         name: 'directory',
         description: 'Extra Madison, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DISCOUNT = TopLevelDomainInfo = {
+    };
+    DISCOUNT: TopLevelDomainInfo = {
         name: 'discount',
         description: 'Holly Hill, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DISCOVER = TopLevelDomainInfo = {
+    };
+    DISCOVER: TopLevelDomainInfo = {
         name: 'discover',
         description: 'Discover Financial Services',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DISH = TopLevelDomainInfo = {
+    };
+    DISH: TopLevelDomainInfo = {
         name: 'dish',
         description: 'Dish DBS Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DIY = TopLevelDomainInfo = {
+    };
+    DIY: TopLevelDomainInfo = {
         name: 'diy',
         description: 'Lifestyle Domain Holdings, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DJ = TopLevelDomainInfo = {
+    };
+    DJ: TopLevelDomainInfo = {
         name: 'dj',
         description: 'Djibouti (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    DK = TopLevelDomainInfo = {
+    };
+    DK: TopLevelDomainInfo = {
         name: 'dk',
         description: 'Denmark (Kingdom of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    DM = TopLevelDomainInfo = {
+    };
+    DM: TopLevelDomainInfo = {
         name: 'dm',
         description: 'Dominica (Commonwealth of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    DNP = TopLevelDomainInfo = {
+    };
+    DNP: TopLevelDomainInfo = {
         name: 'dnp',
         description: 'Dai Nippon Printing Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DO = TopLevelDomainInfo = {
+    };
+    DO: TopLevelDomainInfo = {
         name: 'do',
         description: 'Dominican Republic',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    DOCS = TopLevelDomainInfo = {
+    };
+    DOCS: TopLevelDomainInfo = {
         name: 'docs',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DOCTOR = TopLevelDomainInfo = {
+    };
+    DOCTOR: TopLevelDomainInfo = {
         name: 'doctor',
         description: 'Brice Trail, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DOG = TopLevelDomainInfo = {
+    };
+    DOG: TopLevelDomainInfo = {
         name: 'dog',
         description: 'Koko Mill, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DOMAINS = TopLevelDomainInfo = {
+    };
+    DOMAINS: TopLevelDomainInfo = {
         name: 'domains',
         description: 'Sugar Cross, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DOT = TopLevelDomainInfo = {
+    };
+    DOT: TopLevelDomainInfo = {
         name: 'dot',
         description: 'Dish DBS Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DOWNLOAD = TopLevelDomainInfo = {
+    };
+    DOWNLOAD: TopLevelDomainInfo = {
         name: 'download',
         description: 'dot Support Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DRIVE = TopLevelDomainInfo = {
+    };
+    DRIVE: TopLevelDomainInfo = {
         name: 'drive',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DTV = TopLevelDomainInfo = {
+    };
+    DTV: TopLevelDomainInfo = {
         name: 'dtv',
         description: 'Dish DBS Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DUBAI = TopLevelDomainInfo = {
+    };
+    DUBAI: TopLevelDomainInfo = {
         name: 'dubai',
         description: 'Dubai Smart Government Department',
         public: false,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DUNLOP = TopLevelDomainInfo = {
+    };
+    DUNLOP: TopLevelDomainInfo = {
         name: 'dunlop',
         description: 'The Goodyear Tire & Rubber Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DUPONT = TopLevelDomainInfo = {
+    };
+    DUPONT: TopLevelDomainInfo = {
         name: 'dupont',
         description: 'E. I. du Pont de Nemours and Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DURBAN = TopLevelDomainInfo = {
+    };
+    DURBAN: TopLevelDomainInfo = {
         name: 'durban',
         description: 'ZA Central Registry NPC trading as ZA Central Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DVAG = TopLevelDomainInfo = {
+    };
+    DVAG: TopLevelDomainInfo = {
         name: 'dvag',
         description: 'Deutsche Vermögensberatung Aktiengesellschaft DVAG',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DVR = TopLevelDomainInfo = {
+    };
+    DVR: TopLevelDomainInfo = {
         name: 'dvr',
         description: 'Hughes Satellite Systems Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    DZ = TopLevelDomainInfo = {
+    };
+    DZ: TopLevelDomainInfo = {
         name: 'dz',
         description: 'Algeria (People\'s Democratic Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    EARTH = TopLevelDomainInfo = {
+    };
+    EARTH: TopLevelDomainInfo = {
         name: 'earth',
         description: 'Interlink Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EAT = TopLevelDomainInfo = {
+    };
+    EAT: TopLevelDomainInfo = {
         name: 'eat',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EC = TopLevelDomainInfo = {
+    };
+    EC: TopLevelDomainInfo = {
         name: 'ec',
         description: 'Ecuador (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ECO = TopLevelDomainInfo = {
+    };
+    ECO: TopLevelDomainInfo = {
         name: 'eco',
         description: 'Big Room Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EDEKA = TopLevelDomainInfo = {
+    };
+    EDEKA: TopLevelDomainInfo = {
         name: 'edeka',
         description: 'EDEKA Verband kaufmännischer Genossenschaften e.V.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    EDU = TopLevelDomainInfo = {
+    };
+    EDU: TopLevelDomainInfo = {
         name: 'edu',
         description: 'Educational',
         public: false,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EDUCATION = TopLevelDomainInfo = {
+    };
+    EDUCATION: TopLevelDomainInfo = {
         name: 'education',
         description: 'Brice Way, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EE = TopLevelDomainInfo = {
+    };
+    EE: TopLevelDomainInfo = {
         name: 'ee',
         description: 'Estonia (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    EG = TopLevelDomainInfo = {
+    };
+    EG: TopLevelDomainInfo = {
         name: 'eg',
         description: 'Egypt (Arab Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    EMAIL = TopLevelDomainInfo = {
+    };
+    EMAIL: TopLevelDomainInfo = {
         name: 'email',
         description: 'Spring Madison, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EMERCK = TopLevelDomainInfo = {
+    };
+    EMERCK: TopLevelDomainInfo = {
         name: 'emerck',
         description: 'Merck KGaA',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ENERGY = TopLevelDomainInfo = {
+    };
+    ENERGY: TopLevelDomainInfo = {
         name: 'energy',
         description: 'Binky Birch, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ENGINEER = TopLevelDomainInfo = {
+    };
+    ENGINEER: TopLevelDomainInfo = {
         name: 'engineer',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ENGINEERING = TopLevelDomainInfo = {
+    };
+    ENGINEERING: TopLevelDomainInfo = {
         name: 'engineering',
         description: 'Romeo Canyon',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ENTERPRISES = TopLevelDomainInfo = {
+    };
+    ENTERPRISES: TopLevelDomainInfo = {
         name: 'enterprises',
         description: 'Snow Oaks, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EPSON = TopLevelDomainInfo = {
+    };
+    EPSON: TopLevelDomainInfo = {
         name: 'epson',
         description: 'Seiko Epson Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    EQUIPMENT = TopLevelDomainInfo = {
+    };
+    EQUIPMENT: TopLevelDomainInfo = {
         name: 'equipment',
         description: 'Corn Station, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ER = TopLevelDomainInfo = {
+    };
+    ER: TopLevelDomainInfo = {
         name: 'er',
         description: 'Eritrea (State of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ERICSSON = TopLevelDomainInfo = {
+    };
+    ERICSSON: TopLevelDomainInfo = {
         name: 'ericsson',
         description: 'Telefonaktiebolaget L M Ericsson',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    ERNI = TopLevelDomainInfo = {
+    };
+    ERNI: TopLevelDomainInfo = {
         name: 'erni',
         description: 'ERNI Group Holding AG',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ES = TopLevelDomainInfo = {
+    };
+    ES: TopLevelDomainInfo = {
         name: 'es',
         description: 'Spain (Kingdom of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ESQ = TopLevelDomainInfo = {
+    };
+    ESQ: TopLevelDomainInfo = {
         name: 'esq',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ESTATE = TopLevelDomainInfo = {
+    };
+    ESTATE: TopLevelDomainInfo = {
         name: 'estate',
         description: 'Trixy Park, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ET = TopLevelDomainInfo = {
+    };
+    ET: TopLevelDomainInfo = {
         name: 'et',
         description: 'Ethiopia (Federal Democratic Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ETISALAT = TopLevelDomainInfo = {
+    };
+    ETISALAT: TopLevelDomainInfo = {
         name: 'etisalat',
         description: 'Emirates Telecommunications Corporation (trading as Etisalat)',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    EU = TopLevelDomainInfo = {
+    };
+    EU: TopLevelDomainInfo = {
         name: 'eu',
         description: 'European Union',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    EUROVISION = TopLevelDomainInfo = {
+    };
+    EUROVISION: TopLevelDomainInfo = {
         name: 'eurovision',
         description: 'European Broadcasting Union (EBU)',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    EUS = TopLevelDomainInfo = {
+    };
+    EUS: TopLevelDomainInfo = {
         name: 'eus',
         description: 'Puntueus Fundazioa',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EVENTS = TopLevelDomainInfo = {
+    };
+    EVENTS: TopLevelDomainInfo = {
         name: 'events',
         description: 'Pioneer Maple, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EXCHANGE = TopLevelDomainInfo = {
+    };
+    EXCHANGE: TopLevelDomainInfo = {
         name: 'exchange',
         description: 'Spring Falls, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EXPERT = TopLevelDomainInfo = {
+    };
+    EXPERT: TopLevelDomainInfo = {
         name: 'expert',
         description: 'Magic Pass, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EXPOSED = TopLevelDomainInfo = {
+    };
+    EXPOSED: TopLevelDomainInfo = {
         name: 'exposed',
         description: 'Victor Beach, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EXPRESS = TopLevelDomainInfo = {
+    };
+    EXPRESS: TopLevelDomainInfo = {
         name: 'express',
         description: 'Binky Moon, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    EXTRASPACE = TopLevelDomainInfo = {
+    };
+    EXTRASPACE: TopLevelDomainInfo = {
         name: 'extraspace',
         description: 'Extra Space Storage LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FAGE = TopLevelDomainInfo = {
+    };
+    FAGE: TopLevelDomainInfo = {
         name: 'fage',
         description: 'Fage International S.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FAIL = TopLevelDomainInfo = {
+    };
+    FAIL: TopLevelDomainInfo = {
         name: 'fail',
         description: 'Atomic Pipe, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FAIRWINDS = TopLevelDomainInfo = {
+    };
+    FAIRWINDS: TopLevelDomainInfo = {
         name: 'fairwinds',
         description: 'FairWinds Partners, LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FAITH = TopLevelDomainInfo = {
+    };
+    FAITH: TopLevelDomainInfo = {
         name: 'faith',
         description: 'dot Faith Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FAMILY = TopLevelDomainInfo = {
+    };
+    FAMILY: TopLevelDomainInfo = {
         name: 'family',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FAN = TopLevelDomainInfo = {
+    };
+    FAN: TopLevelDomainInfo = {
         name: 'fan',
         description: 'Asiamix Digital Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FANS = TopLevelDomainInfo = {
+    };
+    FANS: TopLevelDomainInfo = {
         name: 'fans',
         description: 'Asiamix Digital Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FARM = TopLevelDomainInfo = {
+    };
+    FARM: TopLevelDomainInfo = {
         name: 'farm',
         description: 'Just Maple, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FARMERS = TopLevelDomainInfo = {
+    };
+    FARMERS: TopLevelDomainInfo = {
         name: 'farmers',
         description: 'Farmers Insurance Exchange',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FASHION = TopLevelDomainInfo = {
+    };
+    FASHION: TopLevelDomainInfo = {
         name: 'fashion',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FAST = TopLevelDomainInfo = {
+    };
+    FAST: TopLevelDomainInfo = {
         name: 'fast',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FEDEX = TopLevelDomainInfo = {
+    };
+    FEDEX: TopLevelDomainInfo = {
         name: 'fedex',
         description: 'Federal Express Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FEEDBACK = TopLevelDomainInfo = {
+    };
+    FEEDBACK: TopLevelDomainInfo = {
         name: 'feedback',
         description: 'Top Level Spectrum, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FERRARI = TopLevelDomainInfo = {
+    };
+    FERRARI: TopLevelDomainInfo = {
         name: 'ferrari',
         description: 'Fiat Chrysler Automobiles N.V.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FERRERO = TopLevelDomainInfo = {
+    };
+    FERRERO: TopLevelDomainInfo = {
         name: 'ferrero',
         description: 'Ferrero Trading Lux S.A.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FI = TopLevelDomainInfo = {
+    };
+    FI: TopLevelDomainInfo = {
         name: 'fi',
         description: 'Finland (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    FIDELITY = TopLevelDomainInfo = {
+    };
+    FIDELITY: TopLevelDomainInfo = {
         name: 'fidelity',
         description: 'Fidelity Brokerage Services LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FIDO = TopLevelDomainInfo = {
+    };
+    FIDO: TopLevelDomainInfo = {
         name: 'fido',
         description: 'Rogers Communications Canada Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FILM = TopLevelDomainInfo = {
+    };
+    FILM: TopLevelDomainInfo = {
         name: 'film',
         description: 'Motion Picture Domain Registry Pty Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FINAL = TopLevelDomainInfo = {
+    };
+    FINAL: TopLevelDomainInfo = {
         name: 'final',
         description: 'Núcleo de Informação e Coordenação do Ponto BR - NIC.br',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FINANCE = TopLevelDomainInfo = {
+    };
+    FINANCE: TopLevelDomainInfo = {
         name: 'finance',
         description: 'Cotton Cypress, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FINANCIAL = TopLevelDomainInfo = {
+    };
+    FINANCIAL: TopLevelDomainInfo = {
         name: 'financial',
         description: 'Just Cover, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FIRE = TopLevelDomainInfo = {
+    };
+    FIRE: TopLevelDomainInfo = {
         name: 'fire',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FIRESTONE = TopLevelDomainInfo = {
+    };
+    FIRESTONE: TopLevelDomainInfo = {
         name: 'firestone',
         description: 'Bridgestone Licensing Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FIRMDALE = TopLevelDomainInfo = {
+    };
+    FIRMDALE: TopLevelDomainInfo = {
         name: 'firmdale',
         description: 'Firmdale Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FISH = TopLevelDomainInfo = {
+    };
+    FISH: TopLevelDomainInfo = {
         name: 'fish',
         description: 'Fox Woods, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FISHING = TopLevelDomainInfo = {
+    };
+    FISHING: TopLevelDomainInfo = {
         name: 'fishing',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FIT = TopLevelDomainInfo = {
+    };
+    FIT: TopLevelDomainInfo = {
         name: 'fit',
         description: 'Minds + Machines Group Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FITNESS = TopLevelDomainInfo = {
+    };
+    FITNESS: TopLevelDomainInfo = {
         name: 'fitness',
         description: 'Brice Orchard, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FJ = TopLevelDomainInfo = {
+    };
+    FJ: TopLevelDomainInfo = {
         name: 'fj',
         description: 'Fiji (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    FK = TopLevelDomainInfo = {
+    };
+    FK: TopLevelDomainInfo = {
         name: 'fk',
         description: 'Falkland Islands (Malvinas)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    FLICKR = TopLevelDomainInfo = {
+    };
+    FLICKR: TopLevelDomainInfo = {
         name: 'flickr',
         description: 'Yahoo! Domain Services Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FLIGHTS = TopLevelDomainInfo = {
+    };
+    FLIGHTS: TopLevelDomainInfo = {
         name: 'flights',
         description: 'Fox Station, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FLIR = TopLevelDomainInfo = {
+    };
+    FLIR: TopLevelDomainInfo = {
         name: 'flir',
         description: 'FLIR Systems, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FLORIST = TopLevelDomainInfo = {
+    };
+    FLORIST: TopLevelDomainInfo = {
         name: 'florist',
         description: 'Half Cypress, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FLOWERS = TopLevelDomainInfo = {
+    };
+    FLOWERS: TopLevelDomainInfo = {
         name: 'flowers',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FLY = TopLevelDomainInfo = {
+    };
+    FLY: TopLevelDomainInfo = {
         name: 'fly',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FM = TopLevelDomainInfo = {
+    };
+    FM: TopLevelDomainInfo = {
         name: 'fm',
         description: 'Micronesia (Federated States of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    FO = TopLevelDomainInfo = {
+    };
+    FO: TopLevelDomainInfo = {
         name: 'fo',
         description: 'Faroe Islands',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    FOO = TopLevelDomainInfo = {
+    };
+    FOO: TopLevelDomainInfo = {
         name: 'foo',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FOOD = TopLevelDomainInfo = {
+    };
+    FOOD: TopLevelDomainInfo = {
         name: 'food',
         description: 'Lifestyle Domain Holdings, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FOOTBALL = TopLevelDomainInfo = {
+    };
+    FOOTBALL: TopLevelDomainInfo = {
         name: 'football',
         description: 'Foggy Farms, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FORD = TopLevelDomainInfo = {
+    };
+    FORD: TopLevelDomainInfo = {
         name: 'ford',
         description: 'Ford Motor Company',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FOREX = TopLevelDomainInfo = {
+    };
+    FOREX: TopLevelDomainInfo = {
         name: 'forex',
         description: 'DOTFOREX REGISTRY LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FORSALE = TopLevelDomainInfo = {
+    };
+    FORSALE: TopLevelDomainInfo = {
         name: 'forsale',
         description: 'United TLD Holdco, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FORUM = TopLevelDomainInfo = {
+    };
+    FORUM: TopLevelDomainInfo = {
         name: 'forum',
         description: 'Fegistry, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FOUNDATION = TopLevelDomainInfo = {
+    };
+    FOUNDATION: TopLevelDomainInfo = {
         name: 'foundation',
         description: 'John Dale, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FOX = TopLevelDomainInfo = {
+    };
+    FOX: TopLevelDomainInfo = {
         name: 'fox',
         description: 'FOX Registry, LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FR = TopLevelDomainInfo = {
+    };
+    FR: TopLevelDomainInfo = {
         name: 'fr',
         description: 'France (French Republic)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    FREE = TopLevelDomainInfo = {
+    };
+    FREE: TopLevelDomainInfo = {
         name: 'free',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FRESENIUS = TopLevelDomainInfo = {
+    };
+    FRESENIUS: TopLevelDomainInfo = {
         name: 'fresenius',
         description: 'Fresenius Immobilien-Verwaltungs-GmbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FRL = TopLevelDomainInfo = {
+    };
+    FRL: TopLevelDomainInfo = {
         name: 'frl',
         description: 'FRLregistry B.V.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FROGANS = TopLevelDomainInfo = {
+    };
+    FROGANS: TopLevelDomainInfo = {
         name: 'frogans',
         description: 'OP3FT',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FRONTIER = TopLevelDomainInfo = {
+    };
+    FRONTIER: TopLevelDomainInfo = {
         name: 'frontier',
         description: 'Frontier Communications Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FTR = TopLevelDomainInfo = {
+    };
+    FTR: TopLevelDomainInfo = {
         name: 'ftr',
         description: 'Frontier Communications Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FUJITSU = TopLevelDomainInfo = {
+    };
+    FUJITSU: TopLevelDomainInfo = {
         name: 'fujitsu',
         description: 'Fujitsu Limited',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    FUN = TopLevelDomainInfo = {
+    };
+    FUN: TopLevelDomainInfo = {
         name: 'fun',
         description: 'DotSpace, Inc.',
         public: true,
         category: TopLevelDomainCategory.FUN,
-    },
-    FUND = TopLevelDomainInfo = {
+    };
+    FUND: TopLevelDomainInfo = {
         name: 'fund',
         description: 'John Castle, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FURNITURE = TopLevelDomainInfo = {
+    };
+    FURNITURE: TopLevelDomainInfo = {
         name: 'furniture',
         description: 'Lone Fields, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FUTBOL = TopLevelDomainInfo = {
+    };
+    FUTBOL: TopLevelDomainInfo = {
         name: 'futbol',
         description: 'United TLD Holdco, Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    FYI = TopLevelDomainInfo = {
+    };
+    FYI: TopLevelDomainInfo = {
         name: 'fyi',
         description: 'Silver Tigers, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GA = TopLevelDomainInfo = {
+    };
+    GA: TopLevelDomainInfo = {
         name: 'ga',
         description: 'Gabonese Republic',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GAL = TopLevelDomainInfo = {
+    };
+    GAL: TopLevelDomainInfo = {
         name: 'gal',
         description: 'Asociación puntoGAL',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GALLERY = TopLevelDomainInfo = {
+    };
+    GALLERY: TopLevelDomainInfo = {
         name: 'gallery',
         description: 'Sugar House, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GALLO = TopLevelDomainInfo = {
+    };
+    GALLO: TopLevelDomainInfo = {
         name: 'gallo',
         description: 'Gallo Vineyards, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GALLUP = TopLevelDomainInfo = {
+    };
+    GALLUP: TopLevelDomainInfo = {
         name: 'gallup',
         description: 'Gallup, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GAME = TopLevelDomainInfo = {
+    };
+    GAME: TopLevelDomainInfo = {
         name: 'game',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GAMES = TopLevelDomainInfo = {
+    };
+    GAMES: TopLevelDomainInfo = {
         name: 'games',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GAP = TopLevelDomainInfo = {
+    };
+    GAP: TopLevelDomainInfo = {
         name: 'gap',
         description: 'The Gap, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GARDEN = TopLevelDomainInfo = {
+    };
+    GARDEN: TopLevelDomainInfo = {
         name: 'garden',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GAY = TopLevelDomainInfo = {
+    };
+    GAY: TopLevelDomainInfo = {
         name: 'gay',
         description: 'Top Level Design, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GB = TopLevelDomainInfo = {
+    };
+    GB: TopLevelDomainInfo = {
         name: 'gb',
         description: 'United Kingdom of Great Britain and Northern Ireland',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GBIZ = TopLevelDomainInfo = {
+    };
+    GBIZ: TopLevelDomainInfo = {
         name: 'gbiz',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GD = TopLevelDomainInfo = {
+    };
+    GD: TopLevelDomainInfo = {
         name: 'gd',
         description: 'Grenada',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GDN = TopLevelDomainInfo = {
+    };
+    GDN: TopLevelDomainInfo = {
         name: 'gdn',
         description: 'Joint Stock Company "Navigation-information systems"',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GE = TopLevelDomainInfo = {
+    };
+    GE: TopLevelDomainInfo = {
         name: 'ge',
         description: 'Georgia',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GEA = TopLevelDomainInfo = {
+    };
+    GEA: TopLevelDomainInfo = {
         name: 'gea',
         description: 'GEA Group Aktiengesellschaft',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GENT = TopLevelDomainInfo = {
+    };
+    GENT: TopLevelDomainInfo = {
         name: 'gent',
         description: 'Combell nv',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GENTING = TopLevelDomainInfo = {
+    };
+    GENTING: TopLevelDomainInfo = {
         name: 'genting',
         description: 'Resorts World Inc. Pte. Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GEORGE = TopLevelDomainInfo = {
+    };
+    GEORGE: TopLevelDomainInfo = {
         name: 'george',
         description: 'Wal-Mart Stores, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GF = TopLevelDomainInfo = {
+    };
+    GF: TopLevelDomainInfo = {
         name: 'gf',
         description: 'French Guiana (French Department of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GG = TopLevelDomainInfo = {
+    };
+    GG: TopLevelDomainInfo = {
         name: 'gg',
         description: 'Guernsey (Bailiwick of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GGEE = TopLevelDomainInfo = {
+    };
+    GGEE: TopLevelDomainInfo = {
         name: 'gee',
         description: 'Lifestyle Domain Holdings, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GH = TopLevelDomainInfo = {
+    };
+    GH: TopLevelDomainInfo = {
         name: 'gh',
         description: 'Ghana (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GI = TopLevelDomainInfo = {
+    };
+    GI: TopLevelDomainInfo = {
         name: 'gi',
         description: 'Gibraltar',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GIFT = TopLevelDomainInfo = {
+    };
+    GIFT: TopLevelDomainInfo = {
         name: 'gift',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GIFTS = TopLevelDomainInfo = {
+    };
+    GIFTS: TopLevelDomainInfo = {
         name: 'gifts',
         description: 'Goose Sky, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GIVES = TopLevelDomainInfo = {
+    };
+    GIVES: TopLevelDomainInfo = {
         name: 'gives',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GIVING = TopLevelDomainInfo = {
+    };
+    GIVING: TopLevelDomainInfo = {
         name: 'giving',
         description: 'Giving Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GL = TopLevelDomainInfo = {
+    };
+    GL: TopLevelDomainInfo = {
         name: 'gl',
         description: 'Greenland',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GLASS = TopLevelDomainInfo = {
+    };
+    GLASS: TopLevelDomainInfo = {
         name: 'glass',
         description: 'Black Cover, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GLE = TopLevelDomainInfo = {
+    };
+    GLE: TopLevelDomainInfo = {
         name: 'gle',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GLOBAL = TopLevelDomainInfo = {
+    };
+    GLOBAL: TopLevelDomainInfo = {
         name: 'global',
         description: 'Dot Global Domain Registry Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GLOBO = TopLevelDomainInfo = {
+    };
+    GLOBO: TopLevelDomainInfo = {
         name: 'globo',
         description: 'Globo Comunicação e Participações S.A',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GM = TopLevelDomainInfo = {
+    };
+    GM: TopLevelDomainInfo = {
         name: 'gm',
         description: 'Gambia (Republic of the)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GMAIL = TopLevelDomainInfo = {
+    };
+    GMAIL: TopLevelDomainInfo = {
         name: 'gmail',
         description: 'Charleston Road Registry Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GMBH = TopLevelDomainInfo = {
+    };
+    GMBH: TopLevelDomainInfo = {
         name: 'gmbh',
         description: 'Extra Dynamite, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GMO = TopLevelDomainInfo = {
+    };
+    GMO: TopLevelDomainInfo = {
         name: 'gmo',
         description: 'GMO Internet, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GMX = TopLevelDomainInfo = {
+    };
+    GMX: TopLevelDomainInfo = {
         name: 'gmx',
         description: '1&1 Mail & Media GmbH',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GN = TopLevelDomainInfo = {
+    };
+    GN: TopLevelDomainInfo = {
         name: 'gn',
         description: 'Guinea (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GODADDY = TopLevelDomainInfo = {
+    };
+    GODADDY: TopLevelDomainInfo = {
         name: 'godaddy',
         description: 'Go Daddy East, LLC',
         public: false,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOLD = TopLevelDomainInfo = {
+    };
+    GOLD: TopLevelDomainInfo = {
         name: 'gold',
         description: 'June Edge, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOLDPOINT = TopLevelDomainInfo = {
+    };
+    GOLDPOINT: TopLevelDomainInfo = {
         name: 'goldpoint',
         description: 'YODOBASHI CAMERA CO.,LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOLF = TopLevelDomainInfo = {
+    };
+    GOLF: TopLevelDomainInfo = {
         name: 'golf',
         description: 'Lone Falls, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOO = TopLevelDomainInfo = {
+    };
+    GOO: TopLevelDomainInfo = {
         name: 'goo',
         description: 'NTT Resonant Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOODYEAR = TopLevelDomainInfo = {
+    };
+    GOODYEAR: TopLevelDomainInfo = {
         name: 'goodyear',
         description: 'The Goodyear Tire & Rubber Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOOG = TopLevelDomainInfo = {
+    };
+    GOOG: TopLevelDomainInfo = {
         name: 'goog',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOOGLE = TopLevelDomainInfo = {
+    };
+    GOOGLE: TopLevelDomainInfo = {
         name: 'google',
         description: 'Charleston Road Registry Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GOP = TopLevelDomainInfo = {
+    };
+    GOP: TopLevelDomainInfo = {
         name: 'gop',
         description: 'Republican State Leadership Committee, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOT = TopLevelDomainInfo = {
+    };
+    GOT: TopLevelDomainInfo = {
         name: 'got',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GOV = TopLevelDomainInfo = {
+    };
+    GOV: TopLevelDomainInfo = {
         name: 'gov',
         description: 'U.S. national government agencies',
         public: false,
         category: TopLevelDomainCategory.GOVERNMENT,
-    },
-    GP = TopLevelDomainInfo = {
+    };
+    GP: TopLevelDomainInfo = {
         name: 'gp',
         description: 'Guadeloupe (French Department of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GQ = TopLevelDomainInfo = {
+    };
+    GQ: TopLevelDomainInfo = {
         name: 'gq',
         description: 'Equatorial Guinea (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GR = TopLevelDomainInfo = {
+    };
+    GR: TopLevelDomainInfo = {
         name: 'gr',
         description: 'Greece (Hellenic Republic)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GRAINGER = TopLevelDomainInfo = {
+    };
+    GRAINGER: TopLevelDomainInfo = {
         name: 'grainger',
         description: 'Grainger Registry Services, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GRAPHICS = TopLevelDomainInfo = {
+    };
+    GRAPHICS: TopLevelDomainInfo = {
         name: 'graphics',
         description: 'Over Madison, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GRATIS = TopLevelDomainInfo = {
+    };
+    GRATIS: TopLevelDomainInfo = {
         name: 'gratis',
         description: 'Pioneer Tigers, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GREEN = TopLevelDomainInfo = {
+    };
+    GREEN: TopLevelDomainInfo = {
         name: 'green',
         description: 'Afilias Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GRIPE = TopLevelDomainInfo = {
+    };
+    GRIPE: TopLevelDomainInfo = {
         name: 'gripe',
         description: 'Corn Sunset, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GROCERY = TopLevelDomainInfo = {
+    };
+    GROCERY: TopLevelDomainInfo = {
         name: 'grocery',
         description: 'Wal-Mart Stores, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GROUP = TopLevelDomainInfo = {
+    };
+    GROUP: TopLevelDomainInfo = {
         name: 'group',
         description: 'Romeo Town, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GS = TopLevelDomainInfo = {
+    };
+    GS: TopLevelDomainInfo = {
         name: 'gs',
         description: 'South Georgia and the South Sandwich Islands',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GT = TopLevelDomainInfo = {
+    };
+    GT: TopLevelDomainInfo = {
         name: 'gt',
         description: 'Guatemala (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GU = TopLevelDomainInfo = {
+    };
+    GU: TopLevelDomainInfo = {
         name: 'gu',
         description: 'Guam',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GUARDIAN = TopLevelDomainInfo = {
+    };
+    GUARDIAN: TopLevelDomainInfo = {
         name: 'guardian',
         description: 'The Guardian Life Insurance Company of America',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GUCCI = TopLevelDomainInfo = {
+    };
+    GUCCI: TopLevelDomainInfo = {
         name: 'gucci',
         description: 'Guccio Gucci S.p.a.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    GUGE = TopLevelDomainInfo = {
+    };
+    GUGE: TopLevelDomainInfo = {
         name: 'guge',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GUIDE = TopLevelDomainInfo = {
+    };
+    GUIDE: TopLevelDomainInfo = {
         name: 'guide',
         description: 'Snow Moon, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GUITARS = TopLevelDomainInfo = {
+    };
+    GUITARS: TopLevelDomainInfo = {
         name: 'guitars',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GURU = TopLevelDomainInfo = {
+    };
+    GURU: TopLevelDomainInfo = {
         name: 'guru',
         description: 'Pioneer Cypress, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    GW = TopLevelDomainInfo = {
+    };
+    GW: TopLevelDomainInfo = {
         name: 'gw',
         description: 'Guinea-Bissau (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    GY = TopLevelDomainInfo = {
+    };
+    GY: TopLevelDomainInfo = {
         name: 'gy',
         description: 'Guyana (Co-operative Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HAIR = TopLevelDomainInfo = {
+    };
+    HAIR: TopLevelDomainInfo = {
         name: 'hair',
         description: 'L\'Oreal',
         public: true,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HAMBURG = TopLevelDomainInfo = {
+    };
+    HAMBURG: TopLevelDomainInfo = {
         name: 'hamburg',
         description: 'Hamburg Top-Level-Domain GmbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HANGOUT = TopLevelDomainInfo = {
+    };
+    HANGOUT: TopLevelDomainInfo = {
         name: 'hangout',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HAUS = TopLevelDomainInfo = {
+    };
+    HAUS: TopLevelDomainInfo = {
         name: 'haus',
         description: 'United TLD Holdco, LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HBO = TopLevelDomainInfo = {
+    };
+    HBO: TopLevelDomainInfo = {
         name: 'hbo',
         description: 'HBO Registry Services, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HDFC = TopLevelDomainInfo = {
+    };
+    HDFC: TopLevelDomainInfo = {
         name: 'hdfc',
         description: 'HOUSING DEVELOPMENT FINANCE CORPORATION LIMITED',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HDFCBANK = TopLevelDomainInfo = {
+    };
+    HDFCBANK: TopLevelDomainInfo = {
         name: 'hdfcbank',
         description: 'HDFC Bank Limited',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HEALTH = TopLevelDomainInfo = {
+    };
+    HEALTH: TopLevelDomainInfo = {
         name: 'health',
         description: 'DotHealth, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HEALTHCARE = TopLevelDomainInfo = {
+    };
+    HEALTHCARE: TopLevelDomainInfo = {
         name: 'healthcare',
         description: 'Silver Glen, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HELP = TopLevelDomainInfo = {
+    };
+    HELP: TopLevelDomainInfo = {
         name: 'help',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HELSINKI = TopLevelDomainInfo = {
+    };
+    HELSINKI: TopLevelDomainInfo = {
         name: 'helsinki',
         description: 'City of Helsinki',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HERE = TopLevelDomainInfo = {
+    };
+    HERE: TopLevelDomainInfo = {
         name: 'here',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HERMES = TopLevelDomainInfo = {
+    };
+    HERMES: TopLevelDomainInfo = {
         name: 'hermes',
         description: 'Hermes International',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HIPHOP = TopLevelDomainInfo = {
+    };
+    HIPHOP: TopLevelDomainInfo = {
         name: 'hiphop',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HISAMITSU = TopLevelDomainInfo = {
+    };
+    HISAMITSU: TopLevelDomainInfo = {
         name: 'hisamitsu',
         description: 'Hisamitsu Pharmaceutical Co.,Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HITACHI = TopLevelDomainInfo = {
+    };
+    HITACHI: TopLevelDomainInfo = {
         name: 'hitachi',
         description: 'Hitachi, Ltd.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HIV = TopLevelDomainInfo = {
+    };
+    HIV: TopLevelDomainInfo = {
         name: 'hiv',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HK = TopLevelDomainInfo = {
+    };
+    HK: TopLevelDomainInfo = {
         name: 'hk',
         description: 'Hong Kong (Hong Kong Special Administrative Region of the People\'s Republic of China)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HKT = TopLevelDomainInfo = {
+    };
+    HKT: TopLevelDomainInfo = {
         name: 'hkt',
         description: 'PCCW-HKT DataCom Services Limited',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HM = TopLevelDomainInfo = {
+    };
+    HM: TopLevelDomainInfo = {
         name: 'hm',
         description: 'Heard and McDonald Islands',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HN = TopLevelDomainInfo = {
+    };
+    HN: TopLevelDomainInfo = {
         name: 'hn',
         description: 'Honduras (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HOCKEY = TopLevelDomainInfo = {
+    };
+    HOCKEY: TopLevelDomainInfo = {
         name: 'hockey',
         description: 'Half Willow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOLDINGS = TopLevelDomainInfo = {
+    };
+    HOLDINGS: TopLevelDomainInfo = {
         name: 'holdings',
         description: 'John Madison, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOLIDAY = TopLevelDomainInfo = {
+    };
+    HOLIDAY: TopLevelDomainInfo = {
         name: 'holiday',
         description: 'Goose Woods, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOMEDEPOT = TopLevelDomainInfo = {
+    };
+    HOMEDEPOT: TopLevelDomainInfo = {
         name: 'homedepot',
         description: 'Home Depot Product Authority, LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HOMEGOODS = TopLevelDomainInfo = {
+    };
+    HOMEGOODS: TopLevelDomainInfo = {
         name: 'homegoods',
         description: 'The TJX Companies, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HOMES = TopLevelDomainInfo = {
+    };
+    HOMES: TopLevelDomainInfo = {
         name: 'homes',
         description: 'DERHomes, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOMESENSE = TopLevelDomainInfo = {
+    };
+    HOMESENSE: TopLevelDomainInfo = {
         name: 'homesense',
         description: 'The TJX Companies, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HONDA = TopLevelDomainInfo = {
+    };
+    HONDA: TopLevelDomainInfo = {
         name: 'honda',
         description: 'Honda Motor Co., Ltd.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HORSE = TopLevelDomainInfo = {
+    };
+    HORSE: TopLevelDomainInfo = {
         name: 'horse',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOSPITAL = TopLevelDomainInfo = {
+    };
+    HOSPITAL: TopLevelDomainInfo = {
         name: 'hospital',
         description: 'Ruby Pike, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOST = TopLevelDomainInfo = {
+    };
+    HOST: TopLevelDomainInfo = {
         name: 'host',
         description: 'DotHost Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOSTING = TopLevelDomainInfo = {
+    };
+    HOSTING: TopLevelDomainInfo = {
         name: 'hosting',
         description: 'Uniregistry, Corp.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOT = TopLevelDomainInfo = {
+    };
+    HOT: TopLevelDomainInfo = {
         name: 'hot',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.SEXUAL,
-    },
-    HOTELS = TopLevelDomainInfo = {
+    };
+    HOTELS: TopLevelDomainInfo = {
         name: 'hotels',
         description: 'Booking.com B.V.',
         public: false,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOTMAIL = TopLevelDomainInfo = {
+    };
+    HOTMAIL: TopLevelDomainInfo = {
         name: 'hotmail',
         description: 'Microsoft Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HOUSE = TopLevelDomainInfo = {
+    };
+    HOUSE: TopLevelDomainInfo = {
         name: 'house',
         description: 'Sugar Park, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HOW = TopLevelDomainInfo = {
+    };
+    HOW: TopLevelDomainInfo = {
         name: 'how',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    HR = TopLevelDomainInfo = {
+    };
+    HR: TopLevelDomainInfo = {
         name: 'hr',
         description: 'Croatia (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HSBC = TopLevelDomainInfo = {
+    };
+    HSBC: TopLevelDomainInfo = {
         name: 'hsbc',
         description: 'HSBC Global Services (UK) Limited',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HT = TopLevelDomainInfo = {
+    };
+    HT: TopLevelDomainInfo = {
         name: 'ht',
         description: 'Haiti (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HU = TopLevelDomainInfo = {
+    };
+    HU: TopLevelDomainInfo = {
         name: 'hu',
         description: 'Hungary (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    HUGHES = TopLevelDomainInfo = {
+    };
+    HUGHES: TopLevelDomainInfo = {
         name: 'hughes',
         description: 'Hughes Satellite Systems Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HYATT = TopLevelDomainInfo = {
+    };
+    HYATT: TopLevelDomainInfo = {
         name: 'hyatt',
         description: 'Hyatt GTLD, L.L.C.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    HYUNDAI = TopLevelDomainInfo = {
+    };
+    HYUNDAI: TopLevelDomainInfo = {
         name: 'hyundai',
         description: 'Hyundai Motor Company',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    IBM = TopLevelDomainInfo = {
+    };
+    IBM: TopLevelDomainInfo = {
         name: 'ibm',
         description: 'International Business Machines Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    ICBC = TopLevelDomainInfo = {
+    };
+    ICBC: TopLevelDomainInfo = {
         name: 'icbc',
         description: 'Industrial and Commercial Bank of China Limited',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    ICE = TopLevelDomainInfo = {
+    };
+    ICE: TopLevelDomainInfo = {
         name: 'ice',
         description: 'IntercontinentalExchange, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    ICU = TopLevelDomainInfo = {
+    };
+    ICU: TopLevelDomainInfo = {
         name: 'icu',
         description: 'One.com A/S',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ID = TopLevelDomainInfo = {
+    };
+    ID: TopLevelDomainInfo = {
         name: 'id',
         description: 'Indonesia (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    IE = TopLevelDomainInfo = {
+    };
+    IE: TopLevelDomainInfo = {
         name: 'ie',
         description: 'Ireland',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    IEEE = TopLevelDomainInfo = {
+    };
+    IEEE: TopLevelDomainInfo = {
         name: 'ieee',
         description: 'IEEE Global LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    IFM = TopLevelDomainInfo = {
+    };
+    IFM: TopLevelDomainInfo = {
         name: 'ifm',
         description: 'ifm electronic gmbh',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IKANO = TopLevelDomainInfo = {
+    };
+    IKANO: TopLevelDomainInfo = {
         name: 'ikano',
         description: 'Ikano S.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IL = TopLevelDomainInfo = {
+    };
+    IL: TopLevelDomainInfo = {
         name: 'il',
         description: 'Israel (State of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    IM = TopLevelDomainInfo = {
+    };
+    IM: TopLevelDomainInfo = {
         name: 'im',
         description: 'Isle of Man',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    IMAMAT = TopLevelDomainInfo = {
+    };
+    IMAMAT: TopLevelDomainInfo = {
         name: 'imamat',
         description: 'Fondation Aga Khan (Aga Khan Foundation)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IMDB = TopLevelDomainInfo = {
+    };
+    IMDB: TopLevelDomainInfo = {
         name: 'imdb',
         description: 'Amazon Registry Services, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    IMMO = TopLevelDomainInfo = {
+    };
+    IMMO: TopLevelDomainInfo = {
         name: 'immo',
         description: 'Auburn Bloom, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IMMOBILIEN = TopLevelDomainInfo = {
+    };
+    IMMOBILIEN: TopLevelDomainInfo = {
         name: 'immobilien',
         description: 'United TLD Holdco Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IN = TopLevelDomainInfo = {
+    };
+    IN: TopLevelDomainInfo = {
         name: 'in',
         description: 'India (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    INC = TopLevelDomainInfo = {
+    };
+    INC: TopLevelDomainInfo = {
         name: 'inc',
         description: 'Intercap Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INDUSTRIES = TopLevelDomainInfo = {
+    };
+    INDUSTRIES: TopLevelDomainInfo = {
         name: 'industries',
         description: 'Outer House, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INFINITI = TopLevelDomainInfo = {
+    };
+    INFINITI: TopLevelDomainInfo = {
         name: 'infiniti',
         description: 'NISSAN MOTOR CO., LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INFO = TopLevelDomainInfo = {
+    };
+    INFO: TopLevelDomainInfo = {
         name: 'info',
         description: 'Afilias Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ING = TopLevelDomainInfo = {
+    };
+    ING: TopLevelDomainInfo = {
         name: 'ing',
         description: 'Charleston Road Registry Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    INK = TopLevelDomainInfo = {
+    };
+    INK: TopLevelDomainInfo = {
         name: 'ink',
         description: 'Top Level Design, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INSTITUTE = TopLevelDomainInfo = {
+    };
+    INSTITUTE: TopLevelDomainInfo = {
         name: 'institute',
         description: 'Outer Maple, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INSURANCE = TopLevelDomainInfo = {
+    };
+    INSURANCE: TopLevelDomainInfo = {
         name: 'insurance',
         description: 'fTLD Registry Services LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    INSURE = TopLevelDomainInfo = {
+    };
+    INSURE: TopLevelDomainInfo = {
         name: 'insure',
         description: 'Pioneer Willow, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INT = TopLevelDomainInfo = {
+    };
+    INT: TopLevelDomainInfo = {
         name: 'int',
         description: 'International Organizations',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INTERNATIONAL = TopLevelDomainInfo = {
+    };
+    INTERNATIONAL: TopLevelDomainInfo = {
         name: 'international',
         description: 'Wild Way, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    INTUIT = TopLevelDomainInfo = {
+    };
+    INTUIT: TopLevelDomainInfo = {
         name: 'intuit',
         description: 'Intuit Administrative Services, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    INVESTMENTS = TopLevelDomainInfo = {
+    };
+    INVESTMENTS: TopLevelDomainInfo = {
         name: 'investments',
         description: 'Holly Glen, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IO = TopLevelDomainInfo = {
+    };
+    IO: TopLevelDomainInfo = {
         name: 'io',
         description: 'British Indian Ocean Territory',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    IPIRANGA = TopLevelDomainInfo = {
+    };
+    IPIRANGA: TopLevelDomainInfo = {
         name: 'ipiranga',
         description: 'Ipiranga Produtos de Petroleo S.A.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IQ = TopLevelDomainInfo = {
+    };
+    IQ: TopLevelDomainInfo = {
         name: 'iq',
         description: 'Iraq (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    IR = TopLevelDomainInfo = {
+    };
+    IR: TopLevelDomainInfo = {
         name: 'ir',
         description: 'Iran (Islamic Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },  
-    IRISH = TopLevelDomainInfo = {
+    };  
+    IRISH: TopLevelDomainInfo = {
         name: 'irish',
         description: 'Dot-Irish LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IS = TopLevelDomainInfo = {
+    };
+    IS: TopLevelDomainInfo = {
         name: 'is',
         description: 'Iceland',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ISMAILI = TopLevelDomainInfo = {
+    };
+    ISMAILI: TopLevelDomainInfo = {
         name: 'ismaili',
         description: 'Fondation Aga Khan (Aga Khan Foundation)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    IST
-    ISTANBUL
-    IT
-    ITAU
-    ITV
-    JAGUAR
-    JAVA
-    JCB
-    JE
-    JEEP
-    JETZT
-    JEWELRY
-    JIO
-    JLL
-    JM
-    JMP
-    JNJ
-    JO
-    JOBS
-    JOBURG
-    JOT
-    JOY
-    JP
-    JPMORGAN
-    JPRS
-    JUEGOS
-    JUNIPER
-    KAUFEN
-    KDDI
-    KE
-    KERRYHOTELS
-    KERRYLOGISTICS
-    KERRYPROPERTIES
-    KFH
-    KG
-    KH
-    KI
-    KIA
-    KIDS
-    KIM
-    KINDER
-    KINDLE
-    KITCHEN
-    KIWI
-    KM
-    KN
-    KOELN
-    KOMATSU
-    KOSHER
-    KP
-    KPMG
-    KPN
-    KR
-    KRD
-    KRED
-    KUOKGROUP
-    KW
-    KY
-    KYOTO
-    KZ
-    LA
-    LACAIXA
-    LAMBORGHINI
-    LAMER
-    LANCASTER
-    LAND
-    LANDROVER
-    LANXESS
-    LASALLE
-    LAT
-    LATINO
-    LATROBE
-    LAW
-    LAWYER
-    LB
-    LC
-    LDS
-    LEASE
-    LECLERC
-    LEFRAK
-    LEGAL
-    LEGO
-    LEXUS
-    LGBT
-    LI
-    LIDL
-    LIFE
-    LIFEINSURANCE
-    LIFESTYLE
-    LIGHTING
-    LIKE
-    LILLY
-    LIMITED
-    LIMO
-    LINCOLN
-    LINK
-    LIPSY
-    LIVE
-    LIVING
-    LK
-    LLC
-    LLP
-    LOAN
-    LOANS
-    LOCKER
-    LOCUS
-    LOL
-    LONDON
-    LOTTE
-    LOTTO
-    LOVE
-    LPL
-    LPLFINANCIAL
-    LR
-    LS
-    LT
-    LTD
-    LTDA
-    LU
-    LUNDBECK
-    LUXE
-    LUXURY
-    LV
-    LY
-    MA
-    MADRID
-    MAIF
-    MAISON
-    MAKEUP
-    MAN
-    MANAGEMENT
-    MANGO
-    MAP
-    MARKET
-    MARKETING
-    MARKETS
-    MARRIOTT
-    MARSHALLS
-    MATTEL
-    MBA
-    MC
-    MCKINSEY
-    MD
-    ME
-    MED
-    MEDIA
-    MEET
-    MELBOURNE
-    MEME
-    MEMORIAL
-    MEN
-    MENU
-    MERCKMSD
-    MG
-    MH
-    MIAMI
-    MICROSOFT
-    MIL
-    MINI
-    MINT
-    MIT
-    MITSUBISHI
-    MK
-    ML
-    MLB
-    MLS
-    MM
-    MMA
-    MN
-    MO
-    MOBI
-    MOBILE
-    MODA
-    MOE
-    MOI
-    MOM
-    MONASH
-    MONEY
-    MONSTER
-    MORMON
-    MORTGAGE
-    MOSCOW
-    MOTO
-    MOTORCYCLES
-    MOV
-    MOVIE
-    MP
-    MQ
-    MR
-    MS
-    MSD
-    MT
-    MTN
-    MTR
-    MU
-    MUSEUM
-    MUSIC
-    MV
-    MW
-    MX
-    MY
-    MZ
-    NA
-    NAB
-    NAGOYA
-    NAME
-    NATURA
-    NAVY
-    NBA
-    NC
-    NE
-    NEC
-    NET
-    NETBANK
-    NETFLIX
-    NETWORK
-    NEUSTAR
-    NEW
-    NEWS
-    NEXT
-    NEXTDIRECT
-    NEXUS
-    NF
-    NFL
-    NG
-    NGO
-    NHK
-    NI
-    NICO
-    NIKE
-    NIKON
-    NINJA
-    NISSAN
-    NISSAY
-    NL
-    NO
-    NOKIA
-    NORTON
-    NOW
-    NOWRUZ
-    NOWTV
-    NP
-    NR
-    NRA
-    NRW
-    NTT
-    NU
-    NYC
-    NZ
-    OBI
-    OBSERVER
-    OFFICE
-    OKINAWA
-    OLAYAN
-    OLAYANGROUP
-    OLDNAVY
-    OLLO
-    OM
-    OMEGA
-    ONE
-    ONG
-    ONL
-    ONLINE
-    OOO
-    OPEN
-    ORACLE
-    ORANGE
-    ORG
-    ORGANIC
-    ORIGINS
-    OSAKA
-    OTSUKA
-    OTT
-    OVH
-    PA
-    PAGE
-    PANASONIC
-    PARIS
-    PARS
-    PARTNERS
-    PARTS
-    PARTY
-    PAY
-    PCCW
-    PE
-    PET
-    PF
-    PFIZER
-    PG
-    PH
-    PHARMACY
-    PHD
-    PHILIPS
-    PHONE
-    PHOTO
-    PHOTOGRAPHY
-    PHOTOS
-    PHYSIO
-    PICS
-    PICTET
-    PICTURES
-    PID
-    PIN
-    PING
-    PINK
-    PIONEER
-    PIZZA
-    PK
-    PL
-    PLACE
-    PLAY
-    PLAYSTATION
-    PLUMBING
-    PLUS
-    PM
-    PN
-    PNC
-    POHL
-    POKER
-    POLITIE
-    PORN = TopLevelDomainInfo = {
+    };
+    IST: TopLevelDomainInfo = {
+        name: 'ist',
+        description: 'Istanbul Metropolitan Municipality',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ISTANBUL: TopLevelDomainInfo = {
+        name: 'istanbul',
+        description: 'Istanbul Metropolitan Municipality',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    IT: TopLevelDomainInfo = {
+        name: 'it',
+        description: 'Italy (Italian Republic)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    ITAU: TopLevelDomainInfo = {
+        name: 'itau',
+        description: 'Itau Unibanco Holding S.A.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ITV: TopLevelDomainInfo = {
+        name: 'itv',
+        description: 'ITV Services Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JAGUAR: TopLevelDomainInfo = {
+        name: 'jaguar',
+        description: 'Jaguar Land Rover Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JAVA: TopLevelDomainInfo = {
+        name: 'java',
+        description: 'Oracle Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JCB: TopLevelDomainInfo = {
+        name: 'jcb',
+        description: 'JCB Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JE: TopLevelDomainInfo = {
+        name: 'je',
+        description: 'Jersey (Bailiwick of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    JEEP: TopLevelDomainInfo = {
+        name: 'jeep',
+        description: 'FCA US LLC.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JETZT: TopLevelDomainInfo = {
+        name: 'jetzt',
+        description: 'New TLD Company AB',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JEWELRY: TopLevelDomainInfo = {
+        name: 'jewelry',
+        description: 'Wild Bloom, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JIO: TopLevelDomainInfo = {
+        name: 'jio',
+        description: 'Affinity Names, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JLL: TopLevelDomainInfo = {
+        name: 'jll',
+        description: 'Jones Lang LaSalle Incorporated',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JM: TopLevelDomainInfo = {
+        name: 'jm',
+        description: 'Jamaica (Commonwealth of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    JMP: TopLevelDomainInfo = {
+        name: 'jmp',
+        description: 'Matrix IP LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JNJ: TopLevelDomainInfo = {
+        name: 'jnj',
+        description: 'Johnson & Johnson Services, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JO: TopLevelDomainInfo = {
+        name: 'jo',
+        description: 'Jordan (Hashemite Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    JOBS: TopLevelDomainInfo = {
+        name: 'jobs',
+        description: 'Employ Media LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JOBURG: TopLevelDomainInfo = {
+        name: 'joburg',
+        description: 'ZA Central Registry NPC trading as ZA Central Registry',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JOT: TopLevelDomainInfo = {
+        name: 'jot',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JOY: TopLevelDomainInfo = {
+        name: 'joy',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JP: TopLevelDomainInfo = {
+        name: 'jp',
+        description: 'Japan',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    JPMORGAN: TopLevelDomainInfo = {
+        name: 'jpmorgan',
+        description: 'JPMorgan Chase Bank, National Association',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JPRS: TopLevelDomainInfo = {
+        name: 'jprs',
+        description: 'Japan Registry Services Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    JUEGOS: TopLevelDomainInfo = {
+        name: 'juegos',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    JUNIPER: TopLevelDomainInfo = {
+        name: 'juniper',
+        description: 'JUNIPER NETWORKS, INC.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KAUFEN: TopLevelDomainInfo = {
+        name: 'kaufen',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KDDI: TopLevelDomainInfo = {
+        name: 'kddi',
+        description: 'KDDI CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KE: TopLevelDomainInfo = {
+        name: 'ke',
+        description: 'Kenya (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KERRYHOTELS: TopLevelDomainInfo = {
+        name: 'kerryhotels',
+        description: 'Kerry Trading Co. Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KERRYLOGISTICS: TopLevelDomainInfo = {
+        name: 'kerrylogistics',
+        description: 'Kerry Trading Co. Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KERRYPROPERTIES: TopLevelDomainInfo = {
+        name: 'kerryproperties',
+        description: 'Kerry Trading Co. Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KFH: TopLevelDomainInfo = {
+        name: 'kfh',
+        description: 'Kuwait Finance House',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KG: TopLevelDomainInfo = {
+        name: 'kg',
+        description: 'Kyrgyzstan (Kyrgyz Republic)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KH: TopLevelDomainInfo = {
+        name: 'kh',
+        description: 'Cambodia (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KI: TopLevelDomainInfo = {
+        name: 'ki',
+        description: 'Kiribati (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KIA: TopLevelDomainInfo = {
+        name: 'kia',
+        description: 'KIA MOTORS CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KIDS: TopLevelDomainInfo = {
+        name: 'kids',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KIM: TopLevelDomainInfo = {
+        name: 'kim',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KINDER: TopLevelDomainInfo = {
+        name: 'kinder',
+        description: 'Ferrero Trading Lux S.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KINDLE: TopLevelDomainInfo = {
+        name: 'kindle',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KITCHEN: TopLevelDomainInfo = {
+        name: 'kitchen',
+        description: 'Just Goodbye, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KIWI: TopLevelDomainInfo = {
+        name: 'kiwi',
+        description: 'DOT KIWI LIMITED',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KM: TopLevelDomainInfo = {
+        name: 'km',
+        description: 'Comoros (Union of the)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KN: TopLevelDomainInfo = {
+        name: 'kn',
+        description: 'Saint Kitts and Nevis (Federation of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KOELN: TopLevelDomainInfo = {
+        name: 'koeln',
+        description: 'NetCologne Gesellschaft für Telekommunikation mbH',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KOMATSU: TopLevelDomainInfo = {
+        name: 'komatsu',
+        description: 'Komatsu Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KOSHER: TopLevelDomainInfo = {
+        name: 'kosher',
+        description: 'Kosher Marketing Assets LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KP: TopLevelDomainInfo = {
+        name: 'kp',
+        description: 'Korea (Democratic People\'s Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KPMG: TopLevelDomainInfo = {
+        name: 'kpmg',
+        description: 'KPMG International Cooperative (KPMG International Genossenschaft)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KPN: TopLevelDomainInfo = {
+        name: 'kpn',
+        description: 'Koninklijke KPN N.V.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KR: TopLevelDomainInfo = {
+        name: 'kr',
+        description: 'Korea (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KRD: TopLevelDomainInfo = {
+        name: 'krd',
+        description: 'KRG Department of Information Technology',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KRED: TopLevelDomainInfo = {
+        name: 'kred',
+        description: 'KredTLD Pty Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KUOKGROUP: TopLevelDomainInfo = {
+        name: 'kuokgroup',
+        description: 'Kerry Trading Co. Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    KW: TopLevelDomainInfo = {
+        name: 'kw',
+        description: 'Kuwait (State of Kuwait)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KY: TopLevelDomainInfo = {
+        name: 'ky',
+        description: 'Cayman Islands',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    KYOTO: TopLevelDomainInfo = {
+        name: 'kyoto',
+        description: 'Academic Institution: Kyoto Jyoho Gakuen',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    KZ: TopLevelDomainInfo = {
+        name: 'kz',
+        description: 'Kazakhstan (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LA: TopLevelDomainInfo = {
+        name: 'la',
+        description: 'Lao People\'s Democratic Republic',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LACAIXA: TopLevelDomainInfo = {
+        name: 'lacaixa',
+        description: 'CAIXA D\'ESTALVIS I PENSIONS DE BARCELONA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LAMBORGHINI: TopLevelDomainInfo = {
+        name: 'lamborghini',
+        description: 'Automobili Lamborghini S.p.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LAMER: TopLevelDomainInfo = {
+        name: 'lamer',
+        description: 'The Estée Lauder Companies Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LANCASTER: TopLevelDomainInfo = {
+        name: 'lancaster',
+        description: 'LANCASTER',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LAND: TopLevelDomainInfo = {
+        name: 'land',
+        description: 'Pine Moon, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LANDROVER: TopLevelDomainInfo = {
+        name: 'landrover',
+        description: 'Jaguar Land Rover Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LANXESS: TopLevelDomainInfo = {
+        name: 'lanxess',
+        description: 'LANXESS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LASALLE: TopLevelDomainInfo = {
+        name: 'lasalle',
+        description: 'Jones Lang LaSalle Incorporated',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LAT: TopLevelDomainInfo = {
+        name: 'lat',
+        description: 'ECOM-LAC Federación de Latinoamérica y el Caribe para Internet y el Comercio Electrónico',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LATINO: TopLevelDomainInfo = {
+        name: 'latino',
+        description: 'Dish DBS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LATROBE: TopLevelDomainInfo = {
+        name: 'latrobe',
+        description: 'La Trobe University',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LAW: TopLevelDomainInfo = {
+        name: 'law',
+        description: 'Minds + Machines Group Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LAWYER: TopLevelDomainInfo = {
+        name: 'lawyer',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LB: TopLevelDomainInfo = {
+        name: 'lb',
+        description: 'Lebanon (Lebanese Republic)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LC: TopLevelDomainInfo = {
+        name: 'lc',
+        description: 'Saint Lucia',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LDS: TopLevelDomainInfo = {
+        name: 'lds',
+        description: 'IRI Domain Management, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LEASE: TopLevelDomainInfo = {
+        name: 'lease',
+        description: 'Victor Trail, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LECLERC: TopLevelDomainInfo = {
+        name: 'leclerc',
+        description: 'A.C.D. LEC Association des Centres Distributeurs Edouard Leclerc',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LEFRAK: TopLevelDomainInfo = {
+        name: 'lefrak',
+        description: 'LeFrak Organization, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LEGAL: TopLevelDomainInfo = {
+        name: 'legal',
+        description: 'Blue Falls, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LEGO: TopLevelDomainInfo = {
+        name: 'lego',
+        description: 'LEGO Juris A/S',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LEXUS: TopLevelDomainInfo = {
+        name: 'lexus',
+        description: 'TOYOTA MOTOR CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LGBT: TopLevelDomainInfo = {
+        name: 'lgbt',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LI: TopLevelDomainInfo = {
+        name: 'li',
+        description: 'Liechtenstein (Principality of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LIDL: TopLevelDomainInfo = {
+        name: 'lidl',
+        description: 'Schwarz Domains und Services GmbH & Co. KG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LIFE: TopLevelDomainInfo = {
+        name: 'life',
+        description: 'Trixy Oaks, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LIFEINSURANCE: TopLevelDomainInfo = {
+        name: 'lifeinsurance',
+        description: 'American Council of Life Insurers',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LIFESTYLE: TopLevelDomainInfo = {
+        name: 'lifestyle',
+        description: 'Lifestyle Domain Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LIGHTING: TopLevelDomainInfo = {
+        name: 'lighting',
+        description: 'John McCook, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LIKE: TopLevelDomainInfo = {
+        name: 'like',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LILLY: TopLevelDomainInfo = {
+        name: 'lilly',
+        description: 'Eli Lilly and Company',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LIMITED: TopLevelDomainInfo = {
+        name: 'limited',
+        description: 'Big Fest, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LIMO: TopLevelDomainInfo = {
+        name: 'limo',
+        description: 'Hidden Frostbite, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LINCOLN: TopLevelDomainInfo = {
+        name: 'lincoln',
+        description: 'Ford Motor Company',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LINK: TopLevelDomainInfo = {
+        name: 'link',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LIPSY: TopLevelDomainInfo = {
+        name: 'lipsy',
+        description: 'Lipsy Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LIVE: TopLevelDomainInfo = {
+        name: 'live',
+        description: 'Microsoft Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LIVING: TopLevelDomainInfo = {
+        name: 'living',
+        description: 'Lifestyle Domain Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LK: TopLevelDomainInfo = {
+        name: 'lk',
+        description: 'Sri Lanka',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LLC: TopLevelDomainInfo = {
+        name: 'llc',
+        description: 'Afilias plc',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LLP: TopLevelDomainInfo = {
+        name: 'llp',
+        description: 'Afilias plc',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LOAN: TopLevelDomainInfo = {
+        name: 'loan',
+        description: 'dot Loan Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LOANS: TopLevelDomainInfo = {
+        name: 'loans',
+        description: 'June Woods, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LOCKER: TopLevelDomainInfo = {
+        name: 'locker',
+        description: 'Dish DBS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LOCUS: TopLevelDomainInfo = {
+        name: 'locus',
+        description: 'Locus Analytics LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LOL: TopLevelDomainInfo = {
+        name: 'lol',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LONDON: TopLevelDomainInfo = {
+        name: 'london',
+        description: 'Dot London Domains Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LOTTE: TopLevelDomainInfo = {
+        name: 'lotte',
+        description: 'Lotte Holdings Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LOTTO: TopLevelDomainInfo = {
+        name: 'lotto',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LOVE: TopLevelDomainInfo = {
+        name: 'love',
+        description: 'Merchant Law Group LLP',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LPL: TopLevelDomainInfo = {
+        name: 'lpl',
+        description: 'LPL Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LPLFINANCIAL: TopLevelDomainInfo = {
+        name: 'lplfinancial',
+        description: 'LPL Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LR: TopLevelDomainInfo = {
+        name: 'lr',
+        description: 'Liberia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LS: TopLevelDomainInfo = {
+        name: 'ls',
+        description: 'Lesotho (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LT: TopLevelDomainInfo = {
+        name: 'lt',
+        description: 'Lithuania (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LTD: TopLevelDomainInfo = {
+        name: 'ltd',
+        description: 'Over Corner, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LTDA: TopLevelDomainInfo = {
+        name: 'ltda',
+        description: 'InterNetX Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LU: TopLevelDomainInfo = {
+        name: 'lu',
+        description: 'Luxembourg (Grand Duchy of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LUNDBECK: TopLevelDomainInfo = {
+        name: 'lundbeck',
+        description: 'H. Lundbeck A/S',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    LUXE: TopLevelDomainInfo = {
+        name: 'luxe',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LUXURY: TopLevelDomainInfo = {
+        name: 'luxury',
+        description: 'Luxury Partners LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    LV: TopLevelDomainInfo = {
+        name: 'lv',
+        description: 'Latvia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    LY: TopLevelDomainInfo = {
+        name: 'ly',
+        description: 'Libya (State of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MA: TopLevelDomainInfo = {
+        name: 'ma',
+        description: 'Morocco (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MADRID: TopLevelDomainInfo = {
+        name: 'madrid',
+        description: 'Comunidad de Madrid',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MAIF: TopLevelDomainInfo = {
+        name: 'maif',
+        description: 'Mutuelle Assurance Instituteur France (MAIF)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MAISON: TopLevelDomainInfo = {
+        name: 'maison',
+        description: 'Victor Frostbite, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MAKEUP: TopLevelDomainInfo = {
+        name: 'makeup',
+        description: 'L\'Oréal',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MEN: TopLevelDomainInfo = {
+        name: 'men',
+        description: 'Exclusive Registry Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MANAGEMENT: TopLevelDomainInfo = {
+        name: 'management',
+        description: 'John Goodbye, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MANGO: TopLevelDomainInfo = {
+        name: 'mango',
+        description: 'PUNTO FA S.L.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MAP: TopLevelDomainInfo = {
+        name: 'map',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MARKET: TopLevelDomainInfo = {
+        name: 'market',
+        description: 'United TLD Holdco, Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MARKETING: TopLevelDomainInfo = {
+        name: 'marketing',
+        description: 'Fern Pass, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MARKETS: TopLevelDomainInfo = {
+        name: 'markets',
+        description: 'DOTMARKETS REGISTRY LTD',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MARRIOTT: TopLevelDomainInfo = {
+        name: 'marriott',
+        description: 'Marriott Worldwide Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MARSHALLS: TopLevelDomainInfo = {
+        name: 'marshalls',
+        description: 'The TJX Companies, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MATTEL: TopLevelDomainInfo = {
+        name: 'mattel',
+        description: 'Mattel Sites, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MBA: TopLevelDomainInfo = {
+        name: 'mba',
+        description: 'Lone Hollow, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MC: TopLevelDomainInfo = {
+        name: 'mc',
+        description: 'Monaco (Principality of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MCKINSEY: TopLevelDomainInfo = {
+        name: 'mckinsey',
+        description: 'McKinsey Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MD: TopLevelDomainInfo = {
+        name: 'md',
+        description: 'Moldova (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    ME: TopLevelDomainInfo = {
+        name: 'me',
+        description: 'Montenegro',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MED: TopLevelDomainInfo = {
+        name: 'med',
+        description: 'Medistry LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MEDIA: TopLevelDomainInfo = {
+        name: 'media',
+        description: 'Grand Glen, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MEET: TopLevelDomainInfo = {
+        name: 'meet',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MELBOURNE: TopLevelDomainInfo = {
+        name: 'melbourne',
+        description: 'The Crown in right of the State of Victoria, represented by its Department of State Development, Business and Innovation',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MEME: TopLevelDomainInfo = {
+        name: 'meme',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MEMORIAL: TopLevelDomainInfo = {
+        name: 'memorial',
+        description: 'Dog Beach, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MENU: TopLevelDomainInfo = {
+        name: 'menu',
+        description: 'Wedding TLD2, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MERCKMSD: TopLevelDomainInfo = {
+        name: 'merckmsd',
+        description: 'MSD Registry Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MG: TopLevelDomainInfo = {
+        name: 'mg',
+        description: 'Madagascar (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MH: TopLevelDomainInfo = {
+        name: 'mh',
+        description: 'Marshall Islands (Republic of the)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MIAMI: TopLevelDomainInfo = {
+        name: 'miami',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MICROSOFT: TopLevelDomainInfo = {
+        name: 'microsoft',
+        description: 'Microsoft Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MIL: TopLevelDomainInfo = {
+        name: 'mil',
+        description: 'United States Department of Defense Network Information Center',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MINI: TopLevelDomainInfo = {
+        name: 'mini',
+        description: 'Bayerische Motoren Werke Aktiengesellschaft',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MINT: TopLevelDomainInfo = {
+        name: 'mint',
+        description: 'Intuit Administrative Services, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MIT: TopLevelDomainInfo = {
+        name: 'mit',
+        description: 'Massachusetts Institute of Technology',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MITSUBISHI: TopLevelDomainInfo = {
+        name: 'mitsubishi',
+        description: 'Mitsubishi Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MK: TopLevelDomainInfo = {
+        name: 'mk',
+        description: 'Macedonia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    ML: TopLevelDomainInfo = {
+        name: 'ml',
+        description: 'Mali (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MLB: TopLevelDomainInfo = {
+        name: 'mlb',
+        description: 'MLB Advanced Media DH, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MLS: TopLevelDomainInfo = {
+        name: 'mls',
+        description: 'The Canadian Real Estate Association',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MM: TopLevelDomainInfo = {
+        name: 'mm',
+        description: 'Myanmar (Union of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MMA: TopLevelDomainInfo = {
+        name: 'mma',
+        description: 'MMA IARD',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MN: TopLevelDomainInfo = {
+        name: 'mn',
+        description: 'Mongolia',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MO: TopLevelDomainInfo = {
+        name: 'mo',
+        description: 'Macao',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MOBI: TopLevelDomainInfo = {
+        name: 'mobi',
+        description: 'Afilias Technologies Limited dba dotMobi',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOBILE: TopLevelDomainInfo = {
+        name: 'mobile',
+        description: 'Dish DBS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MOBILY: TopLevelDomainInfo = {
+        name: 'mobily',
+        description: 'GreenTech Consultancy Company W.L.L.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MODA: TopLevelDomainInfo = {
+        name: 'moda',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOE: TopLevelDomainInfo = {
+        name: 'moe',
+        description: 'Interlink Co., Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOI: TopLevelDomainInfo = {
+        name: 'moi',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOM: TopLevelDomainInfo = {
+        name: 'mom',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MONASH: TopLevelDomainInfo = {
+        name: 'monash',
+        description: 'Monash University',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MONEY: TopLevelDomainInfo = {
+        name: 'money',
+        description: 'Outer McCook, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MONSTER: TopLevelDomainInfo = {
+        name: 'monster',
+        description: 'Monster Worldwide, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MORMON: TopLevelDomainInfo = {
+        name: 'mormon',
+        description: 'IRI Domain Management, LLC ("Applicant")',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MORTGAGE: TopLevelDomainInfo = {
+        name: 'mortgage',
+        description: 'United TLD Holdco, Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOSCOW: TopLevelDomainInfo = {
+        name: 'moscow',
+        description: 'Foundation for Assistance for Internet Technologies and Infrastructure Development (FAITID)',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOTO: TopLevelDomainInfo = {
+        name: 'moto',
+        description: 'Motorola Trademark Holdings, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MOTORCYCLES: TopLevelDomainInfo = {
+        name: 'motorcycles',
+        description: 'DERMotorcycles, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOV: TopLevelDomainInfo = {
+        name: 'mov',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MOVIE: TopLevelDomainInfo = {
+        name: 'movie',
+        description: 'New Frostbite, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MP: TopLevelDomainInfo = {
+        name: 'mp',
+        description: 'Northern Mariana Islands (Commonwealth of the)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MQ: TopLevelDomainInfo = {
+        name: 'mq',
+        description: 'Martinique (French Department of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MR: TopLevelDomainInfo = {
+        name: 'mr',
+        description: 'Mauritania (Islamic Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MS: TopLevelDomainInfo = {
+        name: 'ms',
+        description: 'Montserrat',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MSD: TopLevelDomainInfo = {
+        name: 'msd',
+        description: 'MSD Registry Holdings, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MT: TopLevelDomainInfo = {
+        name: 'mt',
+        description: 'Malta (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MTR: TopLevelDomainInfo = {
+        name: 'mtr',
+        description: 'MTR Corporation Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    MU: TopLevelDomainInfo = {
+        name: 'mu',
+        description: 'Mauritius (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MUSEUM: TopLevelDomainInfo = {
+        name: 'museum',
+        description: 'Museum Domain Management Association',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MUSIC: TopLevelDomainInfo = {
+        name: 'music',
+        description: 'DotMusic Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    MV: TopLevelDomainInfo = {
+        name: 'mv',
+        description: 'Maldives (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MW: TopLevelDomainInfo = {
+        name: 'mw',
+        description: 'Malawi (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MX: TopLevelDomainInfo = {
+        name: 'mx',
+        description: 'Mexico (United Mexican States)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MY: TopLevelDomainInfo = {
+        name: 'my',
+        description: 'Malaysia',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    MZ: TopLevelDomainInfo = {
+        name: 'mz',
+        description: 'Mozambique (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NA: TopLevelDomainInfo = {
+        name: 'na',
+        description: 'Namibia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NAB: TopLevelDomainInfo = {
+        name: 'nab',
+        description: 'National Australia Bank Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NAGOYA: TopLevelDomainInfo = {
+        name: 'nagoya',
+        description: 'GMO Registry, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NAME: TopLevelDomainInfo = {
+        name: 'name',
+        description: 'VeriSign Information Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NATURA: TopLevelDomainInfo = {
+        name: 'natura',
+        description: 'NATURA COSMÉTICOS S.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NAVY: TopLevelDomainInfo = {
+        name: 'navy',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NBA: TopLevelDomainInfo = {
+        name: 'nba',
+        description: 'NBA REGISTRY, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NC: TopLevelDomainInfo = {
+        name: 'nc',
+        description: 'New Caledonia (Territorial Collectivity of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NE: TopLevelDomainInfo = {
+        name: 'ne',
+        description: 'Niger (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NEC: TopLevelDomainInfo = {
+        name: 'nec',
+        description: 'NEC Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NET: TopLevelDomainInfo = {
+        name: 'net',
+        description: 'VeriSign Global Registry Services',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NETBANK: TopLevelDomainInfo = {
+        name: 'netbank',
+        description: 'COMMONWEALTH BANK OF AUSTRALIA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NETFLIX: TopLevelDomainInfo = {
+        name: 'netflix',
+        description: 'Netflix, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NETWORK: TopLevelDomainInfo = {
+        name: 'network',
+        description: 'Trixy Manor, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NEUSTAR: TopLevelDomainInfo = {
+        name: 'neustar',
+        description: 'NeuStar, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NEW: TopLevelDomainInfo = {
+        name: 'new',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NEWS: TopLevelDomainInfo = {
+        name: 'news',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NEXT: TopLevelDomainInfo = {
+        name: 'next',
+        description: 'Next plc',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NEXTDIRECT: TopLevelDomainInfo = {
+        name: 'nextdirect',
+        description: 'Next plc',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NEXUS: TopLevelDomainInfo = {
+        name: 'nexus',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NF: TopLevelDomainInfo = {
+        name: 'nf',
+        description: 'Norfolk Island (Territory of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NFL: TopLevelDomainInfo = {
+        name: 'nfl',
+        description: 'NFL Reg Ops LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NG: TopLevelDomainInfo = {
+        name: 'ng',
+        description: 'Nigeria (Federal Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NGO: TopLevelDomainInfo = {
+        name: 'ngo',
+        description: 'Public Interest Registry',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NHK: TopLevelDomainInfo = {
+        name: 'nhk',
+        description: 'Japan Broadcasting Corporation (NHK)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NI: TopLevelDomainInfo = {
+        name: 'ni',
+        description: 'Nicaragua (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NICO: TopLevelDomainInfo = {
+        name: 'nico',
+        description: 'DWANGO Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NIKON: TopLevelDomainInfo = {
+        name: 'nikon',
+        description: 'NIKON CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NINJA: TopLevelDomainInfo = {
+        name: 'ninja',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NISSAN: TopLevelDomainInfo = {
+        name: 'nissan',
+        description: 'NISSAN MOTOR CO., LTD.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NL: TopLevelDomainInfo = {
+        name: 'nl',
+        description: 'Netherlands (Kingdom of the)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NO: TopLevelDomainInfo = {
+        name: 'no',
+        description: 'Norway (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NOKIA: TopLevelDomainInfo = {
+        name: 'nokia',
+        description: 'Nokia Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NORTON: TopLevelDomainInfo = {
+        name: 'norton',
+        description: 'Symantec Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NOW: TopLevelDomainInfo = {
+        name: 'now',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NOWRUZ: TopLevelDomainInfo = {
+        name: 'nowruz',
+        description: 'Asia Green IT System Bilgisayar San. ve Tic. Ltd. Sti.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NOWTV: TopLevelDomainInfo = {
+        name: 'nowtv',
+        description: 'Starbucks (HK) Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NP: TopLevelDomainInfo = {
+        name: 'np',
+        description: 'Nepal (Federal Democratic Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NR: TopLevelDomainInfo = {
+        name: 'nr',
+        description: 'Nauru (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NRA: TopLevelDomainInfo = {
+        name: 'nra',
+        description: 'NRA Holdings Company, INC.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NRW: TopLevelDomainInfo = {
+        name: 'nrw',
+        description: 'Minds + Machines GmbH',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NTT: TopLevelDomainInfo = {
+        name: 'ntt',
+        description: 'NIPPON TELEGRAPH AND TELEPHONE CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    NU: TopLevelDomainInfo = {
+        name: 'nu',
+        description: 'Niue',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    NYC: TopLevelDomainInfo = {
+        name: 'nyc',
+        description: 'The City of New York by and through the New York City Department of Information Technology & Telecommunications',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    NZ: TopLevelDomainInfo = {
+        name: 'nz',
+        description: 'New Zealand',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    OBI: TopLevelDomainInfo = {
+        name: 'obi',
+        description: 'OBI Group Holding SE & Co. KGaA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OBSERVER: TopLevelDomainInfo = {
+        name: 'observer',
+        description: 'Top Level Spectrum, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    OFFICE: TopLevelDomainInfo = {
+        name: 'office',
+        description: 'Microsoft Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OKINAWA: TopLevelDomainInfo = {
+        name: 'okinawa',
+        description: 'BusinessRalliart inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    OLAYAN: TopLevelDomainInfo = {
+        name: 'olayan',
+        description: 'Crescent Holding GmbH',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OLAYANGROUP: TopLevelDomainInfo = {
+        name: 'olayangroup',
+        description: 'Crescent Holding GmbH',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OLDNAVY: TopLevelDomainInfo = {
+        name: 'oldnavy',
+        description: 'The Gap, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OLLO: TopLevelDomainInfo = {
+        name: 'ollo',
+        description: 'Dish DBS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OM: TopLevelDomainInfo = {
+        name: 'om',
+        description: 'Oman (Sultanate of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    OMEGA: TopLevelDomainInfo = {
+        name: 'omega',
+        description: 'The Swatch Group Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    ONE: TopLevelDomainInfo = {
+        name: 'one',
+        description: 'One.com A/S',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ONG: TopLevelDomainInfo = {
+        name: 'ong',
+        description: 'Public Interest Registry',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ONL: TopLevelDomainInfo = {
+        name: 'onl',
+        description: 'I-Registry Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ONLINE: TopLevelDomainInfo = {
+        name: 'online',
+        description: 'DotOnline Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    OOO: TopLevelDomainInfo = {
+        name: 'ooo',
+        description: 'INFIBEAM INCORPORATION LIMITED',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    OPEN: TopLevelDomainInfo = {
+        name: 'open',
+        description: 'American Express Travel Related Services Company, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    ORACLE: TopLevelDomainInfo = {
+        name: 'oracle',
+        description: 'Oracle Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    ORANGE: TopLevelDomainInfo = {
+        name: 'orange',
+        description: 'Orange Brand Services Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    ORG: TopLevelDomainInfo = {
+        name: 'org',
+        description: 'Public Interest Registry (PIR)',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ORGANIC: TopLevelDomainInfo = {
+        name: 'organic',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ORIGINS: TopLevelDomainInfo = {
+        name: 'origins',
+        description: 'The Estée Lauder Companies Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OSAKA: TopLevelDomainInfo = {
+        name: 'osaka',
+        description: 'Interlink Co., Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    OTSUKA: TopLevelDomainInfo = {
+        name: 'otsuka',
+        description: 'Otsuka Holdings Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OTT: TopLevelDomainInfo = {
+        name: 'ott',
+        description: 'Dish DBS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    OVH: TopLevelDomainInfo = {
+        name: 'ovh',
+        description: 'OVH SAS',
+        public: true,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PA: TopLevelDomainInfo = {
+        name: 'pa',
+        description: 'Panama (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PAGE: TopLevelDomainInfo = {
+        name: 'page',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PANASONIC: TopLevelDomainInfo = {
+        name: 'panasonic',
+        description: 'Panasonic Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PARIS: TopLevelDomainInfo = {
+        name: 'paris',
+        description: 'City of Paris',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PARS: TopLevelDomainInfo = {
+        name: 'pars',
+        description: 'Asia Green IT System Bilgisayar San. ve Tic. Ltd. Sti.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PARTNERS: TopLevelDomainInfo = {
+        name: 'partners',
+        description: 'Magic Glen, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PARTS: TopLevelDomainInfo = {
+        name: 'parts',
+        description: 'Sea Goodbye, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PARTY: TopLevelDomainInfo = {
+        name: 'party',
+        description: 'Blue Sky Registry Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PAY: TopLevelDomainInfo = {
+        name: 'pay',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PCCW: TopLevelDomainInfo = {
+        name: 'pccw',
+        description: 'PCCW Enterprises Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PE: TopLevelDomainInfo = {
+        name: 'pe',
+        description: 'Peru (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PET: TopLevelDomainInfo = {
+        name: 'pet',
+        description: 'Afilias plc',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PF: TopLevelDomainInfo = {
+        name: 'pf',
+        description: 'French Polynesia (Territorial Collectivity of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PFIZER: TopLevelDomainInfo = {
+        name: 'pfizer',
+        description: 'Pfizer Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PG: TopLevelDomainInfo = {
+        name: 'pg',
+        description: 'Papua New Guinea (Independent State of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PH: TopLevelDomainInfo = {
+        name: 'ph',
+        description: 'Philippines (Republic of the)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PHARMACY: TopLevelDomainInfo = {
+        name: 'pharmacy',
+        description: 'National Association of Boards of Pharmacy',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PHD: TopLevelDomainInfo = {
+        name: 'phd',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PHILIPS: TopLevelDomainInfo = {
+        name: 'philips',
+        description: 'Koninklijke Philips N.V.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PHONE: TopLevelDomainInfo = {
+        name: 'phone',
+        description: 'Dish DBS Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PHOTO: TopLevelDomainInfo = {
+        name: 'photo',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PHOTOGRAPHY: TopLevelDomainInfo = {
+        name: 'photography',
+        description: 'Sugar Glen, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PHOTOS: TopLevelDomainInfo = {
+        name: 'photos',
+        description: 'Sea Corner, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PHYSIO: TopLevelDomainInfo = {
+        name: 'physio',
+        description: 'PhysBiz Pty Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PICS: TopLevelDomainInfo = {
+        name: 'pics',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PICTET: TopLevelDomainInfo = {
+        name: 'pictet',
+        description: 'Pictet Europe S.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PICTURES: TopLevelDomainInfo = {
+        name: 'pictures',
+        description: 'Foggy Sky, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PID: TopLevelDomainInfo = {
+        name: 'pid',
+        description: 'Top Level Spectrum, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PIN: TopLevelDomainInfo = {
+        name: 'pin',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PING: TopLevelDomainInfo = {
+        name: 'ping',
+        description: 'Ping Registry Provider, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PINK: TopLevelDomainInfo = {
+        name: 'pink',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PIONEER: TopLevelDomainInfo = {
+        name: 'pioneer',
+        description: 'Pioneer Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PIZZA: TopLevelDomainInfo = {
+        name: 'pizza',
+        description: 'Foggy Moon, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PK: TopLevelDomainInfo = {
+        name: 'pk',
+        description: 'Pakistan (Islamic Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PL: TopLevelDomainInfo = {
+        name: 'pl',
+        description: 'Poland (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PLACE: TopLevelDomainInfo = {
+        name: 'place',
+        description: 'Snow Galley, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PLAY: TopLevelDomainInfo = {
+        name: 'play',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PLAYSTATION: TopLevelDomainInfo = {
+        name: 'playstation',
+        description: 'Sony Computer Entertainment Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PLUMBING: TopLevelDomainInfo = {
+        name: 'plumbing',
+        description: 'Spring Tigers, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PLUS: TopLevelDomainInfo = {
+        name: 'plus',
+        description: 'Sugar Mill, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PM: TopLevelDomainInfo = {
+        name: 'pm',
+        description: 'Saint Pierre and Miquelon (Territorial Collectivity of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PN: TopLevelDomainInfo = {
+        name: 'pn',
+        description: 'Pitcairn Islands',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PNC: TopLevelDomainInfo = {
+        name: 'pnc',
+        description: 'PNC Domain Co., LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    POHL: TopLevelDomainInfo = {
+        name: 'pohl',
+        description: 'Deutsche Vermögensberatung Aktiengesellschaft DVAG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    POKER: TopLevelDomainInfo = {
+        name: 'poker',
+        description: 'Afilias Domains No. 5 Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    POLITIE: TopLevelDomainInfo = {
+        name: 'politie',
+        description: 'Politie Nederland',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PORN: TopLevelDomainInfo = {
         name: 'porn',
         description: 'ICM Registry PN LLC',
         public: true,
         category: TopLevelDomainCategory.SEXUAL,
-    },
-    POST
-    PR
-    PRAMERICA
-    PRAXI
-    PRESS
-    PRIME
-    PRO
-    PROD
-    PRODUCTIONS
-    PROF
-    PROGRESSIVE
-    PROMO
-    PROPERTIES
-    PROPERTY
-    PROTECTION
-    PRU
-    PRUDENTIAL
-    PS
-    PT
-    PUB
-    PW
-    PWC
-    PY
-    QA
-    QPON
-    QUEBEC
-    QUEST
-    RACING
-    RADIO
-    RE
-    READ
-    REALESTATE
-    REALTOR
-    REALTY
-    RECIPES
-    RED
-    REDSTONE
-    REDUMBRELLA
-    REHAB
-    REISE
-    REISEN
-    REIT
-    RELIANCE
-    REN
-    RENT
-    RENTALS
-    REPAIR
-    REPORT
-    REPUBLICAN
-    REST
-    RESTAURANT
-    REVIEW
-    REVIEWS
-    REXROTH
-    RICH
-    RICHARDLI
-    RICOH
-    RIL
-    RIO
-    RIP
-    RO
-    ROCHER
-    ROCKS
-    RODEO
-    ROGERS
-    ROOM
-    RS
-    RSVP
-    RU
-    RUGBY
-    RUHR
-    RUN
-    RW
-    RWE
-    RYUKYU
-    SA
-    SAARLAND
-    SAFE
-    SAFETY
-    SAKURA
-    SALE
-    SALON
-    SAMSCLUB
-    SAMSUNG
-    SANDVIK
-    SANDVIKCOROMANT
-    SANOFI
-    SAP
-    SARL
-    SAS
-    SAVE
-    SAXO
-    SB
-    SBI
-    SBS
-    SC
-    SCA
-    SCB
-    SCHAEFFLER
-    SCHMIDT
-    SCHOLARSHIPS
-    SCHOOL
-    SCHULE
-    SCHWARZ
-    SCIENCE
-    SCOT
-    SD
-    SE
-    SEARCH
-    SEAT
-    SECURE
-    SECURITY
-    SEEK
-    SELECT
-    SENER
-    SERVICES
-    SEVEN
-    SEW
-    SEX
-    SEXY
-    SFR
-    SG
-    SH
-    SHANGRILA
-    SHARP
-    SHAW
-    SHELL
-    SHIA
-    SHIKSHA
-    SHOES
-    SHOP
-    SHOPPING
-    SHOUJI
-    SHOW
-    SI
-    SILK
-    SINA
-    SINGLES
-    SITE
-    SJ
-    SK
-    SKI
-    SKIN
-    SKY
-    SKYPE
-    SL
-    SLING
-    SM
-    SMART
-    SMILE
-    SN
-    SNCF
-    SO
-    SOCCER
-    SOCIAL
-    SOFTBANK
-    SOFTWARE
-    SOHU
-    SOLAR
-    SOLUTIONS
-    SONG
-    SONY
-    SOY
-    SPA
-    SPACE
-    SPORT
-    SPOT
-    SR
-    SRL
-    SS
-    ST
-    STADA
-    STAPLES
-    STAR
-    STATEBANK
-    STATEFARM
-    STC
-    STCGROUP
-    STOCKHOLM
-    STORAGE
-    STORE
-    STREAM
-    STUDIO
-    STUDY
-    STYLE
-    SU
-    SUCKS
-    SUPPLIES
-    SUPPLY
-    SUPPORT
-    SURF
-    SURGERY
-    SUZUKI
-    SV
-    SWATCH
-    SWISS
-    SX
-    SY
-    SYDNEY
-    SYSTEMS
-    SZ
-    TAB
-    TAIPEI
-    TALK
-    TAOBAO
-    TARGET
-    TATAMOTORS
-    TATAR
-    TATTOO
-    TAX
-    TAXI
-    TC
-    TCI
-    TD
-    TDK
-    TEAM
-    TECH
-    TECHNOLOGY
-    TEL
-    TEMASEK
-    TENNIS
-    TEVA
-    TF
-    TG
-    TH
-    THD
-    THEATER
-    THEATRE
-    TIAA
-    TICKETS
-    TIENDA
-    TIPS
-    TIRES
-    TIROL
-    TJ
-    TJMAXX
-    TJX
-    TK
-    TKMAXX = TopLevelDomainInfo = {
+    };
+    POST: TopLevelDomainInfo = {
+        name: 'post',
+        description: 'Universal Postal Union',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PR: TopLevelDomainInfo = {
+        name: 'pr',
+        description: 'Puerto Rico (Commonwealth of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PRAMERICA: TopLevelDomainInfo = {
+        name: 'pramerica',
+        description: 'Prudential Financial, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PRAXI: TopLevelDomainInfo = {
+        name: 'praxi',
+        description: 'Praxi S.p.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PRESS: TopLevelDomainInfo = {
+        name: 'press',
+        description: 'DotPress Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PRIME: TopLevelDomainInfo = {
+        name: 'prime',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PRO: TopLevelDomainInfo = {
+        name: 'pro',
+        description: 'Registry Services Corporation dba RegistryPro',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PROD: TopLevelDomainInfo = {
+        name: 'prod',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PRODUCTIONS: TopLevelDomainInfo = {
+        name: 'productions',
+        description: 'Magic Birch, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PROF: TopLevelDomainInfo = {
+        name: 'prof',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PROGRESSIVE: TopLevelDomainInfo = {
+        name: 'progressive',
+        description: 'Progressive Casualty Insurance Company',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PROMO: TopLevelDomainInfo = {
+        name: 'promo',
+        description: 'Afilias Domains No. 5 Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PROPERTIES: TopLevelDomainInfo = {
+        name: 'properties',
+        description: 'Big Pass, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PROPERTY: TopLevelDomainInfo = {
+        name: 'property',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PROTECTION: TopLevelDomainInfo = {
+        name: 'protection',
+        description: 'XYZ.COM LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PRU: TopLevelDomainInfo = {
+        name: 'pru',
+        description: 'Prudential Financial, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PRUDENTIAL: TopLevelDomainInfo = {
+        name: 'prudential',
+        description: 'Prudential Financial, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PS: TopLevelDomainInfo = {
+        name: 'ps',
+        description: 'Palestine (State of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PT: TopLevelDomainInfo = {
+        name: 'pt',
+        description: 'Portugal (Portuguese Republic)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PUB: TopLevelDomainInfo = {
+        name: 'pub',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    PW: TopLevelDomainInfo = {
+        name: 'pw',
+        description: 'Palau (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    PWC: TopLevelDomainInfo = {
+        name: 'pwc',
+        description: 'PricewaterhouseCoopers LLP',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    PY: TopLevelDomainInfo = {
+        name: 'py',
+        description: 'Paraguay (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    QA: TopLevelDomainInfo = {
+        name: 'qa',
+        description: 'Qatar (State of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    QPON: TopLevelDomainInfo = {
+        name: 'qpon',
+        description: 'dotCOOL, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    QUEBEC: TopLevelDomainInfo = {
+        name: 'quebec',
+        description: 'PointQuébec Inc',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    QUEST: TopLevelDomainInfo = {
+        name: 'quest',
+        description: 'Quest ION Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RACING: TopLevelDomainInfo = {
+        name: 'racing',
+        description: 'Premier Registry Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RADIO: TopLevelDomainInfo = {
+        name: 'radio',
+        description: 'European Broadcasting Union (EBU)',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RE: TopLevelDomainInfo = {
+        name: 're',
+        description: 'Réunion (Department of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    READ: TopLevelDomainInfo = {
+        name: 'read',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REALESTATE: TopLevelDomainInfo = {
+        name: 'realestate',
+        description: 'dotRealEstate LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REALTOR: TopLevelDomainInfo = {
+        name: 'realtor',
+        description: 'Real Estate Domains LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    REALTY: TopLevelDomainInfo = {
+        name: 'realty',
+        description: 'Fegistry, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RECIPES: TopLevelDomainInfo = {
+        name: 'recipes',
+        description: 'Grand Island, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RED: TopLevelDomainInfo = {
+        name: 'red',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REDCROSS: TopLevelDomainInfo = {
+        name: 'redcross',
+        description: 'American Red Cross',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    REDSTONE: TopLevelDomainInfo = {
+        name: 'redstone',
+        description: 'Redstone Haute Couture Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    REDUMBRELLA: TopLevelDomainInfo = {
+        name: 'redumbrella',
+        description: 'Travelers TLD, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    REHAB: TopLevelDomainInfo = {
+        name: 'rehab',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REISE: TopLevelDomainInfo = {
+        name: 'reise',
+        description: 'Foggy Way, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REISEN: TopLevelDomainInfo = {
+        name: 'reisen',
+        description: 'New Cypress, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REIT: TopLevelDomainInfo = {
+        name: 'reit',
+        description: 'National Association of Real Estate Investment Trusts, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RELIANCE: TopLevelDomainInfo = {
+        name: 'reliance',
+        description: 'Reliance Industries Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    REN: TopLevelDomainInfo = {
+        name: 'ren',
+        description: 'Beijing Qianxiang Wangjing Technology Development Co., Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RENT: TopLevelDomainInfo = {
+        name: 'rent',
+        description: 'XYZ.COM LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RENTALS: TopLevelDomainInfo = {
+        name: 'rentals',
+        description: 'Big Hollow,LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REPAIR: TopLevelDomainInfo = {
+        name: 'repair',
+        description: 'Lone Sunset, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REPORT: TopLevelDomainInfo = {
+        name: 'report',
+        description: 'Binky Glen, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REPUBLICAN: TopLevelDomainInfo = {
+        name: 'republican',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REST: TopLevelDomainInfo = {
+        name: 'rest',
+        description: 'Punto 2012 Sociedad Anonima Promotora de Inversion de Capital Variable',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RESTAURANT: TopLevelDomainInfo = {
+        name: 'restaurant',
+        description: 'Snow Avenue, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REVIEW: TopLevelDomainInfo = {
+        name: 'review',
+        description: 'dot Review Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REVIEWS: TopLevelDomainInfo = {
+        name: 'reviews',
+        description: 'United TLD Holdco, Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    REXROTH: TopLevelDomainInfo = {
+        name: 'rexroth',
+        description: 'Robert Bosch GMBH',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RICH: TopLevelDomainInfo = {
+        name: 'rich',
+        description: 'I-Registry Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RICHARDLI: TopLevelDomainInfo = {
+        name: 'richardli',
+        description: 'Pacific Century Asset Management (HK) Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RICOH: TopLevelDomainInfo = {
+        name: 'ricoh',
+        description: 'Ricoh Company, Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RIL: TopLevelDomainInfo = {
+        name: 'ril',
+        description: 'Reliance Industries Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RIO: TopLevelDomainInfo = {
+        name: 'rio',
+        description: 'Empresa Municipal de Informática SA - IPLANRIO',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RIP: TopLevelDomainInfo = {
+        name: 'rip',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RO: TopLevelDomainInfo = {
+        name: 'ro',
+        description: 'Romania',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    ROCHER: TopLevelDomainInfo = {
+        name: 'rocher',
+        description: 'Ferrero Trading Lux S.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    ROCKS: TopLevelDomainInfo = {
+        name: 'rocks',
+        description: 'United TLD Holdco, LTD.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RODEO: TopLevelDomainInfo = {
+        name: 'rodeo',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    ROGERS: TopLevelDomainInfo = {
+        name: 'rogers',
+        description: 'Rogers Communications Canada Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    ROOM: TopLevelDomainInfo = {
+        name: 'room',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RS: TopLevelDomainInfo = {
+        name: 'rs',
+        description: 'Serbia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    RSVP: TopLevelDomainInfo = {
+        name: 'rsvp',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RU: TopLevelDomainInfo = {
+        name: 'ru',
+        description: 'Russian Federation',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    RUGBY: TopLevelDomainInfo = {
+        name: 'rugby',
+        description: 'World Rugby Strategic Developments Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RUHR: TopLevelDomainInfo = {
+        name: 'ruhr',
+        description: 'regiodot GmbH & Co. KG',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RUN: TopLevelDomainInfo = {
+        name: 'run',
+        description: 'Snow Park, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    RW: TopLevelDomainInfo = {
+        name: 'rw',
+        description: 'Rwanda (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    RWE: TopLevelDomainInfo = {
+        name: 'rwe',
+        description: 'RWE AG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    RYUKYU: TopLevelDomainInfo = {
+        name: 'ryukyu',
+        description: 'BusinessRalliart inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SA: TopLevelDomainInfo = {
+        name: 'sa',
+        description: 'Saudi Arabia (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SAARLAND: TopLevelDomainInfo = {
+        name: 'saarland',
+        description: 'dotSaarland GmbH',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAFE: TopLevelDomainInfo = {
+        name: 'safe',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAFETY: TopLevelDomainInfo = {
+        name: 'safety',
+        description: 'Safety Registry Services, LLC.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAKURA: TopLevelDomainInfo = {
+        name: 'sakura',
+        description: 'SAKURA Internet Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SALE: TopLevelDomainInfo = {
+        name: 'sale',
+        description: 'United TLD Holdco, Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SALON: TopLevelDomainInfo = {
+        name: 'salon',
+        description: 'Outer Orchard, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAMSCLUB: TopLevelDomainInfo = {
+        name: 'samsclub',
+        description: 'Wal-Mart Stores, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SAMSUNG: TopLevelDomainInfo = {
+        name: 'samsung',
+        description: 'SAMSUNG SDS CO., LTD',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SANDVIK: TopLevelDomainInfo = {
+        name: 'sandvik',
+        description: 'Sandvik AB',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SANDVIKCOROMANT: TopLevelDomainInfo = {
+        name: 'sandvikcoromant',
+        description: 'Sandvik AB',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SANOFI: TopLevelDomainInfo = {
+        name: 'sanofi',
+        description: 'Sanofi',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SAP: TopLevelDomainInfo = {
+        name: 'sap',
+        description: 'SAP AG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SARL: TopLevelDomainInfo = {
+        name: 'sarl',
+        description: 'Delta Orchard, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAS: TopLevelDomainInfo = {
+        name: 'sas',
+        description: 'Research IP LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAVE: TopLevelDomainInfo = {
+        name: 'save',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SAXO: TopLevelDomainInfo = {
+        name: 'saxo',
+        description: 'Saxo Bank A/S',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SB: TopLevelDomainInfo = {
+        name: 'sb',
+        description: 'Solomon Islands',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SBI: TopLevelDomainInfo = {
+        name: 'sbi',
+        description: 'STATE BANK OF INDIA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SBS: TopLevelDomainInfo = {
+        name: 'sbs',
+        description: 'SPECIAL BROADCASTING SERVICE CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SC: TopLevelDomainInfo = {
+        name: 'sc',
+        description: 'Seychelles (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SCA: TopLevelDomainInfo = {
+        name: 'sca',
+        description: 'SVENSKA CELLULOSA AKTIEBOLAGET SCA (publ)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SCB: TopLevelDomainInfo = {
+        name: 'scb',
+        description: 'The Siam Commercial Bank Public Company Limited ("SCB")',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SCHAEFFLER: TopLevelDomainInfo = {
+        name: 'schaeffler',
+        description: 'Schaeffler Technologies AG & Co. KG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SCHMIDT: TopLevelDomainInfo = {
+        name: 'schmidt',
+        description: 'SALM S.A.S.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SCHOLARSHIPS: TopLevelDomainInfo = {
+        name: 'scholarships',
+        description: 'Scholarships.com, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SCHOOL: TopLevelDomainInfo = {
+        name: 'school',
+        description: 'Little Galley, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SCHULE: TopLevelDomainInfo = {
+        name: 'schule',
+        description: 'Outer Moon, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SCHWARZ: TopLevelDomainInfo = {
+        name: 'schwarz',
+        description: 'Schwarz Domains und Services GmbH & Co. KG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SCIENCE: TopLevelDomainInfo = {
+        name: 'science',
+        description: 'dot Science Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SCOT: TopLevelDomainInfo = {
+        name: 'scot',
+        description: 'Dot Scot Registry Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SD: TopLevelDomainInfo = {
+        name: 'sd',
+        description: 'Sudan (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SE: TopLevelDomainInfo = {
+        name: 'se',
+        description: 'Sweden (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SEARCH: TopLevelDomainInfo = {
+        name: 'search',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SEAT: TopLevelDomainInfo = {
+        name: 'seat',
+        description: 'SEAT, S.A. (Sociedad Unipersonal)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SECURE: TopLevelDomainInfo = {
+        name: 'secure',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SECURITY: TopLevelDomainInfo = {
+        name: 'security',
+        description: 'XYZ.COM LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SEEK: TopLevelDomainInfo = {
+        name: 'seek',
+        description: 'Seek Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SELECT: TopLevelDomainInfo = {
+        name: 'select',
+        description: 'iSelect Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SENER: TopLevelDomainInfo = {
+        name: 'sener',
+        description: 'Sener Ingeniería y Sistemas, S.A.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SERVICES: TopLevelDomainInfo = {
+        name: 'services',
+        description: 'Fox Castle, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SEVEN: TopLevelDomainInfo = {
+        name: 'seven',
+        description: 'Seven West Media Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SEW: TopLevelDomainInfo = {
+        name: 'sew',
+        description: 'SEW-EURODRIVE GmbH & Co KG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SEX: TopLevelDomainInfo = {
+        name: 'sex',
+        description: 'ICM Registry SX LLC',
+        public: true,
+        category: TopLevelDomainCategory.SEXUAL,
+    };
+    SEXY: TopLevelDomainInfo = {
+        name: 'sexy',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.SEXUAL,
+    };
+    SFR: TopLevelDomainInfo = {
+        name: 'sfr',
+        description: 'Societe Francaise du Radiotelephone - SFR',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SG: TopLevelDomainInfo = {
+        name: 'sg',
+        description: 'Singapore (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SH: TopLevelDomainInfo = {
+        name: 'sh',
+        description: 'Saint Helena, Ascension and Tristan da Cunha',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SHANGRILA: TopLevelDomainInfo = {
+        name: 'shangrila',
+        description: 'Shangri‐La International Hotel Management Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SHARP: TopLevelDomainInfo = {
+        name: 'sharp',
+        description: 'Sharp Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SHAW: TopLevelDomainInfo = {
+        name: 'shaw',
+        description: 'Shaw Cablesystems G.P.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SHELL: TopLevelDomainInfo = {
+        name: 'shell',
+        description: 'Shell Information Technology International Inc',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SHIA: TopLevelDomainInfo = {
+        name: 'shia',
+        description: 'Asia Green IT System Bilgisayar San. ve Tic. Ltd. Sti.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SHIKSHA: TopLevelDomainInfo = {
+        name: 'shiksha',
+        description: 'Afilias Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SHOES: TopLevelDomainInfo = {
+        name: 'shoes',
+        description: 'Binky Galley, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SHOP: TopLevelDomainInfo = {
+        name: 'shop',
+        description: 'GMO Registry, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SHOPPING: TopLevelDomainInfo = {
+        name: 'shopping',
+        description: 'Over Keep, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SHOUJI: TopLevelDomainInfo = {
+        name: 'shouji',
+        description: 'QIHOO 360 TECHNOLOGY CO. LTD.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SHOW: TopLevelDomainInfo = {
+        name: 'show',
+        description: 'Snow Beach, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SI: TopLevelDomainInfo = {
+        name: 'si',
+        description: 'Slovenia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SILK: TopLevelDomainInfo = {
+        name: 'silk',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SINA: TopLevelDomainInfo = {
+        name: 'sina',
+        description: 'Sina Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SINGLES: TopLevelDomainInfo = {
+        name: 'singles',
+        description: 'Fern Madison, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SITE: TopLevelDomainInfo = {
+        name: 'site',
+        description: 'DotSite Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SJ: TopLevelDomainInfo = {
+        name: 'sj',
+        description: 'Svalbard and Jan Mayen (Islands of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SK: TopLevelDomainInfo = {
+        name: 'sk',
+        description: 'Slovakia (Slovak Republic)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SKI: TopLevelDomainInfo = {
+        name: 'ski',
+        description: 'STARTING DOT LIMITED',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SKIN: TopLevelDomainInfo = {
+        name: 'skin',
+        description: 'L\'Oréal',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SKY: TopLevelDomainInfo = {
+        name: 'sky',
+        description: 'Sky International AG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SKYPE: TopLevelDomainInfo = {
+        name: 'skype',
+        description: 'Microsoft Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SL: TopLevelDomainInfo = {
+        name: 'sl',
+        description: 'Sierra Leone (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SLING: TopLevelDomainInfo = {
+        name: 'sling',
+        description: 'Hughes Satellite Systems Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SM: TopLevelDomainInfo = {
+        name: 'sm',
+        description: 'San Marino (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SMART: TopLevelDomainInfo = {
+        name: 'smart',
+        description: 'Smart Communications, Inc. (SMART)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SMILE: TopLevelDomainInfo = {
+        name: 'smile',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SN: TopLevelDomainInfo = {
+        name: 'sn',
+        description: 'Senegal (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SNCF: TopLevelDomainInfo = {
+        name: 'sncf',
+        description: 'SNCF (Société Nationale des Chemins de fer Francais)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SO: TopLevelDomainInfo = {
+        name: 'so',
+        description: 'Somalia (Federal Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SOCCER: TopLevelDomainInfo = {
+        name: 'soccer',
+        description: 'Foggy Shadow, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SOCIAL: TopLevelDomainInfo = {
+        name: 'social',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SOFTBANK: TopLevelDomainInfo = {
+        name: 'softbank',
+        description: 'SoftBank Group Corp.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SOFTWARE: TopLevelDomainInfo = {
+        name: 'software',
+        description: 'United TLD Holdco, Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SOHU: TopLevelDomainInfo = {
+        name: 'sohu',
+        description: 'Sohu.com Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SOLAR: TopLevelDomainInfo = {
+        name: 'solar',
+        description: 'Ruby Town, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SOLUTIONS: TopLevelDomainInfo = {
+        name: 'solutions',
+        description: 'Silver Cover, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SONG: TopLevelDomainInfo = {
+        name: 'song',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SONY: TopLevelDomainInfo = {
+        name: 'sony',
+        description: 'Sony Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SOY: TopLevelDomainInfo = {
+        name: 'soy',
+        description: 'Charleston Road Registry Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SPA: TopLevelDomainInfo = {
+        name: 'spa',
+        description: 'Asia Spa and Wellness Promotion Council Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SPACE: TopLevelDomainInfo = {
+        name: 'space',
+        description: 'DotSpace Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SPORT: TopLevelDomainInfo = {
+        name: 'sport',
+        description: 'Global Association of International Sports Federations (GAISF)',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SPOT: TopLevelDomainInfo = {
+        name: 'spot',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SR: TopLevelDomainInfo = {
+        name: 'sr',
+        description: 'Suriname (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SRL: TopLevelDomainInfo = {
+        name: 'srl',
+        description: 'InterNetX Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SS: TopLevelDomainInfo = {
+        name: 'ss',
+        description: 'South Sudan (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    ST: TopLevelDomainInfo = {
+        name: 'st',
+        description: 'Sao Tome and Principe (Democratic Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    STADA: TopLevelDomainInfo = {
+        name: 'stada',
+        description: 'STADA Arzneimittel AG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STAPLES: TopLevelDomainInfo = {
+        name: 'staples',
+        description: 'Staples, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STAR: TopLevelDomainInfo = {
+        name: 'star',
+        description: 'Star India Private Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STATEBANK: TopLevelDomainInfo = {
+        name: 'statebank',
+        description: 'STATE BANK OF INDIA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STATEFARM: TopLevelDomainInfo = {
+        name: 'statefarm',
+        description: 'State Farm Mutual Automobile Insurance Company',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STC: TopLevelDomainInfo = {
+        name: 'stc',
+        description: 'Saudi Telecom Company',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STCGROUP: TopLevelDomainInfo = {
+        name: 'stcgroup',
+        description: 'Saudi Telecom Company',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    STOCKHOLM: TopLevelDomainInfo = {
+        name: 'stockholm',
+        description: 'Stockholms kommun',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    STORAGE: TopLevelDomainInfo = {
+        name: 'storage',
+        description: 'Self Storage Company LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    STORE: TopLevelDomainInfo = {
+        name: 'store',
+        description: 'DotStore Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    STREAM: TopLevelDomainInfo = {
+        name: 'stream',
+        description: 'dot Stream Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    STUDIO: TopLevelDomainInfo = {
+        name: 'studio',
+        description: 'United TLD Holdco Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    STUDY: TopLevelDomainInfo = {
+        name: 'study',
+        description: 'OPEN UNIVERSITIES AUSTRALIA PTY LTD',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    STYLE: TopLevelDomainInfo = {
+        name: 'style',
+        description: 'Binky Moon, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SU: TopLevelDomainInfo = {
+        name: 'su',
+        description: 'Sowjet Union',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SUCKS: TopLevelDomainInfo = {
+        name: 'sucks',
+        description: 'Vox Populi Registry Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SUPPLIES: TopLevelDomainInfo = {
+        name: 'supplies',
+        description: 'Atomic Fields, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SUPPLY: TopLevelDomainInfo = {
+        name: 'supply',
+        description: 'Half Falls, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SUPPORT: TopLevelDomainInfo = {
+        name: 'support',
+        description: 'Grand Orchard, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SURF: TopLevelDomainInfo = {
+        name: 'surf',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SURGERY: TopLevelDomainInfo = {
+        name: 'surgery',
+        description: 'Tin Avenue, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SUZUKI: TopLevelDomainInfo = {
+        name: 'suzuki',
+        description: 'SUZUKI MOTOR CORPORATION',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SV: TopLevelDomainInfo = {
+        name: 'sv',
+        description: 'El Salvador (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SWATCH: TopLevelDomainInfo = {
+        name: 'swatch',
+        description: 'The Swatch Group Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SWISS: TopLevelDomainInfo = {
+        name: 'swiss',
+        description: 'Swiss Confederation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    SX: TopLevelDomainInfo = {
+        name: 'sx',
+        description: 'Sint Maarten (Dutch part)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SY: TopLevelDomainInfo = {
+        name: 'sy',
+        description: 'Syrian Arab Republic',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    SYDNEY: TopLevelDomainInfo = {
+        name: 'sydney',
+        description: 'State of New South Wales, Department of Premier and Cabinet',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SYSTEMS: TopLevelDomainInfo = {
+        name: 'systems',
+        description: 'Dash Cypress, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    SZ: TopLevelDomainInfo = {
+        name: 'sz',
+        description: 'Swaziland (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TAB: TopLevelDomainInfo = {
+        name: 'tab',
+        description: 'Tabcorp Holdings Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TAIPEI: TopLevelDomainInfo = {
+        name: 'taipei',
+        description: 'Taipei City Government',
+        public: false,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TALK: TopLevelDomainInfo = {
+        name: 'talk',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TAOBAO: TopLevelDomainInfo = {
+        name: 'taobao',
+        description: 'Alibaba Group Holding Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TARGET: TopLevelDomainInfo = {
+        name: 'target',
+        description: 'Target Domain Holdings, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TATAMOTORS: TopLevelDomainInfo = {
+        name: 'tatamotors',
+        description: 'Tata Motors Ltd',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TATAR: TopLevelDomainInfo = {
+        name: 'tatar',
+        description: 'Limited Liability Company "Coordination Center of Regional Domain of Tatarstan Republic"',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TATTOO: TopLevelDomainInfo = {
+        name: 'tattoo',
+        description: 'Uniregistry, Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TAX: TopLevelDomainInfo = {
+        name: 'tax',
+        description: 'Storm Orchard, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TAXI: TopLevelDomainInfo = {
+        name: 'taxi',
+        description: 'Pine Falls, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TC: TopLevelDomainInfo = {
+        name: 'tc',
+        description: 'Turks and Caicos Islands',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TCI: TopLevelDomainInfo = {
+        name: 'tci',
+        description: 'Asia Green IT System Bilgisayar San. ve Tic. Ltd. Sti.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TD: TopLevelDomainInfo = {
+        name: 'td',
+        description: 'Chad (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TDK: TopLevelDomainInfo = {
+        name: 'tdk',
+        description: 'TDK Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TEAM: TopLevelDomainInfo = {
+        name: 'team',
+        description: 'Atomic Lake, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TECH: TopLevelDomainInfo = {
+        name: 'tech',
+        description: 'Dot Tech LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TECHNOLOGY: TopLevelDomainInfo = {
+        name: 'technology',
+        description: 'Auburn Falls',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TEL: TopLevelDomainInfo = {
+        name: 'tel',
+        description: 'Telnic Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TEMASEK: TopLevelDomainInfo = {
+        name: 'temasek',
+        description: 'Temasek Holdings (Private) Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TENNIS: TopLevelDomainInfo = {
+        name: 'tennis',
+        description: 'Cotton Bloom, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TEVA: TopLevelDomainInfo = {
+        name: 'teva',
+        description: 'Teva Pharmaceutical Industries Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TF: TopLevelDomainInfo = {
+        name: 'tf',
+        description: 'French Southern and Antarctic Lands (Territory of the)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TG: TopLevelDomainInfo = {
+        name: 'tg',
+        description: 'Togo (Togolese Republic)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TH: TopLevelDomainInfo = {
+        name: 'th',
+        description: 'Thailand (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    THD: TopLevelDomainInfo = {
+        name: 'thd',
+        description: 'Home Depot Product Authority, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    THEATER: TopLevelDomainInfo = {
+        name: 'theater',
+        description: 'Blue Tigers, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    THEATRE: TopLevelDomainInfo = {
+        name: 'theatre',
+        description: 'XYZ.COM LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TIAA: TopLevelDomainInfo = {
+        name: 'tiaa',
+        description: 'Teachers Insurance and Annuity Association of America',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TICKETS: TopLevelDomainInfo = {
+        name: 'tickets',
+        description: 'Accent Media Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TIENDA: TopLevelDomainInfo = {
+        name: 'tienda',
+        description: 'Victor Manor, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TIPS: TopLevelDomainInfo = {
+        name: 'tips',
+        description: 'Corn Willow, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TIRES: TopLevelDomainInfo = {
+        name: 'tires',
+        description: 'Dog Edge, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TIROL: TopLevelDomainInfo = {
+        name: 'tirol',
+        description: 'punkt Tirol GmbH',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TJ: TopLevelDomainInfo = {
+        name: 'tj',
+        description: 'Tajikistan (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TJMAXX: TopLevelDomainInfo = {
+        name: 'tjmaxx',
+        description: 'The TJX Companies, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TJX: TopLevelDomainInfo = {
+        name: 'tjx',
+        description: 'The TJX Companies, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TK: TopLevelDomainInfo = {
+        name: 'tk',
+        description: 'Tokelau',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TKMAXX: TopLevelDomainInfo = {
         name: 'tkmaxx',
         description: 'The TJX Companies, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    TL
-    TM
-    TMALL
-    TN
-    TO
-    TODAY
-    TOKYO
-    TOOLS
-    TOP
-    TORAY
-    TOSHIBA = TopLevelDomainInfo = {
+    };
+    TL: TopLevelDomainInfo = {
+        name: 'tl',
+        description: 'Timor-Leste (Democratic Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TM: TopLevelDomainInfo = {
+        name: 'tm',
+        description: 'Turkmenistan',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TMALL: TopLevelDomainInfo = {
+        name: 'tmall',
+        description: 'Alibaba Group Holding Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TN: TopLevelDomainInfo = {
+        name: 'tn',
+        description: 'Tunisia (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TO: TopLevelDomainInfo = {
+        name: 'to',
+        description: 'Tonga (Kingdom of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TODAY: TopLevelDomainInfo = {
+        name: 'today',
+        description: 'Pearl Woods, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TOKYO: TopLevelDomainInfo = {
+        name: 'tokyo',
+        description: 'GMO Registry, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TOOLS: TopLevelDomainInfo = {
+        name: 'tools',
+        description: 'Pioneer North, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TOP: TopLevelDomainInfo = {
+        name: 'top',
+        description: 'Jiangsu Bangning Science & Technology Co.,Ltd.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TORAY: TopLevelDomainInfo = {
+        name: 'toray',
+        description: 'Toray Industries, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TOSHIBA: TopLevelDomainInfo = {
         name: 'toshiba',
         description: 'TOSHIBA Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    TOTAL
-    TOURS
-    TOWN
-    TOYOTA = TopLevelDomainInfo = {
+    };
+    TOTAL: TopLevelDomainInfo = {
+        name: 'total',
+        description: 'Total SA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TOURS: TopLevelDomainInfo = {
+        name: 'tours',
+        description: 'Sugar Station, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TOWN: TopLevelDomainInfo = {
+        name: 'town',
+        description: 'Koko Moon, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TOYOTA: TopLevelDomainInfo = {
         name: 'toyota',
         description: 'TOYOTA MOTOR CORPORATION',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    TOYS
-    TR
-    TRADE
-    TRADING
-    TRAINING
-    TRAVEL
-    TRAVELERS
-    TRAVELERSINSURANCE
-    TRUST
-    TRV
-    TT
-    TUBE
-    TUI
-    TUNES
-    TUSHU
-    TV = TopLevelDomainInfo = {
+    };
+    TOYS: TopLevelDomainInfo = {
+        name: 'toys',
+        description: 'Pioneer Orchard, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TR: TopLevelDomainInfo = {
+        name: 'tr',
+        description: 'Turkey (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TRADE: TopLevelDomainInfo = {
+        name: 'trade',
+        description: 'Elite Registry Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TRADING: TopLevelDomainInfo = {
+        name: 'trading',
+        description: 'DOTTRADING REGISTRY LTD',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TRAINING: TopLevelDomainInfo = {
+        name: 'training',
+        description: 'Wild Willow, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TRAVEL: TopLevelDomainInfo = {
+        name: 'travel',
+        description: 'Tralliance Registry Management Company, LLC.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TRAVELERS: TopLevelDomainInfo = {
+        name: 'travelers',
+        description: 'Travelers TLD, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TRAVELERSINSURANCE: TopLevelDomainInfo = {
+        name: 'travelersinsurance',
+        description: 'Travelers TLD, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TRUST: TopLevelDomainInfo = {
+        name: 'trust',
+        description: 'Artemis Internet Inc',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TRV: TopLevelDomainInfo = {
+        name: 'trv',
+        description: 'Travelers TLD, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TT: TopLevelDomainInfo = {
+        name: 'tt',
+        description: 'Trinidad and Tobago (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TUBE: TopLevelDomainInfo = {
+        name: 'tube',
+        description: 'Latin American Telecom LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TUI: TopLevelDomainInfo = {
+        name: 'tui',
+        description: 'TUI AG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TUNES: TopLevelDomainInfo = {
+        name: 'tunes',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TUSHU: TopLevelDomainInfo = {
+        name: 'tushu',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    TV: TopLevelDomainInfo = {
         name: 'tv',
         description: 'Tuvalu',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    TVS
-    TW
-    TZ
-    UA
-    UBANK
-    UBS
-    UG
-    UK
-    UNICOM
-    UNIVERSITY
-    UNO
-    UOL
-    UPS
-    US
-    UY
-    UZ
-    VA
-    VACATIONS
-    VANA
-    VANGUARD
-    VC
-    VE
-    VEGAS
-    VENTURES
-    VERISIGN
-    VERSICHERUNG
-    VET
-    VG
-    VI
-    VIAJES
-    VIDEO
-    VIG
-    VIKING
-    VILLAS
-    VIN
-    VIP
-    VIRGIN
-    VISA
-    VISION
-    VIVA
-    VIVO
-    VLAANDEREN
-    VN
-    VODKA
-    VOLKSWAGEN = TopLevelDomainInfo = {
+    };
+    TVS: TopLevelDomainInfo = {
+        name: 'tvs',
+        description: 'T V SUNDRAM IYENGAR  & SONS PRIVATE LIMITED',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    TW: TopLevelDomainInfo = {
+        name: 'tw',
+        description: 'Taiwan (Republic of China)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    TZ: TopLevelDomainInfo = {
+        name: 'tz',
+        description: 'Tanzania (United Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    UA: TopLevelDomainInfo = {
+        name: 'ua',
+        description: 'Ukraine',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    UBANK: TopLevelDomainInfo = {
+        name: 'ubank',
+        description: 'National Australia Bank Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    UBS: TopLevelDomainInfo = {
+        name: 'ubs',
+        description: 'UBS AG',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    UG: TopLevelDomainInfo = {
+        name: 'ug',
+        description: 'Uganda (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    UK: TopLevelDomainInfo = {
+        name: 'uk',
+        description: 'United Kingdom of Great Britain and Northern Ireland',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    UNICOM: TopLevelDomainInfo = {
+        name: 'unicom',
+        description: 'China United Network Communications Corporation Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    UNIVERSITY: TopLevelDomainInfo = {
+        name: 'university',
+        description: 'Little Station, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    UNO: TopLevelDomainInfo = {
+        name: 'uno',
+        description: 'Dot Latin LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    UOL: TopLevelDomainInfo = {
+        name: 'uol',
+        description: 'UBN INTERNET LTDA.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    UPS: TopLevelDomainInfo = {
+        name: 'ups',
+        description: 'UPS Market Driver, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    US: TopLevelDomainInfo = {
+        name: 'us',
+        description: 'United States of America',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    UY: TopLevelDomainInfo = {
+        name: 'uy',
+        description: 'Uruguay (Eastern Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    UZ: TopLevelDomainInfo = {
+        name: 'uz',
+        description: 'Uzbekistan (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VA: TopLevelDomainInfo = {
+        name: 'va',
+        description: 'Holy See (Vatican City State)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VACATIONS: TopLevelDomainInfo = {
+        name: 'vacations',
+        description: 'Atomic Tigers, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VANA: TopLevelDomainInfo = {
+        name: 'vana',
+        description: 'Lifestyle Domain Holdings, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VANGUARD: TopLevelDomainInfo = {
+        name: 'vanguard',
+        description: 'The Vanguard Group, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    VC: TopLevelDomainInfo = {
+        name: 'vc',
+        description: 'Saint Vincent and the Grenadines',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VE: TopLevelDomainInfo = {
+        name: 've',
+        description: 'Venezuela (Bolivarian Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VEGAS: TopLevelDomainInfo = {
+        name: 'vegas',
+        description: 'Dot Vegas, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VENTURES: TopLevelDomainInfo = {
+        name: 'ventures',
+        description: 'Binky Lake, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VERISIGN: TopLevelDomainInfo = {
+        name: 'verisign',
+        description: 'VeriSign, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    VERSICHERUNG: TopLevelDomainInfo = {
+        name: 'versicherung',
+        description: 'TLD-BOX Registrydienstleistungen GmbH',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VET: TopLevelDomainInfo = {
+        name: 'vet',
+        description: 'United TLD Holdco, Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VG: TopLevelDomainInfo = {
+        name: 'vg',
+        description: 'Virgin Islands (British)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VI: TopLevelDomainInfo = {
+        name: 'vi',
+        description: 'Virgin Islands (U.S.)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VIAJES: TopLevelDomainInfo = {
+        name: 'viajes',
+        description: 'Black Madison, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIDEO: TopLevelDomainInfo = {
+        name: 'video',
+        description: 'United TLD Holdco, Ltd',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIG: TopLevelDomainInfo = {
+        name: 'vig',
+        description: 'VIENNA INSURANCE GROUP AG Wiener Versicherung Gruppe',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIKING: TopLevelDomainInfo = {
+        name: 'viking',
+        description: 'Viking River Cruises (Bermuda) Ltd.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    VILLAS: TopLevelDomainInfo = {
+        name: 'villas',
+        description: 'New Sky, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIN: TopLevelDomainInfo = {
+        name: 'vin',
+        description: 'Holly Shadow, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIP: TopLevelDomainInfo = {
+        name: 'vip',
+        description: 'Minds + Machines Group Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIRGIN: TopLevelDomainInfo = {
+        name: 'virgin',
+        description: 'Virgin Enterprises Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    VISA: TopLevelDomainInfo = {
+        name: 'visa',
+        description: 'Visa Worldwide Pte. Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    VISION: TopLevelDomainInfo = {
+        name: 'vision',
+        description: 'Koko Station, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIVA: TopLevelDomainInfo = {
+        name: 'viva',
+        description: 'Saudi Telecom Company',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VIVO: TopLevelDomainInfo = {
+        name: 'vivo',
+        description: 'Telefonica Brasil S.A.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VLAANDEREN: TopLevelDomainInfo = {
+        name: 'vlaanderen',
+        description: 'DNS.be vzw',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VN: TopLevelDomainInfo = {
+        name: 'vn',
+        description: 'Vietnam',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    VODKA: TopLevelDomainInfo = {
+        name: 'vodka',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VOLKSWAGEN: TopLevelDomainInfo = {
         name: 'volkswagen',
         description: 'Volkswagen Group of America Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    VOLVO = TopLevelDomainInfo = {
+    };
+    VOLVO: TopLevelDomainInfo = {
         name: 'volvo',
         description: 'Volvo Holding Sverige Aktiebolag',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    VOTE
-    VOTING
-    VOTO
-    VOYAGE
-    VU
-    WALES
-    WALMART
-    WALTER
-    WANG
-    WANGGOU
-    WATCH
-    WATCHES
-    WEATHER
-    WEATHERCHANNEL
-    WEBCAM
-    WEBER
-    WEBSITE
-    WED
-    WEDDING
-    WEIBO
-    WEIR
-    WF
-    WHOSWHO
-    WIEN
-    WIKI
-    WILLIAMHILL
-    WIN
-    WINDOWS
-    WINE
-    WINNERS
-    WME
-    WOLTERSKLUWER
-    WOODSIDE
-    WORK
-    WORKS = TopLevelDomainInfo = {
+    };
+    VOTE: TopLevelDomainInfo = {
+        name: 'vote',
+        description: 'Monolith Registry LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VOTING: TopLevelDomainInfo = {
+        name: 'voting',
+        description: 'Valuetainment Corp.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VOTO: TopLevelDomainInfo = {
+        name: 'voto',
+        description: 'Monolith Registry LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VOYAGE: TopLevelDomainInfo = {
+        name: 'voyage',
+        description: 'Ruby House, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    VU: TopLevelDomainInfo = {
+        name: 'vu',
+        description: 'Vanuatu (Republic of)',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    WALES: TopLevelDomainInfo = {
+        name: 'wales',
+        description: 'Nominet UK',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WALMART: TopLevelDomainInfo = {
+        name: 'walmart',
+        description: 'Wal-Mart Stores, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WALTER: TopLevelDomainInfo = {
+        name: 'walter',
+        description: 'Sandvik AB',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WANG: TopLevelDomainInfo = {
+        name: 'wang',
+        description: 'Zodiac Wang Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WANGGOU: TopLevelDomainInfo = {
+        name: 'wanggou',
+        description: 'Amazon Registry Services, Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WATCH: TopLevelDomainInfo = {
+        name: 'watch',
+        description: 'Sand Shadow, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WATCHES: TopLevelDomainInfo = {
+        name: 'watches',
+        description: 'Richemont DNS Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WEATHER: TopLevelDomainInfo = {
+        name: 'weather',
+        description: 'International Business Machines Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WEATHERCHANNEL: TopLevelDomainInfo = {
+        name: 'weatherchannel',
+        description: 'International Business Machines Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WEBCAM: TopLevelDomainInfo = {
+        name: 'webcam',
+        description: 'dot Webcam Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WEBER: TopLevelDomainInfo = {
+        name: 'weber',
+        description: 'Saint-Gobain Weber SA',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WEBSITE: TopLevelDomainInfo = {
+        name: 'website',
+        description: 'DotWebsite Inc.',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WED: TopLevelDomainInfo = {
+        name: 'wed',
+        description: 'Emergency Back-End Registry Operator Program - ICANN',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WEDDING: TopLevelDomainInfo = {
+        name: 'wedding',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WEIBO: TopLevelDomainInfo = {
+        name: 'weibo',
+        description: 'Sina Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WEIR: TopLevelDomainInfo = {
+        name: 'weir',
+        description: 'Weir Group IP Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WF: TopLevelDomainInfo = {
+        name: 'wf',
+        description: 'Wallis and Futuna',
+        public: true,
+        category: TopLevelDomainCategory.GEOGRAPHIC,
+    };
+    WHOSWHO: TopLevelDomainInfo = {
+        name: 'whoswho',
+        description: 'Who\'s Who Registry',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WIEN: TopLevelDomainInfo = {
+        name: 'wien',
+        description: 'punkt.wien GmbH',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WIKI: TopLevelDomainInfo = {
+        name: 'wiki',
+        description: 'Top Level Design, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WILLIAMHILL: TopLevelDomainInfo = {
+        name: 'williamhill',
+        description: 'William Hill Organization Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WIN: TopLevelDomainInfo = {
+        name: 'win',
+        description: 'First Registry Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WINDOWS: TopLevelDomainInfo = {
+        name: 'windows',
+        description: 'Microsoft Corporation',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WINE: TopLevelDomainInfo = {
+        name: 'wine',
+        description: 'June Station, LLC',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WINNERS: TopLevelDomainInfo = {    
+        name: 'winners',
+        description: 'The TJX Companies, Inc.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WME: TopLevelDomainInfo = {
+        name: 'wme',
+        description: 'William Morris Endeavor Entertainment, LLC',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WOLTERSKLUWR: TopLevelDomainInfo = {
+        name: 'wolterskluwer',
+        description: 'Wolters Kluwer N.V.',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WOODSIDE: TopLevelDomainInfo = {
+        name: 'woodside',
+        description: 'Woodside Petroleum Limited',
+        public: false,
+        category: TopLevelDomainCategory.SPONSORED,
+    };
+    WORK: TopLevelDomainInfo = {
+        name: 'work',
+        description: 'Top Level Domain Holdings Limited',
+        public: true,
+        category: TopLevelDomainCategory.GENERIC,
+    };
+    WORKS: TopLevelDomainInfo = {
         name: 'works',
         description: 'Little Dynamite, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    WORLD = TopLevelDomainInfo = {
+    };
+    WORLD: TopLevelDomainInfo = {
         name: 'world',
         description: 'Bitter Fields, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    WOW = TopLevelDomainInfo = {
+    };
+    WOW: TopLevelDomainInfo = {
         name: 'wow',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    WS = TopLevelDomainInfo = {
+    };
+    WS: TopLevelDomainInfo = {
         name: 'ws',
         description: 'Samoa (Independent State of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    WTC = TopLevelDomainInfo = {
+    };
+    WTC: TopLevelDomainInfo = {
         name: 'wtc',
         description: 'World Trade Centers Association, Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    WTF = TopLevelDomainInfo = {
+    };
+    WTF: TopLevelDomainInfo = {
         name: 'wtf',
         description: 'Hidden Way, LLC',
         public: true,
         category: TopLevelDomainCategory.FUN,
-    },
-    XBOX = TopLevelDomainInfo = {
+    };
+    XBOX: TopLevelDomainInfo = {
         name: 'xbox',
         description: 'Microsoft Corporation',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    XEROX = TopLevelDomainInfo = {
+    };
+    XEROX: TopLevelDomainInfo = {
         name: 'xerox',
         description: 'Xerox DNHC LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    XFINITY = TopLevelDomainInfo = {
+    };
+    XFINITY: TopLevelDomainInfo = {
         name: 'xfinity',
         description: 'Comcast IP Holdings I, LLC',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    XIHUAN = TopLevelDomainInfo = {
+    };
+    XIHUAN: TopLevelDomainInfo = {
         name: '喜欢',
         description: 'QIHOO 360 TECHNOLOGY CO. LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XIN = TopLevelDomainInfo = {
+    };
+    XIN: TopLevelDomainInfo = {
         name: '新闻',
         description: 'Guangzhou YU Wei Information Technology Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--11B4C3D = TopLevelDomainInfo = {
+    };
+    XN11B4C3D: TopLevelDomainInfo = {
         name: 'कॉम',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--1CK2E1B = TopLevelDomainInfo = {
+    };
+    XN1CK2E1B: TopLevelDomainInfo = {
         name: 'セール',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--1QQW23A = TopLevelDomainInfo = {
+    };
+    XN1QQW23A: TopLevelDomainInfo = {
         name: '佛山',
         description: 'Guangzhou YU Wei Information Technology Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--2SCRJ9C = TopLevelDomainInfo = {
+    };
+    XN2SCRJ9C: TopLevelDomainInfo = {
         name: 'ಭಾರತ',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--30RR7Y = TopLevelDomainInfo = {
+    };
+    XN30RR7Y: TopLevelDomainInfo = {
         name: '慈善',
         description: 'Excellent First Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--3BST00M = TopLevelDomainInfo = {
+    };
+    XN3BST00M: TopLevelDomainInfo = {
         name: '集团',
         description: 'Eagle Horizon Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--3DS443G = TopLevelDomainInfo = {
+    };
+    XN3DS443G: TopLevelDomainInfo = {
         name: '在线',
         description: 'TLD REGISTRY LIMITED OY',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--3E0B707E = TopLevelDomainInfo = {
+    };
+    XN3E0B707E: TopLevelDomainInfo = {
         name: '한국',
         description: 'KISA (Korea Internet &amp; Security Agency)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--3HCRJ9C = TopLevelDomainInfo = {
+    };
+    XN3HCRJ9C: TopLevelDomainInfo = {
         name: 'ଭାରତ',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--3PXU8K = TopLevelDomainInfo = {
+    };
+    XN3PXU8K: TopLevelDomainInfo = {
         name: 'ไทย',
         description: 'Thai Network Information Center Foundation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--42C2D9A = TopLevelDomainInfo = {
+    };
+    XN42C2D9A: TopLevelDomainInfo = {
         name: '香港',
         description: 'Hong Kong Internet Registration Corporation Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--45BR5CYL = TopLevelDomainInfo = {
+    };
+    XN45BR5CYL: TopLevelDomainInfo = {
         name: '台湾',
         description: 'Taiwan Network Information Center (TWNIC)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--45BRJ9C = TopLevelDomainInfo = {
+    };
+    XN45BRJ9C: TopLevelDomainInfo = {
         name: '台灣',
         description: 'Taiwan Network Information Center (TWNIC)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--45Q11C = TopLevelDomainInfo = {
+    };
+    XN45Q11C: TopLevelDomainInfo = {
         name: '中文网',
         description: 'TLD REGISTRY LIMITED OY',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--4DBRK0CE = TopLevelDomainInfo = {
+    };
+    XN4DBRK0CE: TopLevelDomainInfo = {
         name: '中信',
         description: 'CITIC Group Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--4GBRIM = TopLevelDomainInfo = {
+    };
+    XN4GBRIM: TopLevelDomainInfo = {
         name: 'موقع',
         description: 'Suhub Electronic Establishment',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--54B7FTA0CC = TopLevelDomainInfo = {
+    };
+    XN54B7FTA0CC: TopLevelDomainInfo = {
         name: '企业',
         description: 'Dash McCook, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--55QW42G = TopLevelDomainInfo = {
+    };
+    XN55QW42G: TopLevelDomainInfo = {
         name: '香港',
         description: 'Hong Kong Internet Registration Corporation Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--55QX5D = TopLevelDomainInfo = {
+    };
+    XN55QX5D: TopLevelDomainInfo = {
         name: '公司',
         description: 'Computer Network Information Center of Chinese Academy of Sciences （China Internet Network Information Center）',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--5SU34J936BGSG = TopLevelDomainInfo = {
+    };
+    XN5SU34J936BGSG: TopLevelDomainInfo = {
         name: '网店',
         description: 'Zodiac Aquarius Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--5TZM5G = TopLevelDomainInfo = {
+    };
+    XN5TZM5G: TopLevelDomainInfo = {
         name: '移动',
         description: 'Afilias plc',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--6FRZ82G = TopLevelDomainInfo = {
+    };
+    XN6FRZ82G: TopLevelDomainInfo = {
         name: '我爱你',
         description: 'Tycoon Treasure Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--6QQ986B3XL = TopLevelDomainInfo = {
+    };
+    XN6QQ986B3XL: TopLevelDomainInfo = {
         name: '政务',
         description: 'China Organizational Name Administration Center',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--80ADXHKS = TopLevelDomainInfo = {
+    };
+    XN80ADXHKS: TopLevelDomainInfo = {
         name: 'москва',
         description: 'ICM Registry LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--80AO21A = TopLevelDomainInfo = {
+    };
+    XN80AO21A: TopLevelDomainInfo = {
         name: 'қаз',
         description: 'Association of IT Companies of Kazakhstan',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--80AQECDR1A = TopLevelDomainInfo = {
+    };
+    XN80AQECDR1A: TopLevelDomainInfo = {
         name: 'католик',
         description: 'Pontificium Consilium de Comunicationibus Socialibus (PCCS) (Pontifical Council for Social Communication)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--80ASEHDB = TopLevelDomainInfo = {
+    };
+    XN80ASEHDB: TopLevelDomainInfo = {
         name: 'онлайн',
         description: 'CORE Association',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--80ASWG = TopLevelDomainInfo = {
+    };
+    XN80ASWG: TopLevelDomainInfo = {
         name: 'сайт',
         description: 'CORE Association',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--8Y0A063A = TopLevelDomainInfo = {
+    };
+    XN8Y0A063A: TopLevelDomainInfo = {
         name: '联通',
         description: 'China United Network Communications Corporation Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--90A3AC = TopLevelDomainInfo = {
+    };
+    XN90A3AC: TopLevelDomainInfo = {
         name: 'срб',
         description: 'Serbian National Internet Domain Registry (RNIDS)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--90AE = TopLevelDomainInfo = {
+    };
+    XN90AE: TopLevelDomainInfo = {
         name: 'бг',
         description: 'Imena.BG AD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--90AIS = TopLevelDomainInfo = {
+    };
+    XN90AIS: TopLevelDomainInfo = {
         name: 'бел',
         description: 'Reliable Software, Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--9DBQ2A = TopLevelDomainInfo = {
+    };
+    XN9DBQ2A: TopLevelDomainInfo = {
         name: 'קום',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--9ET52U = TopLevelDomainInfo = {
+    };
+    XN9ET52U: TopLevelDomainInfo = {
         name: '时尚',
         description: 'RISE VICTORY LIMITED',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--9KRT00A = TopLevelDomainInfo = {
+    };
+    XN9KRT00A: TopLevelDomainInfo = {
         name: '微博',
         description: 'Sina Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--B4W605FERD = TopLevelDomainInfo = {
+    };
+    XNB4W605FERD: TopLevelDomainInfo = {
         name: '淡马锡',
         description: 'Temasek Holdings (Private) Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--BCK1B9A5DRE4C = TopLevelDomainInfo = {
+    };
+    XNBCK1B9A5DRE4C: TopLevelDomainInfo = {
         name: 'ファッション',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--C1AVG = TopLevelDomainInfo = {
+    };
+    XNC1AVG: TopLevelDomainInfo = {
         name: 'орг',
         description: 'Public Interest Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--C2BR7G  = TopLevelDomainInfo = {
+    };
+    XNC2BR7G : TopLevelDomainInfo = {
         name: 'नेट',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CCK2B3B = TopLevelDomainInfo = {
+    };
+    XNCCK2B3B: TopLevelDomainInfo = {
         name: 'ストア',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CCKWCXETD = TopLevelDomainInfo = {
+    };
+    XNCCKWCXETD: TopLevelDomainInfo = {
         name: 'ポイント',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CG4BKI = TopLevelDomainInfo = {
+    };
+    XNCG4BKI: TopLevelDomainInfo = {
         name: '삼성',
         description: 'SAMSUNG SDS CO., LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CLCHC0EA0B2G2A9GCD = TopLevelDomainInfo = {
+    };
+    XNCLCHC0EA0B2G2A9GCD: TopLevelDomainInfo = {
         name: 'சிங்கப்பூர்',
         description: 'Singapore Network Information Centre (SGNIC) Pte Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CZR694B = TopLevelDomainInfo = {
+    };
+    XNCZR694B: TopLevelDomainInfo = {
         name: '商标',
         description: 'HU YI GLOBAL INFORMATION RESOURCES(HOLDING) COMPANY.HONGKONG LIMITED',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CZRS0T = TopLevelDomainInfo = {
+    };
+    XNCZRS0T: TopLevelDomainInfo = {
         name: '商店',
         description: 'Wild Island, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--CZRU2D = TopLevelDomainInfo = {
+    };
+    XNCZRU2D: TopLevelDomainInfo = {
         name: '商城',
         description: 'Zodiac Aquarius Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--D1ACJ3B = TopLevelDomainInfo = {
+    };
+    XND1ACJ3B: TopLevelDomainInfo = {
         name: 'дети',
         description: 'The Foundation for Network Initiatives “The Smart Internet”',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--D1ALF = TopLevelDomainInfo = {
+    };
+    XND1ALF: TopLevelDomainInfo = {
         name: 'мкд',
         description: 'Macedonian Academic Research Network Skopje',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--E1A4C = TopLevelDomainInfo = {
+    };
+    XNE1A4C: TopLevelDomainInfo = {
         name: 'ею',
         description: 'EURid vzw/asbl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--ECKVDTC9D = TopLevelDomainInfo = {
+    };
+    XNECKVDTC9D: TopLevelDomainInfo = {
         name: 'ポルテ',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--EFVY88H = TopLevelDomainInfo = {
+    };
+    XNEFVY88H: TopLevelDomainInfo = {
         name: '新闻',
         description: 'Guangzhou YU Wei Information Technology Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FCT429K = TopLevelDomainInfo = {
+    };
+    XNFCT429K: TopLevelDomainInfo = {
         name: '工行',
         description: 'Industrial and Commercial Bank of China Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FHBEI = TopLevelDomainInfo = {
+    };
+    XNFHBEI: TopLevelDomainInfo = {
         name: 'كوم',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FIQ228C5HS = TopLevelDomainInfo = {
+    };
+    XNFIQ228C5HS: TopLevelDomainInfo = {
         name: '中文网',
         description: 'TLD REGISTRY LIMITED OY',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FIQ64B = TopLevelDomainInfo = {
+    };
+    XNFIQ64B: TopLevelDomainInfo = {
         name: '中信',
         description: 'CITIC Group Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FIQS8S = TopLevelDomainInfo = {
+    };
+    XNFIQS8S: TopLevelDomainInfo = {
         name: '中国',
         description: 'China Internet Network Information Center (CNNIC)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FIQZ9S = TopLevelDomainInfo = {
+    };
+    XNFIQZ9S: TopLevelDomainInfo = {
         name: '中國',
         description: 'China Internet Network Information Center (CNNIC)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FJQ720A = TopLevelDomainInfo = {
+    };
+    XNFJQ720A: TopLevelDomainInfo = {
         name: '嘉里大酒店',
         description: 'Kerry Trading Co. Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FLW351E = TopLevelDomainInfo = {
+    };
+    XNFLW351E: TopLevelDomainInfo = {
         name: '電訊盈科',
         description: 'PCCW Enterprises Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FPCRJ9C3D = TopLevelDomainInfo = {
+    };
+    XNFPCRJ9C3D: TopLevelDomainInfo = {
         name: '购物',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FZC2C9E2C = TopLevelDomainInfo = {
+    };
+    XNFZC2C9E2C: TopLevelDomainInfo = {
         name: 'クラウド',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--FZYS8D69UVGM = TopLevelDomainInfo = {
+    };
+    XNFZYS8D69UVGM: TopLevelDomainInfo = {
         name: '通販',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--G2XX48C = TopLevelDomainInfo = {
+    };
+    XNG2XX48C: TopLevelDomainInfo = {
         name: '网店',
         description: 'Zodiac Aquarius Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--GCKR3F0F = TopLevelDomainInfo = {
+    };
+    XNGCKR3F0F: TopLevelDomainInfo = {
         name: 'संगठन',
         description: 'Public Interest Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--GECRJ9C = TopLevelDomainInfo = {
+    };
+    XNGECRJ9C: TopLevelDomainInfo = {
         name: 'คอม',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--GK3AT1E = TopLevelDomainInfo = {
+    };
+    XNGK3AT1E: TopLevelDomainInfo = {
         name: 'みんな',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--H2BREG3EVE = TopLevelDomainInfo = {
+    };
+    XNH2BREG3EVE: TopLevelDomainInfo = {
         name: 'グーグル',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--H2BRJ9C = TopLevelDomainInfo = {
+    };
+    XNH2BRJ9C: TopLevelDomainInfo = {
         name: '世界',
         description: 'Stable Tone Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--H2BRJ9C8C = TopLevelDomainInfo = {
+    };
+    XNH2BRJ9C8C: TopLevelDomainInfo = {
         name: '書籍',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--HXT814E = TopLevelDomainInfo = {
+    };
+    XNHXT814E: TopLevelDomainInfo = {
         name: '网址',
         description: 'KNET Co., Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--I1B6B1A6A2E = TopLevelDomainInfo = {
+    };
+    XNI1B6B1A6A2E: TopLevelDomainInfo = {
         name: '닷컴',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--IMR513N = TopLevelDomainInfo = {
+    };
+    XNIMR513N: TopLevelDomainInfo = {
         name: '政府',
         description: 'Net-Chinese Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--IO0A7I = TopLevelDomainInfo = {
+    };
+    XNIO0A7I: TopLevelDomainInfo = {
         name: '삼성',
         description: 'SAMSUNG SDS CO., LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--J1AEF = TopLevelDomainInfo = {
+    };
+    XNJ1AEF: TopLevelDomainInfo = {
         name: 'சிங்கப்பூர்',
         description: 'Singapore Network Information Centre (SGNIC) Pte Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--J1AMH = TopLevelDomainInfo = {
+    };
+    XNJ1AMH: TopLevelDomainInfo = {
         name: 'ලංකා',
         description: 'LK Domain Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--J6W193G = TopLevelDomainInfo = {
+    };
+    XNJ6W193G: TopLevelDomainInfo = {
         name: '集团',
         description: 'Eagle Horizon Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--JLQ480N2RG = TopLevelDomainInfo = {
+    };
+    XNJLQ480N2RG: TopLevelDomainInfo = {
         name: '在线',
         description: 'TLD REGISTRY LIMITED OY',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--JVR189M = TopLevelDomainInfo = {
+    };
+    XNJVR189M: TopLevelDomainInfo = {
         name: '한국',
         description: 'KISA (Korea Internet &amp; Security Agency)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--KCRX77D1X4A = TopLevelDomainInfo = {
+    };
+    XNKCRX77D1X4A: TopLevelDomainInfo = {
         name: '八卦',
         description: 'Zodiac Scorpio Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--KPRW13D = TopLevelDomainInfo = {
+    };
+    XNKPRW13D: TopLevelDomainInfo = {
         name: 'موقع',
         description: 'Suhub Electronic Establishment',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--KPRY57D = TopLevelDomainInfo = {
+    };
+    XNKPRY57D: TopLevelDomainInfo = {
         name: 'موقع',
         description: 'Suhub Electronic Establishment',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--KPUT3I = TopLevelDomainInfo = {
+    };
+    XNKPUT3I: TopLevelDomainInfo = {
         name: 'বাংলা',
         description: 'Posts and Telecommunications Division',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--L1ACC = TopLevelDomainInfo = {
+    };
+    XNL1ACC: TopLevelDomainInfo = {
         name: 'укр',
         description: 'Ukrainian Network Information Centre (UANIC), Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--LGBBAT1AD8J = TopLevelDomainInfo = {
+    };
+    XNLGBBAT1AD8J: TopLevelDomainInfo = {
         name: 'مليسيا',
         description: 'MYNIC Berhad',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGB9AWBF = TopLevelDomainInfo = {
+    };
+    XNMGB9AWBF: TopLevelDomainInfo = {
         name: 'المغرب',
         description: 'Agence Nationale de Réglementation des Télécommunications (ANRT)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBA3A3EJT = TopLevelDomainInfo = {
+    };
+    XNMGBA3A3EJT: TopLevelDomainInfo = {
         name: 'ابوظبي',
         description: 'Abu Dhabi Systems and Information Centre',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBA3A4F16A = TopLevelDomainInfo = {
+    };
+    XNMGBA3A4F16A: TopLevelDomainInfo = {
         name: 'السعودية',
         description: 'Communications and Information Technology Commission',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBA7C0BBN0A = TopLevelDomainInfo = {
+    };
+    XNMGBA7C0BBN0A: TopLevelDomainInfo = {
         name: 'سودان',
         description: 'Sudan Internet Society',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBAAKC7DVF = TopLevelDomainInfo = {
+    };
+    XNMGBAAKC7DVF: TopLevelDomainInfo = {
         name: 'همراه',
         description: 'Asia Green IT System Bilgisayar San. ve Tic. Ltd. Sti.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBAAM7A8H = TopLevelDomainInfo = {
+    };
+    XNMGBAAM7A8H: TopLevelDomainInfo = {
         name: 'عرب',
         description: 'League of Arab States',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBAB2BD = TopLevelDomainInfo = {
+    };
+    XNMGBAB2BD: TopLevelDomainInfo = {
         name: 'ارامكو',
         description: 'Aramco Services Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBAH1A3HJKRD = TopLevelDomainInfo = {
+    };
+    XNMGBAH1A3HJKRD: TopLevelDomainInfo = {
         name: 'ایران',
         description: 'Institute for Research in Fundamental Sciences (IPM)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBAI9AZGQP6J = TopLevelDomainInfo = {
+    };
+    XNMGBAI9AZGQP6J: TopLevelDomainInfo = {
         name: 'العليان',
         description: 'Crescent Holding GmbH',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBAYH7GPA = TopLevelDomainInfo = {
+    };
+    XNMGBAYH7GPA: TopLevelDomainInfo = {
         name: 'اتصالات',
         description: 'Emirates Telecommunications Corporation (trading as Etisalat)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBBH1A = TopLevelDomainInfo = {
+    };
+    XNMGBBH1A: TopLevelDomainInfo = {
         name: 'بازار',
         description: 'CORE Association',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBBH1A71E = TopLevelDomainInfo = {
+    };
+    XNMGBBH1A71E: TopLevelDomainInfo = {
         name: 'موريتانيا',
         description: 'Université de Nouakchott Al Aasriya',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBC0A9AZCG = TopLevelDomainInfo = {
+    };
+    XNMGBC0A9AZCG: TopLevelDomainInfo = {
         name: 'پاکستان',
         description: 'National Telecommunication Corporation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBCA7DZDO = TopLevelDomainInfo = {
+    };
+    XNMGBCA7DZDO: TopLevelDomainInfo = {
         name: 'الاردن',
         description: 'National Information Technology Center (NITC)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBCPQ6GPA1A = TopLevelDomainInfo = {
+    };
+    XNMGBCPQ6GPA1A: TopLevelDomainInfo = {
         name: 'موبايلي',
         description: 'GreenTech Consultancy Company W.L.L.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBERP4A5D4AR = TopLevelDomainInfo = {
+    };
+    XNMGBERP4A5D4AR: TopLevelDomainInfo = {
         name: 'بارت',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBGU82A = TopLevelDomainInfo = {
+    };
+    XNMGBGU82A: TopLevelDomainInfo = {
         name: 'بھارت',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBI4ECEXP = TopLevelDomainInfo = {
+    };
+    XNMGBI4ECEXP: TopLevelDomainInfo = {
         name: 'المغرب',
         description: 'Agence Nationale de Réglementation des Télécommunications (ANRT)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBPL2FH = TopLevelDomainInfo = {
+    };
+    XNMGBPL2FH: TopLevelDomainInfo = {
         name: 'السعودية',
         description: 'Communications and Information Technology Commission',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBT3DHD = TopLevelDomainInfo = {
+    };
+    XNMGBT3DHD: TopLevelDomainInfo = {
         name: 'ڀارت',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBTX2B = TopLevelDomainInfo = {
+    };
+    XNMGBTX2B: TopLevelDomainInfo = {
         name: 'مصر',
         description: 'National Telecommunication Regulatory Authority - NTRA',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MGBX4CD0AB = TopLevelDomainInfo = {
+    };
+    XNMGBX4CD0AB: TopLevelDomainInfo = {
         name: 'قطر',
         description: 'Communications Regulatory Authority',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MIX891F = TopLevelDomainInfo = {
+    };
+    XNMIX891F: TopLevelDomainInfo = {
         name: 'இலங்கை',
         description: 'LK Domain Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MK1BU44C = TopLevelDomainInfo = {
+    };
+    XNMK1BU44C: TopLevelDomainInfo = {
         name: 'இந்தியா',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--MXTQ1M = TopLevelDomainInfo = {
+    };
+    XNMXTQ1M: TopLevelDomainInfo = {
         name: 'آزمایشی',
         description: 'Internet Assigned Numbers Authority',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NGBC5AZD = TopLevelDomainInfo = {
+    };
+    XNNGBC5AZD: TopLevelDomainInfo = {
         name: 'الجزائر',
         description: 'CERIST',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NGBE9E0A = TopLevelDomainInfo = {
+    };
+    XNNGBE9E0A: TopLevelDomainInfo = {
         name: 'عمان',
         description: 'Telecommunications Regulatory Authority (TRA)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NGBRX = TopLevelDomainInfo = {
+    };
+    XNNGBRX: TopLevelDomainInfo = {
         name: 'ارامكو',
         description: 'Aramco Services Company',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NODE = TopLevelDomainInfo = {
+    };
+    XNNODE: TopLevelDomainInfo = {
         name: 'გე',
         description: 'Information Technologies Development Center (ITDC)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NQV7F = TopLevelDomainInfo = {
+    };
+    XNNQV7F: TopLevelDomainInfo = {
         name: '机构',
         description: 'Public Interest Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NQV7FS00EMA = TopLevelDomainInfo = {
+    };
+    XNNQV7FS00EMA: TopLevelDomainInfo = {
         name: '组织机构',
         description: 'Public Interest Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--NYQY26A = TopLevelDomainInfo = {
+    };
+    XNNYQY26A: TopLevelDomainInfo = {
         name: '健康',
         description: 'Stable Tone Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--O3CW4H = TopLevelDomainInfo = {
+    };
+    XNO3CW4H: TopLevelDomainInfo = {
         name: 'ไทย',
         description: 'Thai Network Information Center Foundation',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--OGBPF8FL = TopLevelDomainInfo = {
+    };
+    XNOGBPF8FL: TopLevelDomainInfo = {
         name: 'سورية',
         description: 'National Agency for Network Services (NANS)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--OTU796D = TopLevelDomainInfo = {
+    };
+    XNOTU796D: TopLevelDomainInfo = {
         name: '招聘',
         description: 'Dot Trademark TLD Holding Company Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--P1ACF = TopLevelDomainInfo = {
+    };
+    XNP1ACF: TopLevelDomainInfo = {
         name: 'рус',
         description: 'Rusnames Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--P1AI = TopLevelDomainInfo = {
+    };
+    XNP1AI: TopLevelDomainInfo = {
         name: 'рф',
         description: 'Coordination Center for TLD RU',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--PGBS0DH = TopLevelDomainInfo = {
+    };
+    XNPGBS0DH: TopLevelDomainInfo = {
         name: 'بيتك',
         description: 'Kuwait Finance House',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--PSSY2U = TopLevelDomainInfo = {
+    };
+    XNPSSY2U: TopLevelDomainInfo = {
         name: '机构',
         description: 'Public Interest Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--Q7CE6A = TopLevelDomainInfo = {
+    };
+    XNQ7CE6A: TopLevelDomainInfo = {
         name: 'グーグル',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--Q9JYB4C = TopLevelDomainInfo = {
+    };
+    XNQ9JYB4C: TopLevelDomainInfo = {
         name: '삼성',
         description: 'SAMSUNG SDS CO., LTD',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--QCKA1PMC = TopLevelDomainInfo = {
+    };
+    XNQCKA1PMC: TopLevelDomainInfo = {
         name: 'ഭാരതം',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--QXA6A = TopLevelDomainInfo = {
+    };
+    XNQXA6A: TopLevelDomainInfo = {
         name: '广东',
         description: 'Guangzhou YU Wei Information Technology Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--QXAM = TopLevelDomainInfo = {
+    };
+    XNQXAM: TopLevelDomainInfo = {
         name: 'இலங்கை',
         description: 'LK Domain Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--RHQV96G = TopLevelDomainInfo = {
+    };
+    XNRHQV96G: TopLevelDomainInfo = {
         name: 'இந்தியா',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--ROVU88B = TopLevelDomainInfo = {
+    };
+    XNROVU88B: TopLevelDomainInfo = {
         name: 'ભારત',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--RVC1E0AM3E = TopLevelDomainInfo = {
+    };
+    XNRVC1E0AM3E: TopLevelDomainInfo = {
         name: 'ಭಾರತ',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--S9BRJ9C = TopLevelDomainInfo = {
+    };
+    XNS9BRJ9C: TopLevelDomainInfo = {
         name: 'ਭਾਰਤ',
         description: 'National Internet Exchange of India',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--SES554G = TopLevelDomainInfo = {
+    };
+    XNSES554G: TopLevelDomainInfo = {
         name: '网址',
         description: 'KNET Co., Ltd',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--T60B56A = TopLevelDomainInfo = {
+    };
+    XNT60B56A: TopLevelDomainInfo = {
         name: '닷넷',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--TCKWE = TopLevelDomainInfo = {
+    };
+    XNTCKWE: TopLevelDomainInfo = {
         name: 'コム',
         description: 'VeriSign Sarl',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--TIQ49XQYJ = TopLevelDomainInfo = {
+    };
+    XNTIQ49XQYJ: TopLevelDomainInfo = {
         name: '天主教',
         description: 'Pontificium Consilium de Comunicationibus Socialibus (PCCS) (Pontifical Council for Social Communication)',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--UNUP4Y = TopLevelDomainInfo = {
+    };
+    XNUNUP4Y: TopLevelDomainInfo = {
         name: '游戏',
         description: 'Spring Fields, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--VERMGENSBERATER-CTB = TopLevelDomainInfo = {
+    };
+    XNVERMGENSBERATERCTB: TopLevelDomainInfo = {
         name: 'vermögensberater',
         description: 'Deutsche Vermögensberatung Aktiengesellschaft DVAG',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--VERMGENSBERATUNG-PWB = TopLevelDomainInfo = {
+    };
+    XNVERMGENSBERATUNGPWB: TopLevelDomainInfo = {
         name: 'vermögensberatung',
         description: 'Deutsche Vermögensberatung Aktiengesellschaft DVAG',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--VHQUV = TopLevelDomainInfo = {
+    };
+    XNVHQUV: TopLevelDomainInfo = {
         name: '企业',
         description: 'Dash McCook, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--VUQ861B = TopLevelDomainInfo = {
+    };
+    XNVUQ861B: TopLevelDomainInfo = {
         name: '信息',
         description: 'Beijing Tele-info Network Technology Co., Ltd.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--W4R85EL8FHU5DNRA = TopLevelDomainInfo = {
+    };
+    XNW4R85EL8FHU5DNRA: TopLevelDomainInfo = {
         name: '嘉里大酒店',
         description: 'Kerry Trading Co. Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--W4RS40L = TopLevelDomainInfo = {
+    };
+    XNW4RS40L: TopLevelDomainInfo = {
         name: '嘉里',
         description: 'Kerry Trading Co. Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--WGBH1C = TopLevelDomainInfo = {
+    };
+    XNWGBH1C: TopLevelDomainInfo = {
         name: '通販',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--WGBL6A = TopLevelDomainInfo = {
+    };
+    XNWGBL6A: TopLevelDomainInfo = {
         name: 'みんな',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--XHQ521B = TopLevelDomainInfo = {
+    };
+    XNXHQ521B: TopLevelDomainInfo = {
         name: '网店',
         description: 'Zodiac Aquarius Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--XKC2AL3HYE2A = TopLevelDomainInfo = {
+    };
+    XNXKC2AL3HYE2A: TopLevelDomainInfo = {
         name: 'संगठन',
         description: 'Public Interest Registry',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--XKC2DL3A5EE0H = TopLevelDomainInfo = {
+    };
+    XNXKC2DL3A5EE0H: TopLevelDomainInfo = {
         name: '餐厅',
         description: 'HU YI GLOBAL INFORMATION RESOURCES (HOLDING) COMPANY. HONGKONG LIMITED',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--Y9A3AQ = TopLevelDomainInfo = {
+    };
+    XNY9A3AQ: TopLevelDomainInfo = {
         name: '网络',
         description: 'Computer Network Information Center of Chinese Academy of Sciences （China Internet Network Information Center）',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--YFRO4I67O = TopLevelDomainInfo = {
+    };
+    XNYFRO4I67O: TopLevelDomainInfo = {
         name: '新加坡',
         description: 'Sahara India Pariwar',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--YGBI2AMMX = TopLevelDomainInfo = {
+    };
+    XNYGBI2AMMX: TopLevelDomainInfo = {
         name: 'فلسطين',
         description: 'Alibaba Group Holding Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XN--ZFR164B = TopLevelDomainInfo = {
+    };
+    XNZFR164B: TopLevelDomainInfo = {
         name: '政务',
         description: 'TLD registry limited to registration of Hebrew domain names',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    XXX = TopLevelDomainInfo = {
+    };
+    XXX: TopLevelDomainInfo = {
         name: 'xxx',
         description: 'Adult entertainment',
         public: true,
         category: TopLevelDomainCategory.SEXUAL,
-    },
-    XYZ = TopLevelDomainInfo = {
+    };
+    XYZ: TopLevelDomainInfo = {
         name: 'xyz',
         description: 'XYZ.COM LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YACHTS = TopLevelDomainInfo = {
+    };
+    YACHTS: TopLevelDomainInfo = {
         name: 'yachts',
         description: 'DERYachts, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YAHOO = TopLevelDomainInfo = {
+    };
+    YAHOO: TopLevelDomainInfo = {
         name: 'yahoo',
         description: 'Yahoo! Domain Services Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    YAMAXUN = TopLevelDomainInfo = {
+    };
+    YAMAXUN: TopLevelDomainInfo = {
         name: 'yamaxun',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YANDEX = TopLevelDomainInfo = {
+    };
+    YANDEX: TopLevelDomainInfo = {
         name: 'yandex',
         description: 'YANDEX, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YE = TopLevelDomainInfo = {
+    };
+    YE: TopLevelDomainInfo = {
         name: 'ye',
         description: 'Yemen (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    YODOBASHI = TopLevelDomainInfo = {
+    };
+    YODOBASHI: TopLevelDomainInfo = {
         name: 'yodobashi',
         description: 'YODOBASHI CAMERA CO.,LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YOGA = TopLevelDomainInfo = {
+    };
+    YOGA: TopLevelDomainInfo = {
         name: 'yoga',
         description: 'Top Level Domain Holdings Limited',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YOKOHAMA = TopLevelDomainInfo = {
+    };
+    YOKOHAMA: TopLevelDomainInfo = {
         name: 'yokohama',
         description: 'GMO Registry, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YOU = TopLevelDomainInfo = {
+    };
+    YOU: TopLevelDomainInfo = {
         name: 'you',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    YOUTUBE = TopLevelDomainInfo = {
+    };
+    YOUTUBE: TopLevelDomainInfo = {
         name: 'youtube',
         description: 'Charleston Road Registry Inc.',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    YT = TopLevelDomainInfo = {
+    };
+    YT: TopLevelDomainInfo = {
         name: 'yt',
         description: 'Mayotte (Department of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    YUN = TopLevelDomainInfo = {
+    };
+    YUN: TopLevelDomainInfo = {
         name: 'yun',
         description: 'QIHOO 360 TECHNOLOGY CO. LTD.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ZA = TopLevelDomainInfo = {
+    };
+    ZA: TopLevelDomainInfo = {
         name: 'za',
         description: 'South Africa (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ZAPPOS = TopLevelDomainInfo = {
+    };
+    ZAPPOS: TopLevelDomainInfo = {
         name: 'zappos',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ZARA = TopLevelDomainInfo = {
+    };
+    ZARA: TopLevelDomainInfo = {
         name: 'zara',
         description: 'Industria de Diseño Textil, S.A. (INDITEX, S.A.)',
         public: false,
         category: TopLevelDomainCategory.SPONSORED,
-    },
-    ZERO = TopLevelDomainInfo = {
+    };
+    ZERO: TopLevelDomainInfo = {
         name: 'zero',
         description: 'Amazon Registry Services, Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ZIP = TopLevelDomainInfo = {
+    };
+    ZIP: TopLevelDomainInfo = {
         name: 'zip',
         description: 'Charleston Road Registry Inc.',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ZM = TopLevelDomainInfo = {
+    };
+    ZM: TopLevelDomainInfo = {
         name: 'zm',
         description: 'Zambia (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ZONE = TopLevelDomainInfo = {
+    };
+    ZONE: TopLevelDomainInfo = {
         name: 'zone',
         description: 'Outer Falls, LLC',
         public: true,
         category: TopLevelDomainCategory.GENERIC,
-    },
-    ZUERICH = TopLevelDomainInfo = {
+    };
+    ZUERICH: TopLevelDomainInfo = {
         name: 'zuerich',
         description: 'Kanton Zürich (Canton of Zurich)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
-    ZW = TopLevelDomainInfo = {
+    };
+    ZW: TopLevelDomainInfo = {
         name: 'zw',
         description: 'Zimbabwe (Republic of)',
         public: true,
         category: TopLevelDomainCategory.GEOGRAPHIC,
-    },
+    };
 }
