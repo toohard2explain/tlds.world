@@ -74,7 +74,7 @@ export default class NotAvailable extends React.Component<NotAvailableProps> {
                             className=" font-extrabold text-xl text-right hover:underline"
                             target="_blank"
                         >
-                            Visit digga.dev! <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="mb-2 ml-0.5 text-gray-400 text-sm" />
+                            Visit digga.dev <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="mb-2 ml-0.5 text-gray-400 text-xs" />
                         </a>
                     </div>
                 </div>
