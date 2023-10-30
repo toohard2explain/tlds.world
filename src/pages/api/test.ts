@@ -6,7 +6,7 @@ type Data = {
   whois: any,
 }
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
@@ -15,7 +15,7 @@ export default function handler(
   (async function(){
     const collector: SpaceshipCollector = new SpaceshipCollector();
 
-    collector.collect();
+    //collector.collect();
 
     res.status(200).json({ whois: 'lol' })
   })()
