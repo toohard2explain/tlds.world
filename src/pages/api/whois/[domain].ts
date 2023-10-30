@@ -2,12 +2,20 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  useable: boolean
+  whois: any,
 }
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ useable: true })
+  const { domain } = req.query;
+
+  (async function(){
+    const whois = require('whois-json');
+
+    var results = await whois(domain);
+
+    res.status(200).json({ whois: results })
+  })()
 }

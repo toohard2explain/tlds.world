@@ -4,15 +4,26 @@ import 'animate.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TopLevelDomain from '@/TopLevelDomain';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  let loading = false;
+
   function searchForDomain(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     // TODO: Search for domain
 
+    if (loading) return;
     if (!validateInput) return;
+
+    setLoading(true)
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
   }
 
   function validateInput(event: React.KeyboardEvent<HTMLInputElement>) {
@@ -144,29 +155,89 @@ export default function Home() {
     errors.innerHTML = 'Search for a domain, and we will tell you if its available and how much it costs at various registrars.';
     errors.classList.remove('text-green-600');
     errors.classList.remove('text-red-400');
+  }
 
+  function setLoading(state: boolean) {
+    loading = state;
+
+    const loader = document.getElementById('loader');
+    const input = document.getElementById('domain') as HTMLInputElement;
+    const errors = document.getElementById('errors');
+    const stats = document.getElementById('stats');
+
+    if (!input) return;
+    if (!loader) return;
+    if (!errors) return;
+    if (!stats) return;
+
+    if (state) {
+      loader.classList.remove('hidden');
+      input.classList.add('bg-gray-200', 'cursor-not-allowed', 'outline-none');
+
+      errors.classList.add('animate__fadeOutUp');
+      errors.classList.remove('animate__fadeInDown');
+
+      stats.classList.add('animate__fadeOutLeft');
+      stats.classList.remove('animate__fadeInLeft');
+    } else {
+      loader.classList.add('hidden');
+      input.classList.remove('bg-gray-200', 'cursor-not-allowed', 'outline-none');
+
+      errors.classList.add('animate__fadeInDown');
+      errors.classList.remove('animate__fadeOutUp');
+
+      stats.classList.add('animate__fadeInLeft');
+      stats.classList.remove('animate__fadeOutLeft');
+    }
   }
 
   return (
     <main
       className={'flex min-h-screen flex-col items-center justify-between relative p-6 ${inter.className}'}
     >
-      <ToastContainer
-          position="top-right"
-          autoClose={3000}
-          hideProgressBar
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          limit={5}
-          pauseOnHover
-          theme="light"
-        ></ToastContainer>
+      <div 
+        className='max-w-2xl w-full mx-auto py-6'
+        id='search-container'
+      >
+        <form
+          onSubmit={searchForDomain}
+        >
+          <div
+            className='relative'
+          >
+            <input 
+              className='w-full bg-gray-100 border border-gray-300 rounded-xl py-4 px-6 animate__animated animate__fadeInDown'
+              placeholder='example.com'
+              type='search'
+              id='domain'
+              onKeyUp={validateInput}
+              onBlur={removeMessage}
+            />
+
+            <div
+              className='absolute top-0 flex justify-center w-full hidden cursor-not-allowed'
+              id='loader'
+            >
+              <FontAwesomeIcon
+                className='animate-spin text-lg mt-5 text-gray-400'
+                icon={faCircleNotch}
+              />
+            </div>
+          </div>
+
+          <p
+            className='text-gray-400 text-xs mt-2 animate__animated animate__fadeInDown px-2 duration-200'
+            id='errors'
+          >
+            Search for a domain, and we will tell you if its available and how much it costs at various registrars.
+          </p>
+        </form>
+      </div>
+
 
       <div
-        className='absolute bottom-0 left-0 p-5'
+        className='absolute bottom-0 left-0 p-5 animate__animated'
+        id='stats'
       >
         <span
           className='text-xs text-gray-400'
@@ -179,30 +250,6 @@ export default function Home() {
         >
           Need info about a taken domain? Visit <a href='https://digga.dev' className='underline'>digga.dev</a> for more info.
         </span>
-      </div>
-
-      <div 
-        className='max-w-2xl w-full m-auto'
-      >
-        <form
-          onSubmit={searchForDomain}
-        >
-          <input 
-            className='w-full bg-gray-100 border border-gray-300 rounded-xl py-4 px-6 animate__animated animate__fadeInDown'
-            placeholder='example.com'
-            type='search'
-            onKeyUp={validateInput}
-            onBlur={removeMessage}
-          />
-
-          <p
-            className='text-gray-400 text-xs mt-2 animate__animated animate__fadeInDown px-2 duration-200'
-            id='errors'
-          >
-            Search for a domain, and we will tell you if its available and how much it costs at various registrars.
-          </p>
-
-        </form>
       </div>
     </main>
   )
