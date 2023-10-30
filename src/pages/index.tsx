@@ -24,6 +24,8 @@ export default function Home() {
     const inputObject = (document.getElementById('domain') as HTMLInputElement);
     const input = inputObject.value;
 
+    if (!input) return;
+
     const domain = input.match(domainRegex)![0];
 
     if (!domain) return;
@@ -214,7 +216,7 @@ export default function Home() {
 
   return (
     <main
-      className={'flex min-h-screen flex-col items-center justify-between relative p-6 ${inter.className}'}
+      className={'flex min-h-screen flex-col items-center justify-between relative p-4 ${inter.className}'}
     >
       <div 
         className='max-w-2xl w-full mx-auto py-6 mt-40'
