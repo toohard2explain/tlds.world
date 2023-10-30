@@ -45,8 +45,6 @@ export default function Home() {
         theme: "light",
       });
     }
-
-    
   }
 
   return (
