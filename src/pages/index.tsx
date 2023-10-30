@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-12 ${inter.className}`}
+      className={'flex min-h-screen flex-col items-center justify-between p-12 ${inter.className}'}
     >
       <ToastContainer
           position="top-right"
@@ -88,7 +88,7 @@ export default function Home() {
           <span
             className='text-gray-400 text-xs mt-2 animate__animated animate__fadeInDown px-6'
           >
-            Search for a domain, and we'll tell you if it's available and how much it costs at various registrars.
+            Search for a domain, and we will tell you if it's available and how much it costs at various registrars.
           </span>
 
         </form>
