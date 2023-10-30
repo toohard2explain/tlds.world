@@ -207,7 +207,7 @@ export default function Home() {
       stats.classList.add('animate__fadeInLeft');
       stats.classList.remove('animate__fadeOutLeft');
       
-      //document.getElementById('search-container')!.classList.remove('mt-40');
+      document.getElementById('search-container')!.classList.remove('mt-40');
     }
   }
 
