@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import PerfectMatch from '@/components/PerfectMatch';
 import NotAvailable from '@/components/NotAvailable';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'
+import { create } from 'domain';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,9 +61,9 @@ export default function Home() {
           const json = await free.json();
 
           if (json.useable) {
-            ReactDOM.render(<PerfectMatch domain={domainString} />, results);
+            createRoot(results).render(<PerfectMatch domain={domainString} />);
           } else {
-            ReactDOM.render(<NotAvailable domain={domainString} />, results);
+            createRoot(results).render(<NotAvailable domain={domainString} />);
           }
 
           setLoading(false)
@@ -72,7 +73,7 @@ export default function Home() {
     } else {
       setLoading(false)
     }
-    
+
   }
 
   function validateInput() {
