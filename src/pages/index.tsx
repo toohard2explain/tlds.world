@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <main
-      className={'flex min-h-screen flex-col items-center justify-between p-12 ${inter.className}'}
+      className={'flex min-h-screen flex-col items-center justify-between p-6 ${inter.className}'}
     >
       <ToastContainer
           position="top-right"
@@ -85,11 +85,11 @@ export default function Home() {
             onKeyUp={validateInput}
           />
 
-          <span
-            className='text-gray-400 text-xs mt-2 animate__animated animate__fadeInDown px-6'
+          <p
+            className='text-gray-400 text-xs mt-2 animate__animated animate__fadeInDown px-2'
           >
             Search for a domain, and we will tell you if its available and how much it costs at various registrars.
-          </span>
+          </p>
 
         </form>
       </div>
