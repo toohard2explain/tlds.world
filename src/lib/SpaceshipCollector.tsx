@@ -1,5 +1,6 @@
 import Collector from "./Collector";
 import TopLevelDomain, { TopLevelDomainInfo } from "../TopLevelDomain";
+import { TopLevelDomainPricingInfo } from "./TopLevelDomainPricingInfo";
 
 export default class SpaceshipCollector implements Collector {
     name: string = "Spaceship";
@@ -430,7 +431,7 @@ export default class SpaceshipCollector implements Collector {
 
     tldHandler: TopLevelDomain | undefined = undefined;
 
-    collect(): void {
+    async collect(): Promise<TopLevelDomainPricingInfo[]> {
         const axios = require('axios');
         let data = this.buildJsonBody();
 
@@ -445,16 +446,12 @@ export default class SpaceshipCollector implements Collector {
             data : data
         };
 
-        axios.request(config)
-        .then((response: any) => {
-            console.log(JSON.stringify(response.data));
+        const response = await axios(config);
+        const responseData = response.data;
 
-            // handle data
-        })
-        .catch((error: any) => {
-            console.log(error);
-        });
+        let pricingInfos: TopLevelDomainPricingInfo[] = [];
 
+        return pricingInfos;
     }
 
     buildJsonBody() {

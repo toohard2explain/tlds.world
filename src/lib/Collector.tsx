@@ -1,4 +1,5 @@
 import { TopLevelDomainInfo } from "@/TopLevelDomain";
+import { TopLevelDomainPricingInfo } from "./TopLevelDomainPricingInfo";
 
 export default interface Collector {
     name: string;
@@ -6,5 +7,5 @@ export default interface Collector {
     tlds: TopLevelDomainInfo[];
     data: any[];
 
-    collect(): void;
+    collect(): Promise<TopLevelDomainPricingInfo[]>;
 }
