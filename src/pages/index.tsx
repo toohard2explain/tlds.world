@@ -19,6 +19,23 @@ export default function Home() {
     if (loading) return;
     if (!validateInput) return;
 
+    const domainRegex = /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)/igm;
+    const inputObject = (document.getElementById('domain') as HTMLInputElement);
+    const input = inputObject.value;
+
+    const domain = input.match(domainRegex)![0];
+
+    if (!domain) return;
+    if (domain.length < 3) return;
+    if (domain.length > 63) return;
+    if (domain.includes(' ')) return;
+    if (domain.startsWith('.')) return;
+    if (domain.endsWith('.')) return;
+    if (domain.startsWith('-')) return;
+    if (domain.endsWith('-')) return;
+    if (domain.includes('..')) return;
+    if (domain.includes('--')) return;
+
     setLoading(true)
 
     setTimeout(() => {
@@ -26,12 +43,13 @@ export default function Home() {
     }, 3000);
   }
 
-  function validateInput(event: React.KeyboardEvent<HTMLInputElement>) {
-    const input = event.currentTarget.value
+  function validateInput() {
+    const inputObject = (document.getElementById('domain') as HTMLInputElement);
+    const input = inputObject.value;
 
     // if the input is longer than 63 characters, don't allow it
     if (input.length > 63) {
-      event.currentTarget.value = input.slice(0, 63)
+      inputObject.value = input.slice(0, 63)
 
       displayErrorMessage('The domain name can\'t be longer than 63 characters.')
 
@@ -47,7 +65,7 @@ export default function Home() {
 
     // if the input contains a space, don't allow it
     if (input.includes(' ')) {
-      event.currentTarget.value = input.replace(/ /g, '')
+      inputObject.value = input.replace(/ /g, '')
 
       displayErrorMessage('The domain name can\'t contain spaces.')
 
@@ -56,7 +74,7 @@ export default function Home() {
 
     // if the input contains special characters, don't allow it
     if (input.match(/[^a-zA-Z0-9.-]/g)) {
-      event.currentTarget.value = input.replace(/[^a-zA-Z0-9.-]/g, '')
+      inputObject.value = input.replace(/[^a-zA-Z0-9.-]/g, '')
 
       displayErrorMessage('The domain name can\'t contain special characters.')
 
@@ -65,7 +83,7 @@ export default function Home() {
 
     // if the input contains two dots in a row, don't allow it
     if (input.match(/\.\./g)) {
-      event.currentTarget.value = input.replace(/\.\./g, '.')
+      inputObject.value = input.replace(/\.\./g, '.')
 
       displayErrorMessage('The domain name can\'t contain two dots in a row.')
 
@@ -74,7 +92,7 @@ export default function Home() {
 
     // if the input starts with a dot, don't allow it
     if (input.startsWith('.')) {
-      event.currentTarget.value = input.slice(1)
+      inputObject.value = input.slice(1)
 
       displayErrorMessage('The domain name can\'t start with a dot.')
 
@@ -90,7 +108,7 @@ export default function Home() {
 
     // if the input contains two dashes in a row, don't allow it
     if (input.match(/--/g)) {
-      event.currentTarget.value = input.replace(/--/g, '-')
+      inputObject.value = input.replace(/--/g, '-')
 
       displayErrorMessage('The domain name can\'t contain two dashes in a row.')
 
@@ -99,7 +117,7 @@ export default function Home() {
 
     // if the input starts with a dash, don't allow it
     if (input.startsWith('-')) {
-      event.currentTarget.value = input.slice(1)
+      inputObject.value = input.slice(1)
 
       displayErrorMessage('The domain name can\'t start with a dash.')
 
@@ -147,7 +165,7 @@ export default function Home() {
 
   function removeMessage(event: React.FocusEvent<HTMLInputElement>) {
     const errors = document.getElementById('errors');
-    const input = event.currentTarget.value;
+    const input = event.target.value;
 
     if (!errors) return;
     if (input !== '') return;
@@ -188,6 +206,8 @@ export default function Home() {
 
       stats.classList.add('animate__fadeInLeft');
       stats.classList.remove('animate__fadeOutLeft');
+      
+      //document.getElementById('search-container')!.classList.remove('mt-40');
     }
   }
 
@@ -196,8 +216,9 @@ export default function Home() {
       className={'flex min-h-screen flex-col items-center justify-between relative p-6 ${inter.className}'}
     >
       <div 
-        className='max-w-2xl w-full mx-auto py-6'
+        className='max-w-2xl w-full mx-auto py-6 mt-40'
         id='search-container'
+        style={{ transition: 'margin 700ms' }}
       >
         <form
           onSubmit={searchForDomain}
@@ -249,6 +270,12 @@ export default function Home() {
           className='text-xs text-gray-400 block mt-2'
         >
           Need info about a taken domain? Visit <a href='https://digga.dev' className='underline'>digga.dev</a> for more info.
+        </span>
+
+        <span
+          className='text-xs text-gray-400 block mt-2'
+        >
+          &copy; 2023 tlds.world. All rights reserved. Deployed on <a href='https://vercel.com' className='underline'>vercel.com</a>.
         </span>
       </div>
     </main>
