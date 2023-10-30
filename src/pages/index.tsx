@@ -1,11 +1,12 @@
 import { Inter } from 'next/font/google'
 
 import 'animate.css';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TopLevelDomain from '@/TopLevelDomain';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import PerfectMatch from '@/components/PerfectMatch';
+import NotAvailable from '@/components/NotAvailable';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -253,9 +254,21 @@ export default function Home() {
             Search for a domain, and we will tell you if its available and how much it costs at various registrars.
           </p>
         </form>
+
+        <section
+          id='results'
+          className='pt-8 space-y-2'
+        >
+          <NotAvailable
+            domain='example.com'
+          />
+
+          <PerfectMatch
+            domain='example.com'
+          />
+        </section>
       </div>
-
-
+      
       <div
         className='absolute bottom-0 left-0 p-5 animate__animated'
         id='stats'

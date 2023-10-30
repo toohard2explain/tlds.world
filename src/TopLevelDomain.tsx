@@ -8767,7 +8767,7 @@ class TopLevelDomain {
     };
 
     getTLDInfo(tld: string): TopLevelDomainInfo | undefined {
-        return this.getTLDInfos().find(tldInfo => tldInfo.name === tld.toLocaleLowerCase());
+        return this.getTLDInfos().find(tldInfo => tldInfo.name === String(tld).toLowerCase());
     }
 
     getTLDInfos(): Array<TopLevelDomainInfo> {
@@ -10233,3 +10233,9 @@ class TopLevelDomain {
 }
 
 export default TopLevelDomain;
+
+export {
+    TopLevelDomainCategory
+};
+
+export type { TopLevelDomainInfo };
