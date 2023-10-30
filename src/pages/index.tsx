@@ -10,6 +10,8 @@ export default function Home() {
   function searchForDomain(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     // TODO: Search for domain
+
+    if (!validateInput) return;
   }
 
   function validateInput(event: React.KeyboardEvent<HTMLInputElement>) {
@@ -29,6 +31,8 @@ export default function Home() {
         progress: undefined,
         theme: "light",
       });
+
+      return false;
     }
 
     // if the input contains a space, don't allow it
@@ -44,12 +48,16 @@ export default function Home() {
         draggable: true,
         theme: "light",
       });
+
+      return false;
     }
+
+    return true;
   }
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between p-12 ${inter.className}`}
     >
       <ToastContainer
           position="top-right"
@@ -72,10 +80,17 @@ export default function Home() {
         >
           <input 
             className='w-full bg-gray-100 border border-gray-300 rounded-xl py-4 px-6 animate__animated animate__fadeInDown'
-            placeholder='Search for a domain...'
+            placeholder='example.com'
             type='search'
             onKeyUp={validateInput}
           />
+
+          <span
+            className='text-gray-400 text-xs mt-2 animate__animated animate__fadeInDown px-6'
+          >
+            Search for a domain, and we'll tell you if it's available and how much it costs at various registrars.
+          </span>
+
         </form>
       </div>
     </main>
