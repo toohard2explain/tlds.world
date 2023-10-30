@@ -7,13 +7,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import PerfectMatch from '@/components/PerfectMatch';
 import NotAvailable from '@/components/NotAvailable';
+import ReactDOM from 'react-dom';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   let loading = false;
+  let domainString = '';
 
-  function searchForDomain(event: React.FormEvent<HTMLFormElement>) {
+  async function searchForDomain(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     // TODO: Search for domain
 
@@ -41,9 +43,36 @@ export default function Home() {
 
     setLoading(true)
 
-    setTimeout(() => {
+    domainString = domain;
+
+    const results = document.getElementById('top-results')!;
+
+    if (!results) return;
+
+    const tld = String(domain).split('.')[1];
+    const tldObject = new TopLevelDomain().getTLDInfo(tld);
+
+    // load top results
+    if (tldObject !== undefined) {
+        const free = await fetch('/api/useable/' + domainString);
+
+        if (free.status === 200) {
+          const json = await free.json();
+
+          if (json.useable) {
+            ReactDOM.render(<PerfectMatch domain={domainString} />, results);
+          } else {
+            ReactDOM.render(<NotAvailable domain={domainString} />, results);
+          }
+
+          setLoading(false)
+        } else {
+          setLoading(false)
+        }
+    } else {
       setLoading(false)
-    }, 3000);
+    }
+    
   }
 
   function validateInput() {
@@ -261,13 +290,11 @@ export default function Home() {
           id='results'
           className='pt-8 space-y-2'
         >
-          <NotAvailable
-            domain='example.com'
-          />
+          <div
+            id='top-results'
+          >
 
-          <PerfectMatch
-            domain='example.com'
-          />
+          </div>
         </section>
       </div>
       

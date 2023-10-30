@@ -35,7 +35,7 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
     render()  {
         return (
             <div
-                className="bg-gray-100 border border-gray-300 py-4 px-6 rounded-xl"
+                className="bg-gray-100 border border-gray-300 py-4 px-6 rounded-xl animate__animated animate__fadeInUp"
             >
                 <div
                     className="flex justify-between text-green-500"
