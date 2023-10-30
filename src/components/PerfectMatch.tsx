@@ -4,12 +4,16 @@ import React from "react";
 import {useRouter} from "next/router";
 import TopLevelDomain, { TopLevelDomainInfo } from "@/TopLevelDomain";
 
-export default class PerfectMatch extends React.Component {
+interface PerfectMatchProps {
+    domain: string;
+}
+
+export default class PerfectMatch extends React.Component<PerfectMatchProps> {
     domain: string = '';
     tldObject: TopLevelDomainInfo | undefined;
 
-    constructor(domain: string) {
-        super(domain);
+    constructor(props: PerfectMatchProps) {
+        super(props);
         this.domain = this.props.domain;
 
         const tld = String(this.domain).split('.')[1];

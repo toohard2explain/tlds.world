@@ -4,12 +4,16 @@ import React from "react";
 import {useRouter} from "next/router";
 import TopLevelDomain, { TopLevelDomainInfo } from "@/TopLevelDomain";
 
-export default class NotAvailable extends React.Component {
+interface NotAvailableProps {
+    domain: string;
+  }
+
+export default class NotAvailable extends React.Component<NotAvailableProps> {
     domain: string = '';
     tldObject: TopLevelDomainInfo | undefined;
 
-    constructor(domain: string) {
-        super(domain);
+    constructor(props: NotAvailableProps) {
+        super(props);
         this.domain = this.props.domain;
 
         const tld = String(this.domain).split('.')[1];
