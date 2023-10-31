@@ -451,6 +451,25 @@ export default class SpaceshipCollector implements Collector {
 
         let pricingInfos: TopLevelDomainPricingInfo[] = [];
 
+        const products = responseData.products;
+        const topLevelHandler = new TopLevelDomain();
+
+        products.forEach((product: any) => {
+            const tld = product.product.productSlug;
+            const priceNew = product.prices[0].total.EUR.price.amount;
+            const priceRenew = product.prices[1].total.EUR.price.amount;
+            const transfer = priceRenew;
+
+            pricingInfos.push({
+                tld: topLevelHandler.getTLDInfo(tld) ?? topLevelHandler.COM,
+                priceNew: priceNew,
+                priceRenew: priceRenew,
+                priceTransfer: transfer,
+                registrar: this.name,
+                registrarWebsite: this.website
+            });
+        });
+
         return pricingInfos;
     }
 
