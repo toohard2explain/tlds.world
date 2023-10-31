@@ -1,5 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import TopLevelDomain from '@/TopLevelDomain';
+import PorkbunCollector from '@/lib/PorkbunCollector';
 import SpaceshipCollector from '@/lib/SpaceshipCollector';
+import { TopLevelDomainPricingInfo } from '@/lib/TopLevelDomainPricingInfo';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
@@ -13,7 +16,7 @@ export default async function handler(
   const { domain } = req.query;
 
   (async function(){
-    const collector: SpaceshipCollector = new SpaceshipCollector();
+    const collector: PorkbunCollector = new PorkbunCollector();
 
     collector.collect().then((data) => {
       res.status(200).json({ data: data })
