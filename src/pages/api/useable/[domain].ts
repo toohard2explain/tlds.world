@@ -29,12 +29,14 @@ export default function handler(
     const domainString = domain!.toString();
     const hostnameExist = await hostnameExists(domainString)
 
+    if (hostnameExist.exists) res.status(200).json({ useable: false, query: domainString })
+
     const whois = require('whois-json');
 
     var results = await whois(domain);
 
     if (results.domainName) res.status(200).json({ useable: false, query: domainString })
 
-    res.status(200).json({ useable: !hostnameExist.exists, query: domainString })
+    res.status(200).json({ useable: true, query: domainString })
   })()
 }

@@ -530,8 +530,6 @@ export default class PorkbunCollector implements Collector {
 
             if (tld === undefined) return;
 
-            console.log('key', topLevelHandler.getTLDInfo(key)?.name, key, tld.name);
-
             const registrar = this.name;
             const registrarWebsite = this.website;
 
