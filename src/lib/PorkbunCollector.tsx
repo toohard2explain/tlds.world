@@ -523,10 +523,14 @@ export default class PorkbunCollector implements Collector {
         const keys = Object.keys(pricing);
 
         keys.forEach((key: string) => {
-            const tld = topLevelHandler.getTLDInfo(key) ?? topLevelHandler.COM;
+            const tld = topLevelHandler.getTLDInfo(key);
             const priceNew = pricing[key].registration;
             const priceRenew = pricing[key].renewal;
             const priceTransfer = pricing[key].transfer;
+
+            if (tld === undefined) return;
+
+            console.log('key', topLevelHandler.getTLDInfo(key)?.name, key, tld.name);
 
             const registrar = this.name;
             const registrarWebsite = this.website;
