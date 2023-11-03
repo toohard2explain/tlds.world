@@ -10,6 +10,7 @@ import NotAvailable from '@/components/NotAvailable';
 import { createRoot } from 'react-dom/client'
 import { create } from 'domain';
 import Alternative from '@/components/Alternative';
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -241,8 +242,8 @@ export default function Home() {
       errors.classList.add('animate__fadeInDown');
       errors.classList.remove('animate__fadeOutUp');
 
-      stats.classList.add('animate__fadeInLeft');
-      stats.classList.remove('animate__fadeOutLeft');
+      //stats.classList.add('animate__fadeInLeft');
+      //stats.classList.remove('animate__fadeOutLeft');
       
       document.getElementById('search-container')!.classList.remove('mt-40');
     }
@@ -270,6 +271,7 @@ export default function Home() {
               id='domain'
               onKeyUp={validateInput}
               onBlur={removeMessage}
+              value={useRouter().query.domain as string}
             />
 
             <div

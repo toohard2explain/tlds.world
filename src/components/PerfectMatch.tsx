@@ -48,7 +48,7 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
                     const priceObject = document.getElementById('perfect-pricing')!;
                     const registrarObject = document.getElementById('perfect-registrar')!;
 
-                    priceObject.innerHTML = priceNew + '';
+                    priceObject.innerHTML = priceNew + '€';
                     registrarObject.innerHTML = registrar;
                     registrarObject.setAttribute('href', 'https://' + registrarWebsite);
                 }
@@ -101,7 +101,7 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
                         <p
                             className="text-gray-400 text-sm text-right"
                         >
-                            At <a href="https://namecheap.com" className="underline" id="perfect-registrar">namecheap.com</a>
+                            at <a href="" className="underline" id="perfect-registrar"></a>
                         </p>
                     </div>
                 </div>
