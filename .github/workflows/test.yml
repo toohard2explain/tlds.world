@@ -21,10 +21,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: npm
 
       - name: Install Dependencies
-        run: yarn install --immutable
+        run: npm install
 
       - name: Run Tests
-        run: yarn run test:format
+        run: npm run test:format
