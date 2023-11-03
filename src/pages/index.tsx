@@ -9,6 +9,7 @@ import PerfectMatch from '@/components/PerfectMatch';
 import NotAvailable from '@/components/NotAvailable';
 import { createRoot } from 'react-dom/client'
 import { create } from 'domain';
+import Alternative from '@/components/Alternative';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,7 +32,6 @@ export default function Home() {
 
     const domain = input.match(domainRegex)![0];
 
-    if (!domain) return;
     if (domain.length < 3) return;
     if (domain.length > 63) return;
     if (domain.includes(' ')) return;
@@ -47,6 +47,7 @@ export default function Home() {
     domainString = domain;
 
     const results = document.getElementById('top-results')!;
+    const otherResults = document.getElementById('other-results')!;
 
     if (!results) return;
 
@@ -66,11 +67,14 @@ export default function Home() {
             createRoot(results).render(<NotAvailable domain={domainString} />);
           }
 
+          createRoot(otherResults).render(<Alternative domain={domainString} />);
           setLoading(false)
         } else {
+          createRoot(otherResults).render(<Alternative domain={domainString} />);
           setLoading(false)
         }
     } else {
+      createRoot(otherResults).render(<Alternative domain={domainString} />);
       setLoading(false)
     }
 
@@ -293,6 +297,12 @@ export default function Home() {
         >
           <div
             id='top-results'
+          >
+
+          </div>
+
+          <div
+            id='other-results'
           >
 
           </div>
