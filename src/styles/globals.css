@@ -20,7 +20,10 @@ body {
 
 .dotted-background {
   opacity: 0.99;
-  background-image: radial-gradient(rgba(175, 175, 175, 0.3) 1.25px, rgba(0, 0, 0, 0) 0.95px);
+  background-image: radial-gradient(
+    rgba(175, 175, 175, 0.3) 1.25px,
+    rgba(0, 0, 0, 0) 0.95px
+  );
   background-size: 19px 19px;
   background-repeat: repeat;
 }
