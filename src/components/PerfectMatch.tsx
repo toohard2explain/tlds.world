@@ -49,9 +49,17 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
             const registrar = item.registrar;
             const registrarWebsite = item.registrarWebsite;
 
+            const registrarBox = document.getElementById("registrarbox")!;
+            const priceBox = document.getElementById("pricingbox")!;
+            const priceYear = document.getElementById("pricingyear")!;
             const priceObject = document.getElementById("perfect-pricing")!;
             const registrarObject =
               document.getElementById("perfect-registrar")!;
+
+            priceBox.classList.remove("animate__flash", "animate__infinite", "animate__slower", 'text-gray-300', 'bg-gray-300');
+            priceYear.classList.remove('text-gray-300');
+
+            registrarBox.classList.remove("text-gray-200", "bg-gray-200", "animate__flash", "animate__infinite", "animate__slower");
 
             priceObject.innerHTML = priceNew + "€";
             registrarObject.innerHTML = registrar;
@@ -77,11 +85,13 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
             </p>
           </div>
           <div>
-            <p className="text-xl font-extrabold">
-              <span id="perfect-pricing"></span>
-              <span className="text-gray-500 text-sm font-normal">/year</span>
+            <p id="pricingbox" className="text-xl font-extrabold animate__animated animate__flash animate__infinite animate__slower bg-gray-300 rounded text-gray-300">
+              <span id="perfect-pricing">
+                0.00€
+              </span>
+              <span id="pricingyear" className="text-gray-500 text-sm font-normal text-gray-300">/year</span>
             </p>
-            <p className="text-gray-400 text-sm text-right">
+            <p className="text-gray-400 text-sm text-right text-gray-200 animate__animated animate__flash animate__infinite animate__slower bg-gray-200 rounded" id="registrarbox">
               at <a href="" className="underline" id="perfect-registrar"></a>
             </p>
           </div>
