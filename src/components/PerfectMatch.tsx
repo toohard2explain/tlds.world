@@ -56,10 +56,22 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
             const registrarObject =
               document.getElementById("perfect-registrar")!;
 
-            priceBox.classList.remove("animate__flash", "animate__infinite", "animate__slower", 'text-gray-300', 'bg-gray-300');
-            priceYear.classList.remove('text-gray-300');
+            priceBox.classList.remove(
+              "animate__flash",
+              "animate__infinite",
+              "animate__slower",
+              "text-gray-300",
+              "bg-gray-300",
+            );
+            priceYear.classList.remove("text-gray-300");
 
-            registrarBox.classList.remove("text-gray-200", "bg-gray-200", "animate__flash", "animate__infinite", "animate__slower");
+            registrarBox.classList.remove(
+              "text-gray-200",
+              "bg-gray-200",
+              "animate__flash",
+              "animate__infinite",
+              "animate__slower",
+            );
 
             priceObject.innerHTML = priceNew + "€";
             registrarObject.innerHTML = registrar;
@@ -85,13 +97,22 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
             </p>
           </div>
           <div>
-            <p id="pricingbox" className="text-xl font-extrabold animate__animated animate__flash animate__infinite animate__slower bg-gray-300 rounded text-gray-300">
-              <span id="perfect-pricing">
-                0.00€
+            <p
+              id="pricingbox"
+              className="text-xl font-extrabold animate__animated animate__flash animate__infinite animate__slower bg-gray-300 rounded text-gray-300"
+            >
+              <span id="perfect-pricing">0.00€</span>
+              <span
+                id="pricingyear"
+                className="text-gray-500 text-sm font-normal text-gray-300"
+              >
+                /year
               </span>
-              <span id="pricingyear" className="text-gray-500 text-sm font-normal text-gray-300">/year</span>
             </p>
-            <p className="text-gray-400 text-sm text-right text-gray-200 animate__animated animate__flash animate__infinite animate__slower bg-gray-200 rounded" id="registrarbox">
+            <p
+              className="text-gray-400 text-sm text-right text-gray-200 animate__animated animate__flash animate__infinite animate__slower bg-gray-200 rounded"
+              id="registrarbox"
+            >
               at <a href="" className="underline" id="perfect-registrar"></a>
             </p>
           </div>
