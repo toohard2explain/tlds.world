@@ -11,6 +11,7 @@ import { createRoot } from "react-dom/client";
 import { create } from "domain";
 import Alternative from "@/components/Alternative";
 import { useRouter } from "next/router";
+import GithubButton from "@/components/GithubButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -307,6 +308,8 @@ export default function Home() {
           <div id="other-results"></div>
         </section>
       </div>
+
+      <GithubButton />
 
       <div
         className="absolute bottom-0 left-0 p-5 animate__animated"
