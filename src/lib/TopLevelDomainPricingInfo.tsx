@@ -1,12 +1,12 @@
 import { TopLevelDomainInfo } from "@/TopLevelDomain";
 
 export type TopLevelDomainPricingInfo = {
-    tld: TopLevelDomainInfo;
+  tld: TopLevelDomainInfo;
 
-    priceNew: number;
-    priceRenew: number;
-    priceTransfer: number;
+  priceNew: number;
+  priceRenew: number;
+  priceTransfer: number;
 
-    registrar: string;
-    registrarWebsite: string;
-}
+  registrar: string;
+  registrarWebsite: string;
+};
