@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import {useRouter} from "next/router";
 import TopLevelDomain, { TopLevelDomainInfo } from "@/TopLevelDomain";
+import { TopLevelDomainPricingInfo } from "@/lib/TopLevelDomainPricingInfo";
 
 interface PerfectMatchProps {
     domain: string;
@@ -30,6 +31,29 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
 
     getTLD(): string {
         return this.tldObject?.name || '';
+    }
+
+    componentDidMount(): void {
+        fetch('/api/collect/best').then((response) => {
+            return response.json();
+        }).then((json) => {
+            const data: TopLevelDomainPricingInfo[] = json.best as TopLevelDomainPricingInfo[];
+
+            data.forEach((item) => {
+                if(item.tld.name === this.getTLD()) {
+                    const priceNew = item.priceNew;
+                    const registrar = item.registrar;
+                    const registrarWebsite = item.registrarWebsite;
+
+                    const priceObject = document.getElementById('perfect-pricing')!;
+                    const registrarObject = document.getElementById('perfect-registrar')!;
+
+                    priceObject.innerHTML = priceNew + '';
+                    registrarObject.innerHTML = registrar;
+                    registrarObject.setAttribute('href', 'https://' + registrarWebsite);
+                }
+            });
+        });
     }
 
     render()  {
@@ -67,7 +91,7 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
                         <p
                             className="text-xl font-extrabold"
                         >
-                            29.99$
+                            <span id="perfect-pricing"></span>
                             <span
                                 className="text-gray-500 text-sm font-normal"
                             >
@@ -77,7 +101,7 @@ export default class PerfectMatch extends React.Component<PerfectMatchProps> {
                         <p
                             className="text-gray-400 text-sm text-right"
                         >
-                            At <a href="https://namecheap.com" className="underline">namecheap.com</a>
+                            At <a href="https://namecheap.com" className="underline" id="perfect-registrar">namecheap.com</a>
                         </p>
                     </div>
                 </div>
