@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>TLDS.world &middot; The best comparing platform for top level domain</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className='dotted-background'>
         <Main />
