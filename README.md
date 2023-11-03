@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/toohard2explain/tlds.world/main/public/logo.png" height=120></p>
+
 ## tlds.world
 
 tlds.world was made for the junge of providers that are giving people the opportunity to register domains, but how do you know what is the best price? Now you do! Simply get on [tlds.world](https://tlds.world) and search for you name or domain, the prices and availabilties will be shown as **fast** as we can collect the **newest** information for you and your wallet.
