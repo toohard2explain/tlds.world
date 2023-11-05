@@ -44,6 +44,6 @@ export default function handler(
 
   setTimeout(() => {
     const domainString = domain!.toString();
-    res.status(200).json({ useable: false, query: domainString });
-  }, 5000);
+    res.status(200).json({ useable: true, query: domainString });
+  }, 6000);
 }
