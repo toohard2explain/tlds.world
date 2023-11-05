@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 
 import "animate.css";
 import "react-toastify/dist/ReactToastify.css";
+import "react-tooltip/dist/react-tooltip.css";
 import TopLevelDomain from "@/TopLevelDomain";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +13,8 @@ import { create } from "domain";
 import Alternative from "@/components/Alternative";
 import { useRouter } from "next/router";
 import GithubButton from "@/components/GithubButton";
+import PremiumMatch from "@/components/PremiumMatch";
+import { Tooltip } from "react-tooltip";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +22,10 @@ export default function Home() {
   let loading = false;
   let domainString = "";
 
+  let controller = new AbortController();
+
   async function searchForDomain(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    // TODO: Search for domain
 
     if (loading) return;
     if (!validateInput) return;
@@ -46,6 +50,8 @@ export default function Home() {
     if (domain.includes("--")) return;
 
     setLoading(true);
+    controller.abort();
+    controller = new AbortController();
 
     domainString = domain;
 
@@ -65,19 +71,41 @@ export default function Home() {
         const json = await free.json();
 
         if (json.useable) {
-          createRoot(results).render(<PerfectMatch domain={domainString} />);
+          const premium = await fetch("/api/premium/" + domainString);
+
+          if (premium.status === 200) {
+            const json = await premium.json();
+
+            if (json.premium) {
+              createRoot(results).render(
+                <PremiumMatch domain={domainString} />,
+              );
+            } else {
+              createRoot(results).render(
+                <PerfectMatch domain={domainString} />,
+              );
+            }
+          } else {
+            createRoot(results).render(<PerfectMatch domain={domainString} />);
+          }
         } else {
           createRoot(results).render(<NotAvailable domain={domainString} />);
         }
 
-        createRoot(otherResults).render(<Alternative domain={domainString} />);
+        createRoot(otherResults).render(
+          <Alternative controller={controller} domain={domainString} />,
+        );
         setLoading(false);
       } else {
-        createRoot(otherResults).render(<Alternative domain={domainString} />);
+        createRoot(otherResults).render(
+          <Alternative controller={controller} domain={domainString} />,
+        );
         setLoading(false);
       }
     } else {
-      createRoot(otherResults).render(<Alternative domain={domainString} />);
+      createRoot(otherResults).render(
+        <Alternative controller={controller} domain={domainString} />,
+      );
       setLoading(false);
     }
   }
@@ -252,9 +280,6 @@ export default function Home() {
       errors.classList.add("animate__fadeInDown");
       errors.classList.remove("animate__fadeOutUp");
 
-      //stats.classList.add('animate__fadeInLeft');
-      //stats.classList.remove('animate__fadeOutLeft');
-
       document.getElementById("search-container")!.classList.remove("mt-40");
     }
   }
@@ -310,6 +335,8 @@ export default function Home() {
       </div>
 
       <GithubButton />
+
+      <Tooltip id="my-tooltip" />
 
       <div
         className="absolute bottom-0 left-0 p-5 animate__animated"
