@@ -16,3 +16,5 @@ We are working day for day to make [tlds.world](https://tlds.world) better for y
 - [ ] Collect from more providers
 - [ ] Cashback / Affiliate
 - [ ] Sharing of domain ideas
+
+v2 is coming...
